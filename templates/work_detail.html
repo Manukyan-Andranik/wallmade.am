@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/work_detail_style.css') }}">
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>{{ work.title }}</h1>
+        <p>Featured project using Wallmade architectural details</p>
+    </div>
+</section>
+
+<section class="section project-detail">
+    <div class="container">
+        <div class="project-gallery">
+            <div class="main-image">
+                <img src="{{ work.Images_folder_url }}/1.jpg" alt="{{ work.title }}" id="main-project-image">
+            </div>
+            <div class="thumbnail-container">
+                {% for i in range(1, 6) %}
+                <div class="thumbnail">
+                    <img src="{{ work.Images_folder_url }}/{{ i }}.jpg" alt="{{ work.title }} - Image {{ i }}" class="thumbnail-image" data-full="{{ work.Images_folder_url }}/{{ i }}.jpg">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="project-info">
+            <div class="project-meta">
+                <div class="meta-item">
+                    <h4>Location</h4>
+                    <p>{{ work.location if work.location else 'Not specified' }}</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Project Type</h4>
+                    <p>{{ work.project_type if work.project_type else 'Architectural' }}</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Year Completed</h4>
+                    <p>{{ work.year if work.year else 'Recent' }}</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Architect</h4>
+                    <p>{{ work.architect if work.architect else 'Various' }}</p>
+                </div>
+            </div>
+            
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>{{ work.description }}</p>
+                
+                {% if work.challenges %}
+                <h3>Challenges & Solutions</h3>
+                <p>{{ work.challenges }}</p>
+                {% endif %}
+                
+                {% if work.products_used %}
+                <h3>Wallmade Products Used</h3>
+                <ul class="products-used">
+                    {% for product in work.products_used %}
+                    <li>{{ product }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if work.testimonial %}
+<section class="section project-testimonial bg-light">
+    <div class="container">
+        <div class="testimonial-content">
+            <blockquote>
+                <p>{{ work.testimonial.text }}</p>
+                <footer>
+                    <cite>{{ work.testimonial.author }}, {{ work.testimonial.position }}</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section class="section project-more-images">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Project Details</h2>
+            <p class="section-subtitle">Additional views and details</p>
+        </div>
+        <div class="image-grid">
+            {% for i in range(6, 11) %}
+            <div class="grid-item">
+                <img src="{{ work.Images_folder_url }}/{{ i }}.jpg" alt="{{ work.title }} - Detail {{ i }}" loading="lazy" class="zoom-on-hover">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section cta bg-dark">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Inspired by This Project?</h2>
+            <p>Contact us to discuss how we can contribute to your next architectural endeavor.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

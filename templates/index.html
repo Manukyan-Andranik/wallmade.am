@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Precision Crafted Architectural Details</h1>
+            <p class="hero-subtitle">We fix walls, We build Dreams</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('products') }}" class="btn-primary">Explore Products</a>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+<section class="section about-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Crafting Excellence in Architectural Details</h2>
+            <p class="section-subtitle">Our commitment to quality and precision sets us apart in the industry</p>
+        </div>
+        <div class="about-preview-content">
+            <div class="about-preview-text">
+                <p>Wallmade specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications.</p>
+                <a href="{{ url_for('about') }}" class="btn-text">Learn more about us <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="about-preview-image">
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='images/about-preview.jpg') }}" alt="Wallmade craftsmanship" class="zoom-effect">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section products-preview bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Product Range</h2>
+            <p class="section-subtitle">Explore our collection of architectural details</p>
+        </div>
+        <div class="products-grid">
+            {% for product in featured_products %}
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title }}" loading="lazy">
+                    <div class="product-overlay">
+                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">View Details</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>{{ product.title }}</h3>
+                    <p>{{ product.description[:100] }}...</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="section-footer">
+            <a href="{{ url_for('products') }}" class="btn-primary">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<section class="section works-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Recent Works</h2>
+            <p class="section-subtitle">See how our products enhance architectural projects</p>
+        </div>
+        <div class="works-grid">
+            {% for work in featured_works %}
+            <div class="work-card">
+                <div class="work-image">
+                    <img src="{{ work.Images_folder_url }}/1.jpg" alt="{{ work.title }}" loading="lazy">
+                    <div class="work-overlay">
+                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">View Project</a>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>{{ work.title }}</h3>
+                    <p>{{ work.description[:100] }}...</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="section-footer">
+            <a href="{{ url_for('works') }}" class="btn-primary">View All Works</a>
+        </div>
+    </div>
+</section>
+
+<section class="section cta bg-dark">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Project?</h2>
+            <p>Contact us today to discuss your architectural detail needs.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

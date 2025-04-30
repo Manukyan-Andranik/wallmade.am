@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wallmade Website\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Premium Architectural Details for Modern Construction"
+msgstr "Premium Architectural Details for Modern Construction"
+
+msgid "Architectural Details"
+msgstr "Architectural Details"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Our Works"
+msgstr "Our Works"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Creating exceptional architectural details for modern construction since 2010."
+msgstr "Creating exceptional architectural details for modern construction since 2010."
+
+msgid "Quick Links"
+msgstr "Quick Links"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid "Subscribe to our newsletter for the latest updates."
+msgstr "Subscribe to our newsletter for the latest updates."
+
+msgid "Your email address"
+msgstr "Your email address"
+
+msgid "All rights reserved."
+msgstr "All rights reserved."
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Terms of Service"
+msgstr "Terms of Service"

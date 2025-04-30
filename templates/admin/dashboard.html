@@ -1,0 +1,69 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard-grid">
+    <div class="dashboard-card">
+        <div class="card-header">
+            <h3>Products</h3>
+            <i class="fas fa-box-open"></i>
+        </div>
+        <div class="card-body">
+            <span class="count">{{ products_count }}</span>
+            <a href="{{ url_for('admin_products') }}" class="btn-view">View All</a>
+        </div>
+    </div>
+    <div class="dashboard-card">
+        <div class="card-header">
+            <h3>Our Works</h3>
+            <i class="fas fa-building"></i>
+        </div>
+        <div class="card-body">
+            <span class="count">{{ works_count }}</span>
+            <a href="{{ url_for('admin_works') }}" class="btn-view">View All</a>
+        </div>
+    </div>
+    <div class="dashboard-card">
+        <div class="card-header">
+            <h3>Quick Actions</h3>
+            <i class="fas fa-bolt"></i>
+        </div>
+        <div class="card-body">
+            <div class="quick-actions">
+                <a href="{{ url_for('admin_products') }}?action=add" class="btn-action">
+                    <i class="fas fa-plus"></i> Add Product
+                </a>
+                <a href="{{ url_for('admin_works') }}?action=add" class="btn-action">
+                    <i class="fas fa-plus"></i> Add Work
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="recent-activity">
+    <h3>Recent Activity</h3>
+    <div class="activity-list">
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-box"></i>
+            </div>
+            <div class="activity-details">
+                <p>New product "Custom Facade Panels" added</p>
+                <span class="activity-time">2 hours ago</span>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <div class="activity-details">
+                <p>Work "Modern Office Building" updated</p>
+                <span class="activity-time">1 day ago</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

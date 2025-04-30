@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/products_style.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>High-quality architectural details for every project</p>
+    </div>
+</section>
+
+<section class="section products-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Product Categories</h2>
+            <p class="section-subtitle">Explore our range of architectural details</p>
+        </div>
+        
+        <div class="products-filter">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="facade">Facade Elements</button>
+            <button class="filter-btn" data-filter="interior">Interior Details</button>
+            <button class="filter-btn" data-filter="structural">Structural Components</button>
+            <button class="filter-btn" data-filter="decorative">Decorative Pieces</button>
+        </div>
+        
+        <div class="products-grid">
+            {% for product in products %}
+            <div class="product-card" data-category="{{ product.category if product.category else 'all' }}">
+                <div class="product-image">
+                    <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title }}" loading="lazy">
+                    <div class="product-overlay">
+                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">View Details</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>{{ product.title }}</h3>
+                    <p>{{ product.description[:120] }}...</p>
+                    <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-text">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section materials bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Materials We Work With</h2>
+            <p class="section-subtitle">Quality materials for exceptional results</p>
+        </div>
+        <div class="materials-grid">
+            <div class="material-card">
+                <div class="material-image">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Metal">
+                </div>
+                <div class="material-info">
+                    <h3>Metal</h3>
+                    <ul>
+                        <li>Stainless Steel</li>
+                        <li>Brass</li>
+                        <li>Bronze</li>
+                        <li>Aluminum</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="material-card">
+                <div class="material-image">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Wood">
+                </div>
+                <div class="material-info">
+                    <h3>Wood</h3>
+                    <ul>
+                        <li>Hardwoods</li>
+                        <li>Engineered Wood</li>
+                        <li>Teak</li>
+                        <li>Oak</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="material-card">
+                <div class="material-image">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Stone">
+                </div>
+                <div class="material-info">
+                    <h3>Stone</h3>
+                    <ul>
+                        <li>Marble</li>
+                        <li>Granite</li>
+                        <li>Limestone</li>
+                        <li>Quartz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="material-card">
+                <div class="material-image">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Composite">
+                </div>
+                <div class="material-info">
+                    <h3>Composite</h3>
+                    <ul>
+                        <li>GFRC</li>
+                        <li>GFRP</li>
+                        <li>Carbon Fiber</li>
+                        <li>High-Performance Polymers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta bg-dark">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p>We specialize in custom solutions. Contact us to discuss your specific requirements.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Request Custom Quote</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

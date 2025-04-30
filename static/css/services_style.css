@@ -1,0 +1,225 @@
+/* Services Page Specific Styles */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.page-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.services-intro {
+    background-color: white;
+    padding: 100px 0 60px;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-list {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.service-card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.service-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.service-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.service-features {
+    margin-top: 25px;
+}
+
+.service-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.05rem;
+}
+
+.service-features i {
+    margin-right: 12px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.process {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 40px 30px;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    transition: var(--transition);
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.process-step:hover .step-number {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.process-step:hover h3 {
+    color: white;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 25px;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.process-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.process-step p {
+    color: var(--text-light);
+    line-height: 1.7;
+    transition: var(--transition);
+}
+
+.process-step:hover p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .service-card {
+        flex-direction: column;
+    }
+    
+    .service-icon {
+        margin: 0 auto;
+    }
+    
+    .service-content {
+        text-align: center;
+    }
+    
+    .service-features li {
+        justify-content: center;
+    }
+    
+    .page-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .page-hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-hero {
+        padding: 120px 0 80px;
+    }
+    
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+}

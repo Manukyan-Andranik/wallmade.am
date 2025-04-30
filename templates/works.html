@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/works_style.css') }}">
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>Our Works</h1>
+        <p>See our architectural details in completed projects</p>
+    </div>
+</section>
+
+<section class="section portfolio">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Project Portfolio</h2>
+            <p class="section-subtitle">Explore our completed projects featuring Wallmade products</p>
+        </div>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="institutional">Institutional</button>
+            <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            {% for work in works %}
+            <div class="portfolio-item" data-category="{{ work.category if work.category else 'all' }}">
+                <div class="portfolio-image">
+                    <img src="{{ work.Images_folder_url }}/1.jpg" alt="{{ work.title }}" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>{{ work.title }}</h3>
+                        <p>{{ work.location if work.location else '' }}</p>
+                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">View Project</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section clients bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Clients</h2>
+            <p class="section-subtitle">We've had the privilege to work with</p>
+        </div>
+        <div class="clients-grid">
+            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 1"></div>
+            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 2"></div>
+            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 3"></div>
+            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 4"></div>
+            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 5"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Feedback from architects and builders</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Wallmade's architectural details transformed our residential project from ordinary to extraordinary. Their attention to detail and craftsmanship is unmatched in the industry."</p>
+                    <div class="testimonial-author">
+                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Principal Architect, Johnson Designs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"We've used Wallmade products on three major commercial developments now. Their consistency, quality, and technical support make them our go-to for architectural details."</p>
+                    <div class="testimonial-author">
+                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Project Manager, Urban Construct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"The custom facade elements Wallmade created for our museum project received accolades from both critics and visitors. Their team understood our vision perfectly."</p>
+                    <div class="testimonial-author">
+                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Elena Rodriguez">
+                        <div>
+                            <h4>Elena Rodriguez</h4>
+                            <p>Director, Modern Arts Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta bg-dark">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want to Feature Your Project Here?</h2>
+            <p>Contact us to discuss how Wallmade products can enhance your next architectural project.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Start a Conversation</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

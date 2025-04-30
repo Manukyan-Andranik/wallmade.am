@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ current_language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} | Wallmade</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base_style.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        {% for code, name in languages.items() %}
+            <a href="{{ url_for('set_language', language=code) }}" class="{% if code == current_language %}active{% endif %}">
+                {{ name }}
+            </a>
+        {% endfor %}
+    </div>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>{{ _('Premium Architectural Details for Modern Construction') }}</p>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="{{ url_for('home') }}" class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wallmade Logo">
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">{{ _('Home') }}</a></li>
+                        <li><a href="{{ url_for('about') }}" class="{% if request.endpoint == 'about' %}active{% endif %}">{{ _('About') }}</a></li>
+                        <li><a href="{{ url_for('services') }}" class="{% if request.endpoint == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
+                        <li><a href="{{ url_for('products') }}" class="{% if request.endpoint == 'products' %}active{% endif %}">{{ _('Products') }}</a></li>
+                        <li><a href="{{ url_for('works') }}" class="{% if request.endpoint == 'works' %}active{% endif %}">{{ _('Our Works') }}</a></li>
+                        <li><a href="{{ url_for('contact') }}" class="btn-contact">{{ _('Contact') }}</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="{{ url_for('home') }}" class="logo">
+                <span>WALLMADE</span>
+            </a>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">{{ _('Home') }}</a></li>
+                <li><a href="{{ url_for('about') }}">{{ _('About') }}</a></li>
+                <li><a href="{{ url_for('services') }}">{{ _('Services') }}</a></li>
+                <li><a href="{{ url_for('products') }}">{{ _('Products') }}</a></li>
+                <li><a href="{{ url_for('works') }}">{{ _('Our Works') }}</a></li>
+                <li><a href="{{ url_for('contact') }}">{{ _('Contact') }}</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Wallmade</h3>
+                    <p>{{ _('Creating exceptional architectural details for modern construction since 2010.') }}</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ _('Quick Links') }}</h3>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">{{ _('Home') }}</a></li>
+                        <li><a href="{{ url_for('about') }}">{{ _('About') }}</a></li>
+                        <li><a href="{{ url_for('services') }}">{{ _('Services') }}</a></li>
+                        <li><a href="{{ url_for('products') }}">{{ _('Products') }}</a></li>
+                        <li><a href="{{ url_for('works') }}">{{ _('Our Works') }}</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ _('Contact Us') }}</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Design Street, Architecture City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@wallmade.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ _('Newsletter') }}</h3>
+                    <p>{{ _('Subscribe to our newsletter for the latest updates.') }}</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="{{ _('Your email address') }}">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wallmade. {{ _('All rights reserved.') }}</p>
+                <div class="footer-links">
+                    <a href="#">{{ _('Privacy Policy') }}</a>
+                    <a href="#">{{ _('Terms of Service') }}</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

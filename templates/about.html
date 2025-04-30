@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about_style.css') }}">
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>About Wallmade</h1>
+        <p>Our story, values, and commitment to architectural excellence</p>
+    </div>
+</section>
+
+<section class="section our-story">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Story</h2>
+        </div>
+        <div class="story-content">
+            <div class="story-image">
+                <img src="{{ url_for('static', filename='images/our-story.jpg') }}" alt="Wallmade founders" class="parallax-effect">
+            </div>
+            <div class="story-text">
+                <p>Founded in 2010 by architect John Wall and master craftsman Maria Made, Wallmade began as a small workshop dedicated to creating custom architectural details for high-end residential projects. What started as a passion project quickly grew into a respected name in the architectural community.</p>
+                <p>Today, we operate from a 20,000 square foot facility with state-of-the-art equipment, but we've never lost sight of our roots in craftsmanship and attention to detail. Each piece that leaves our workshop carries the same level of care and precision as those first custom pieces we created over a decade ago.</p>
+                <p>Our team now includes architects, designers, engineers, and skilled craftsmen working together to push the boundaries of what's possible in architectural detailing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section our-values bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Quality</h3>
+                <p>We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>We work closely with architects and builders to understand their vision and bring it to life.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Sustainability</h3>
+                <p>We're committed to environmentally responsible practices in our materials sourcing and manufacturing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section our-team">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Meet Our Leadership</h2>
+            <p class="section-subtitle">The experienced professionals guiding Wallmade</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="John Wall">
+                </div>
+                <div class="member-info">
+                    <h3>John Wall</h3>
+                    <p class="position">Co-Founder & CEO</p>
+                    <p>With over 25 years in architecture, John ensures our products meet the highest design standards.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Maria Made">
+                </div>
+                <div class="member-info">
+                    <h3>Maria Made</h3>
+                    <p class="position">Co-Founder & Production Director</p>
+                    <p>Maria's craftsmanship expertise guarantees the quality of every piece we produce.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="David Stone">
+                </div>
+                <div class="member-info">
+                    <h3>David Stone</h3>
+                    <p class="position">Head of Design</p>
+                    <p>David leads our design team in creating innovative architectural solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta bg-dark">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want to Learn More About Us?</h2>
+            <p>Our team is always happy to discuss our approach and how we can contribute to your project.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

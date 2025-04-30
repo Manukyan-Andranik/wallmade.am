@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wallmade Website\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Premium Architectural Details for Modern Construction"
+msgstr "Մոդեռն շինարարության համար պրեմիում ճարտարապետական մանրամասներ"
+
+msgid "Architectural Details"
+msgstr "Ճարտարապետական Մանրամասներ"
+
+msgid "Home"
+msgstr "Գլխավոր"
+
+msgid "About"
+msgstr "Մեր Մասին"
+
+msgid "Services"
+msgstr "Ծառայություններ"
+
+msgid "Products"
+msgstr "Ապրանքներ"
+
+msgid "Our Works"
+msgstr "Մեր Աշխատանքները"
+
+msgid "Contact"
+msgstr "Կապ"
+
+msgid "Creating exceptional architectural details for modern construction since 2010."
+msgstr "2010 թվականից ստեղծում ենք բացառիկ ճարտարապետական մանրամասներ ժամանակակից շինարարության համար։"
+
+msgid "Quick Links"
+msgstr "Արագ Հղումներ"
+
+msgid "Contact Us"
+msgstr "Կապ Մեզ Հետ"
+
+msgid "Newsletter"
+msgstr "Հետադարձ կապ"
+
+msgid "Subscribe to our newsletter for the latest updates."
+msgstr "Բաժանորդագրվեք մեր նամակագրությանը՝ նորությունների համար։"
+
+msgid "Your email address"
+msgstr "Ձեր էլ. փոստի հասցեն"
+
+msgid "All rights reserved."
+msgstr "Բոլոր իրավունքները պաշտպանված են։"
+
+msgid "Privacy Policy"
+msgstr "Գաղտնիության Քաղաքականություն"
+
+msgid "Terms of Service"
+msgstr "Ծառայությունների Պայմաններ"

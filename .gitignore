@@ -1,0 +1,8 @@
+wallmadelogofiles/
+.env
+commands.sh
+__pycache__/
+products.json
+works.json
+venv_wallmade/
+.DS_Store

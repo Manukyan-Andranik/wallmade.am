@@ -5,11 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuClose = document.querySelector('.mobile-menu-close');
     
     mobileMenuToggle.addEventListener('click', function() {
-        mobileMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
     });
     
     mobileMenuClose.addEventListener('click', function() {
+        mobileMenuToggle.classList.remove('active');
         mobileMenu.classList.remove('active');
         document.body.style.overflow = '';
     });
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', function() {
+            mobileMenuToggle.classList.remove('active');
             mobileMenu.classList.remove('active');
             document.body.style.overflow = '';
         });

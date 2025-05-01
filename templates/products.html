@@ -7,39 +7,39 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>Our Products</h1>
-        <p>High-quality architectural details for every project</p>
+        <h1>{{ _("Our Products") }}</h1>
+        <p>{{ _("High-quality architectural details for every project") }}</p>
     </div>
 </section>
 
 <section class="section products-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Product Categories</h2>
-            <p class="section-subtitle">Explore our range of architectural details</p>
+            <h2 class="section-title">{{ _("Product Categories") }}</h2>
+            <p class="section-subtitle">{{ _("Explore our range of architectural details") }}</p>
         </div>
         
         <div class="products-filter">
-            <button class="filter-btn active" data-filter="all">All Products</button>
-            <button class="filter-btn" data-filter="facade">Facade Elements</button>
-            <button class="filter-btn" data-filter="interior">Interior Details</button>
-            <button class="filter-btn" data-filter="structural">Structural Components</button>
-            <button class="filter-btn" data-filter="decorative">Decorative Pieces</button>
+            <button class="filter-btn active" data-filter="all">{{ _("All Products") }}</button>
+            <button class="filter-btn" data-filter="facade">{{ _("Facade Elements") }}</button>
+            <button class="filter-btn" data-filter="interior">{{ _("Interior Details") }}</button>
+            <button class="filter-btn" data-filter="structural">{{ _("Structural Components") }}</button>
+            <button class="filter-btn" data-filter="decorative">{{ _("Decorative Pieces") }}</button>
         </div>
         
         <div class="products-grid">
             {% for product in products %}
-            <div class="product-card" data-category="{{ product.category if product.category else 'all' }}">
+            <div class="product-card" data-category="{{ product.category.get(current_language, 'all') if product.category else 'all' }}">
                 <div class="product-image">
-                    <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title }}" loading="lazy">
+                    <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title.get('en') }}" loading="lazy">
                     <div class="product-overlay">
-                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">View Details</a>
+                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3>{{ product.title }}</h3>
-                    <p>{{ product.description[:120] }}...</p>
-                    <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-text">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <h3>{{ product.title.get(current_language, product.title.get('en', '')) }}</h3>
+                    <p>{{ product.description.get(current_language, product.description.get('en', ''))[:120] }}...</p>
+                    <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-text">{{ _("Learn more") }} <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             {% endfor %}
@@ -50,63 +50,63 @@
 <section class="section materials bg-light">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Materials We Work With</h2>
-            <p class="section-subtitle">Quality materials for exceptional results</p>
+            <h2 class="section-title">{{ _("Materials We Work With") }}</h2>
+            <p class="section-subtitle">{{ _("Quality materials for exceptional results") }}</p>
         </div>
         <div class="materials-grid">
             <div class="material-card">
                 <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Metal">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Metal') }}">
                 </div>
                 <div class="material-info">
-                    <h3>Metal</h3>
+                    <h3>{{ _("Metal") }}</h3>
                     <ul>
-                        <li>Stainless Steel</li>
-                        <li>Brass</li>
-                        <li>Bronze</li>
-                        <li>Aluminum</li>
+                        <li>{{ _("Stainless Steel") }}</li>
+                        <li>{{ _("Brass") }}</li>
+                        <li>{{ _("Bronze") }}</li>
+                        <li>{{ _("Aluminum") }}</li>
                     </ul>
                 </div>
             </div>
             <div class="material-card">
                 <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Wood">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Wood') }}">
                 </div>
                 <div class="material-info">
-                    <h3>Wood</h3>
+                    <h3>{{ _("Wood") }}</h3>
                     <ul>
-                        <li>Hardwoods</li>
-                        <li>Engineered Wood</li>
-                        <li>Teak</li>
-                        <li>Oak</li>
+                        <li>{{ _("Hardwoods") }}</li>
+                        <li>{{ _("Engineered Wood") }}</li>
+                        <li>{{ _("Teak") }}</li>
+                        <li>{{ _("Oak") }}</li>
                     </ul>
                 </div>
             </div>
             <div class="material-card">
                 <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Stone">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Stone') }}">
                 </div>
                 <div class="material-info">
-                    <h3>Stone</h3>
+                    <h3>{{ _("Stone") }}</h3>
                     <ul>
-                        <li>Marble</li>
-                        <li>Granite</li>
-                        <li>Limestone</li>
-                        <li>Quartz</li>
+                        <li>{{ _("Marble") }}</li>
+                        <li>{{ _("Granite") }}</li>
+                        <li>{{ _("Limestone") }}</li>
+                        <li>{{ _("Quartz") }}</li>
                     </ul>
                 </div>
             </div>
             <div class="material-card">
                 <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Composite">
+                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Composite') }}">
                 </div>
                 <div class="material-info">
-                    <h3>Composite</h3>
+                    <h3>{{ _("Composite") }}</h3>
                     <ul>
-                        <li>GFRC</li>
-                        <li>GFRP</li>
-                        <li>Carbon Fiber</li>
-                        <li>High-Performance Polymers</li>
+                        <li>{{ _("GFRC") }}</li>
+                        <li>{{ _("GFRP") }}</li>
+                        <li>{{ _("Carbon Fiber") }}</li>
+                        <li>{{ _("High-Performance Polymers") }}</li>
                     </ul>
                 </div>
             </div>
@@ -117,9 +117,9 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Can't Find What You're Looking For?</h2>
-            <p>We specialize in custom solutions. Contact us to discuss your specific requirements.</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">Request Custom Quote</a>
+            <h2>{{ _("Can't Find What You're Looking For?") }}</h2>
+            <p>{{ _("We specialize in custom solutions. Contact us to discuss your specific requirements.") }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _("Request Custom Quote") }}</a>
         </div>
     </div>
 </section>

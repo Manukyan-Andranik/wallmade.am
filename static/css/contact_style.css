@@ -30,8 +30,35 @@
 .contact-info {
     flex: 1;
     padding: 40px;
-    background-color: #f8f9fa;
+    background-color: var(--white);
     border-radius: var(--border-radius);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-top: 5px;
+}
+
+.info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.info-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-card a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+.info-card a:hover {
+    color: var(--text-light);
+    text-decoration: underline;
 }
 
 .contact-info h2 {

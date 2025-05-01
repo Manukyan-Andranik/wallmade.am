@@ -46,7 +46,8 @@ def get_collections():
     return (
         db.products,
         db.works,
-        db.users
+        db.admins,
+        db.employees
     )
 
 # Cloudinary configuration
@@ -76,7 +77,7 @@ def set_language(language):
 # Frontend Routes
 @app.route('/')
 def home():
-    products, works, _ = get_collections()
+    products, works, _, _ = get_collections()
     featured_products = list(products.find().limit(4))
     featured_works = list(works.find().limit(4))
     
@@ -88,7 +89,9 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', languages=LANGUAGES, current_language=get_locale())
+    _, _, _, employees = get_collections()
+    employees = list(employees.find())
+    return render_template('about.html', employees=employees, languages=LANGUAGES, current_language=get_locale())
 
 @app.route('/services')
 def services():
@@ -102,13 +105,13 @@ def services():
 
 @app.route('/products')
 def products():
-    products, _, _ = get_collections()
+    products, _, _, _ = get_collections()
     all_products = list(products.find())
     return render_template('products.html', products=all_products, languages=LANGUAGES, current_language=get_locale())
 
 @app.route('/product/<product_id>')
 def product_detail(product_id):
-    products, _, _ = get_collections()
+    products, _, _, _ = get_collections()
     product = products.find_one({"_id": product_id})
     if not product:
         return redirect(url_for('products'))
@@ -116,13 +119,13 @@ def product_detail(product_id):
 
 @app.route('/works')
 def works():
-    _, works, _ = get_collections()
+    _, works, _, _ = get_collections()
     all_works = list(works.find())
     return render_template('works.html', works=all_works, languages=LANGUAGES, current_language=get_locale())
 
 @app.route('/work/<work_id>')
 def work_detail(work_id):
-    _, works, _ = get_collections()
+    _, works, _, _ = get_collections()
     work = works.find_one({"_id": work_id})
     if not work:
         return redirect(url_for('works'))
@@ -146,10 +149,11 @@ def admin_login():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        _, _, users = get_collections()
+        _, _, admins, _ = get_collections()
+        print(username, password)
         
-        admin_user = users.find_one({"username": username, "is_admin": True})
-        
+        admin_user = admins.find_one({"username": username, "is_admin": "True"})
+        print(admin_user)
         if admin_user and check_password_hash(admin_user['password'], password):
             session['admin_logged_in'] = True
             session['admin_username'] = username
@@ -175,7 +179,7 @@ def admin_dashboard():
 @app.route('/admin/products')
 @admin_required
 def admin_products():
-    products, _, _ = get_collections()
+    products, _, _, _ = get_collections()
     
     if request.method == 'POST':
         # Handle product creation or update
@@ -225,7 +229,7 @@ def admin_products():
 @app.route('/admin/product/delete/<product_id>')
 @admin_required
 def admin_delete_product(product_id):
-    products, _, _ = get_collections()
+    products, _, _, _ = get_collections()
     products.delete_one({"_id": product_id})
     flash('Product deleted successfully', 'success')
     return redirect(url_for('admin_products'), languages=LANGUAGES, current_language=get_locale())
@@ -233,7 +237,7 @@ def admin_delete_product(product_id):
 @app.route('/admin/works', methods=['GET', 'POST'])
 @admin_required
 def admin_works():
-    _, works, _ = get_collections()
+    _, works, _, _ = get_collections()
     
     if request.method == 'POST':
         # Handle work creation or update
@@ -291,7 +295,7 @@ def admin_works():
 @app.route('/admin/work/delete/<work_id>')
 @admin_required
 def admin_delete_work(work_id):
-    _, works, _ = get_collections()
+    _, works, _, _ = get_collections()
     works.delete_one({"_id": work_id})
     flash('Work deleted successfully', 'success')
     return redirect(url_for('admin_works'), languages=LANGUAGES, current_language=get_locale())

@@ -1,3 +1,22 @@
+:root {
+    --primary-color: #a7502a;        /* From top rust/orange layer */
+    --secondary-color: #c1733f;      /* Second lighter terracotta */
+    --accent-color: #d6b385;         /* Middle beige layer */
+    --light-color: #e3cba6;          /* Lightest beige layer */
+    --dark-color: #5a5045;           /* First dark gray layer */
+    --text-color: #3d372f;           /* Second darkest layer */
+    --text-light: #7c6f63;           /* Muted gray-brown tone */
+    --white: #f5f3ee;                /* Very light tone from highlights */
+    --black: #2c2c2c;                /* Deepest shadow tone */
+    --gray: #8a817a;                 /* Mid gray from the image */
+    --light-gray: #c9b9a7;           /* Washed-out brown/gray */
+    --dark-gray: #4a4139;            /* Near-black tone */
+    --transition: all 0.3s ease;
+    --box-shadow: 0 5px 15px rgba(44, 44, 44, 0.1);
+    --box-shadow-hover: 0 8px 25px rgba(44, 44, 44, 0.15);
+    --border-radius: 8px;
+}
+
 /* Index Page Specific Styles */
 .hero {
     height: 100vh;
@@ -5,8 +24,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
+    /* background: url('../images/back.png') no-repeat center center/cover; */
+    color: var(--text-light);
     padding-top: 100px;
     text-align: center;
 }
@@ -18,9 +37,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(42, 92, 141, 0.8), rgba(63, 55, 201, 0.6));
+    /* background: linear-gradient(to right, rgba(167, 80, 42, 0.85), rgba(90, 80, 69, 0.65)); using --primary-color and --dark-color */
+    z-index: 0;
 }
-
 .hero-content {
     position: relative;
     z-index: 2;
@@ -77,10 +96,16 @@
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* optional: vertical centering */
 }
 
 .about-preview-image img {
+    max-width: 100%;
     transition: transform 0.5s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-preview-image:hover img {

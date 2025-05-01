@@ -5,8 +5,8 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ product.title }}</h1>
-        <p>Architectural detail product</p>
+        <h1>{{ product.title.get(current_language, product.title.get('en', 'Product')) }}</h1>
+        <p>{{ _("Architectural detail product") }}</p>
     </div>
 </section>
 
@@ -14,43 +14,43 @@
     <div class="container">
         <div class="product-gallery">
             <div class="main-image">
-                <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title }}" id="main-product-image">
+                <img src="{{ product.Images_folder_url }}/1.jpg" alt="{{ product.title.get(current_language, product.title.get('en', 'Product')) }}" id="main-product-image">
             </div>
             <div class="thumbnail-container">
                 {% for i in range(1, 6) %}
                 <div class="thumbnail">
-                    <img src="{{ product.Images_folder_url }}/{{ i }}.jpg" alt="{{ product.title }} - Image {{ i }}" class="thumbnail-image" data-full="{{ product.Images_folder_url }}/{{ i }}.jpg">
+                    <img src="{{ product.Images_folder_url }}/{{ i }}.jpg" alt="{{ product.title.get(current_language, product.title.get('en', 'Product')) }} - {{ _('Image') }} {{ i }}" class="thumbnail-image" data-full="{{ product.Images_folder_url }}/{{ i }}.jpg">
                 </div>
                 {% endfor %}
             </div>
         </div>
         
         <div class="product-info">
-            <h2>{{ product.title }}</h2>
+            <h2>{{ product.title.get(current_language, product.title.get('en', 'Product')) }}</h2>
             <div class="product-meta">
-                <span class="category"><i class="fas fa-tag"></i> {{ product.category if product.category else 'Architectural Detail' }}</span>
-                <span class="material"><i class="fas fa-cube"></i> {{ product.material if product.material else 'Various Materials' }}</span>
+                <span class="category"><i class="fas fa-tag"></i> {{ product.category.get(current_language, product.category.get('en', 'Architectural Detail')) }}</span>
+                <span class="material"><i class="fas fa-cube"></i> {{ product.material.get(current_language, product.material.get('en', 'Various Materials')) }}</span>
             </div>
             
             <div class="product-description">
-                <h3>Product Description</h3>
-                <p>{{ product.description }}</p>
+                <h3>{{ _("Product Description") }}</h3>
+                <p>{{ product.description.get(current_language, product.description.get('en', '')) }}</p>
                 
                 {% if product.features %}
-                <h3>Key Features</h3>
+                <h3>{{ _("Key Features") }}</h3>
                 <ul class="features-list">
-                    {% for feature in product.features %}
+                    {% for feature in product.features.get(current_language, product.features.get('en', [])) %}
                     <li><i class="fas fa-check"></i> {{ feature }}</li>
                     {% endfor %}
                 </ul>
                 {% endif %}
                 
                 {% if product.specifications %}
-                <h3>Technical Specifications</h3>
+                <h3>{{ _("Technical Specifications") }}</h3>
                 <table class="specs-table">
                     {% for spec in product.specifications %}
                     <tr>
-                        <th>{{ spec.name }}</th>
+                        <th>{{ spec.name.get(current_language, spec.name.get('en', 'Specification')) }}</th>
                         <td>{{ spec.value }}</td>
                     </tr>
                     {% endfor %}
@@ -59,8 +59,8 @@
             </div>
             
             <div class="product-actions">
-                <a href="{{ url_for('contact') }}?product={{ product.title }}" class="btn-primary">Inquire About This Product</a>
-                <button class="btn-secondary" id="share-product">Share Product</button>
+                <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">{{ _("Inquire About This Product") }}</a>
+                <button class="btn-secondary" id="share-product">{{ _("Share Product") }}</button>
             </div>
         </div>
     </div>
@@ -70,21 +70,21 @@
 <section class="section related-products bg-light">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Related Products</h2>
-            <p class="section-subtitle">You might also be interested in these</p>
+            <h2 class="section-title">{{ _("Related Products") }}</h2>
+            <p class="section-subtitle">{{ _("You might also be interested in these") }}</p>
         </div>
         <div class="products-grid">
             {% for related in product.related_products %}
             <div class="product-card">
                 <div class="product-image">
-                    <img src="{{ related.Images_folder_url }}/1.jpg" alt="{{ related.title }}">
+                    <img src="{{ related.Images_folder_url }}/1.jpg" alt="{{ related.title.get(current_language, related.title.get('en', 'Product')) }}">
                     <div class="product-overlay">
-                        <a href="{{ url_for('product_detail', product_id=related._id) }}" class="btn-view">View Details</a>
+                        <a href="{{ url_for('product_detail', product_id=related._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3>{{ related.title }}</h3>
-                    <p>{{ related.description[:100] }}...</p>
+                    <h3>{{ related.title.get(current_language, related.title.get('en', 'Product')) }}</h3>
+                    <p>{{ related.description.get(current_language, related.description.get('en', ''))[:100] }}...</p>
                 </div>
             </div>
             {% endfor %}
@@ -96,10 +96,11 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Have Questions About This Product?</h2>
-            <p>Our product specialists are ready to provide more information and technical details.</p>
-            <a href="{{ url_for('contact') }}?product={{ product.title }}" class="btn-primary">Contact Our Team</a>
+            <h2>{{ _("Have Questions About This Product?") }}</h2>
+            <p>{{ _("Our product specialists are ready to provide more information and technical details.") }}</p>
+            <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">{{ _("Contact Our Team") }}</a>
         </div>
     </div>
 </section>
+
 {% endblock %}

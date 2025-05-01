@@ -54,3 +54,123 @@ msgstr "Գաղտնիության Քաղաքականություն"
 
 msgid "Terms of Service"
 msgstr "Ծառայությունների Պայմաններ"
+
+msgid "Ready to Elevate Your Project?"
+msgstr "Պահպանվու՞մ եք ձեր ծրագրի հետևելու համար։"
+
+msgid "Product Description"
+msgstr "Ապրանքի Նկարագրություն"
+
+msgid "Key Features"
+msgstr "Հատուկ Յգտագործողություններ"
+
+msgid "Technical Specifications"
+msgstr "Տեխնիկական բնութագիր"
+
+msgid "Architectural detail product"
+msgstr "Ճարտարապետական դետալներ.
+
+msgid "Have Questions About This Product?"
+msgstr "Դուք կարող եք կատարել հարցումներ այս ապրանքի մասին։"
+
+msgid "Our product specialists are ready to provide more information and technical details."
+msgstr "Մեր ապրանքի հարկավորողները պահանջում են լինել ավելի շատ տեղեկություն և տեխնիկական տեղեկություններ։"
+
+msgid "Contact Our Team"
+msgstr "Կապվեք մեզ հետ"
+
+msgid "Our Products"
+msgstr "Մեր Ապրանքները"
+
+msgid "High-quality architectural details for every project"
+msgstr "Մեդեռն շինարարության համար պրեմիում ճարտարապետական մանրամասներ"
+
+msgid "Product Categories"
+msgstr "Ապրանքի կատեգորիաներ"
+
+msgid "Explore our range of architectural details"
+msgstr "Զննեք մեր ճարտարապետական ​​​​մանրամասների տեսականին"
+
+msgid "Learn more"
+msgstr "Կարդալ ավելին"
+
+msgid "Materials We Work With"
+msgstr "Ինչ նյութերի հետ ենք աշխատում"
+
+msgid "Metal"
+msgstr "Մետակայություն"
+
+msgid "Wood"
+msgstr "Գուուդ"
+
+msgid "Stone"
+msgstr "Աղբյուր"
+
+msgid "Composite"
+msgstr "Հավանական"
+
+msgid "Quality materials for exceptional results"
+msgstr "Հավանական սարքեր պրեմիում ճարտարապետական արդյունքների համար։"
+
+msgid "Can't Find What You're Looking For?"
+msgstr "Չե՞ք կարողանում գտնել այն, ինչ փնտրում եք։"
+
+msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
+msgstr "Մենք մասնագիտանում ենք անհատական ​​լուծումների մեջ: Կապվեք մեզ հետ՝ ձեր կոնկրետ պահանջները քննարկելու համար:"
+
+msgid "Request Custom Quote"
+msgstr "Պատվիրեք անհատական ​​գնանշում"
+
+msgid "About Wallmade"
+msgstr "Մեր Մասին"
+
+msgid "Our story, values, and commitment to architectural excellence"
+msgstr "Մեր պատմությունը, արժեքները և ճարտարապետական ​​​​գերազանցության հանդեպ նվիրվածությունը"
+
+msgid "Our Story"
+msgstr "Մեր Պատմությունը"
+
+msgid "Our Values"
+msgstr "Մեր Արժեքները"
+
+msgid "The principles that guide everything we do"
+msgstr "Հասկացություններ, որոնք կարող են համակարգել մեր գործողությունը"
+
+msgid "Meet Our Leadership"
+msgstr "Մեզ հետ համակարգելու համար"
+
+msgid "The experienced professionals guiding Wallmade"
+msgstr "Հաշվարկող պրոցը կարող են համակարգել Wallmade"
+
+msgid "Want to Learn More About Us?"
+msgstr "Ցանկանո՞ւմ եք ավելին իմանալ մեր մասին։"
+
+msgid "Our team is always happy to discuss our approach and how we can contribute to your project."
+msgstr "Մեր թիմը միշտ ուրախ է քննարկել մեր մոտեցումը և թե ինչպես կարող ենք ներդրում ունենալ ձեր նախագծի իրականացման գործում։"
+
+msgid "Contact Us"
+msgstr "Կապվեք մեզ հետ"
+
+msgid "Services"
+msgstr "Ծառայություններ"
+
+msgid "Comprehensive solutions for architectural detailing needs"
+msgstr "Համապարփակ լուծումներ ճարտարապետական ​​​​մանրամասնությունների կարիքների համար"
+
+msgid "Tailored Services for Every Project"
+msgstr "Անհատականացված ծառայություններ յուրաքանչյուր նախագծի համար"
+
+msgid "From concept to installation, we're with you every step of the way"
+msgstr "Մտահղացումից մինչև տեղադրում, մենք ձեզ հետ ենք ամեն քայլափոխի"
+
+msgid "Our Process"
+msgstr "Մեր գործողությունը"
+
+msgid "How we work to bring your vision to life"
+msgstr "Ինչպես ենք մենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
+
+msgid "Precision Crafted Architectural Details"
+msgstr "Ճշգրիտ մշակված ճարտարապետական ​​​​մանրամասներ"
+
+msgid "We fix walls, We build Dreams"
+msgstr "Ուղղելով պատերը՝ Կառուցելով երազանքեր"

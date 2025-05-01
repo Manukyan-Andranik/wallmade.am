@@ -54,3 +54,123 @@ msgstr "Политика Конфиденциальности"
 
 msgid "Terms of Service"
 msgstr "Условия Обслуживания"
+
+msgid "Ready to Elevate Your Project?"
+msgstr "Готовы к Увеличению Вашего Проекта?"
+
+msgid "Product Description"
+msgstr "Описание Продукта"
+
+msgid "Key Features"
+msgstr "Ключевые Возможности"
+
+msgid "Technical Specifications"
+msgstr "Технические Спецификации"
+
+msgid "Architectural detail product"
+msgstr "Архитектурный детальный продукт"
+
+msgid "Have Questions About This Product?"
+msgstr "Есть Вопросы О Этом Продукте?"
+
+msgid "Our product specialists are ready to provide more information and technical details."
+msgstr "Наши специалисты продукта готовы предоставить больше информации и технические детали."
+
+msgid "Contact Our Team"
+msgstr "Свяжитесь с Нашей Командой"
+
+msgid "Our Products"
+msgstr "Наши Продукты"
+
+msgid "High-quality architectural details for every project"
+msgstr "Высококачественные архитектурные детали для каждого проекта"
+
+msgid "Product Categories"
+msgstr "Категории Продуктов"
+
+msgid "Explore our range of architectural details"
+msgstr "Исследуйте нашу диапазон архитектурных деталей"
+
+msgid "Learn more"
+msgstr "Узнать больше"
+
+msgid "Materials We Work With"
+msgstr "Материалы, с которыми мы работаем"
+
+msgid "Metal"
+msgstr "Металл"
+
+msgid "Wood"
+msgstr "Дерево"
+
+msgid "Stone"
+msgstr "Камень"
+
+msgid "Composite"
+msgstr "Композитный"
+
+msgid "Quality materials for exceptional results"
+msgstr "Качественные материалы для исключительных результатов"
+
+msgid "Can't Find What You're Looking For?"
+msgstr "Не можете найти то, что ищете?"
+
+msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
+msgstr "Мы специализируемся на пользовательских решениях. Свяжитесь с нами, чтобы обсудить ваши конкретные требования."
+
+msgid "Request Custom Quote"
+msgstr "Запросить Пользовательский Квоту"
+
+msgid "About Wallmade"
+msgstr "О Нас"
+
+msgid "Our story, values, and commitment to architectural excellence"
+msgstr "Наша история, ценности и приверженность архитектурному совершенству"
+
+msgid "Our Story"
+msgstr "Наша История"
+
+msgid "Our Values"
+msgstr "Наши Значения"
+
+msgid "The principles that guide everything we do"
+msgstr "Принципы, которые направляют все, что мы делаем"
+
+msgid "Meet Our Leadership"
+msgstr "Встретитесь с Нашей Лидерством"
+
+msgid "The experienced professionals guiding Wallmade"
+msgstr "Опытные профессионалы, которые проводят Wallmade"
+
+msgid "Want to Learn More About Us?"
+msgstr "Хотите узнать больше о нас?"
+
+msgid "Our team is always happy to discuss our approach and how we can contribute to your project." 
+msgstr "Наша команда всегда рада обсуждать наш подход и как мы можем внести свой вклад в ваш проект."
+
+msgid "Contact Us"
+msgstr "Свяжитесь с Нами"
+
+msgid "Services"
+msgstr "Услуги"
+
+msgid "Comprehensive solutions for architectural detailing needs"
+msgstr "Обширные решения для требований архитектурных деталей"
+
+msgid "Tailored Services for Every Project"
+msgstr "Совершенствованные услуги для каждого проекта"
+
+msgid "From concept to installation, we're with you every step of the way"  
+msgstr "От концепции до установки, мы с вами каждый шаг в пути"
+
+msgid "Our Process"
+msgstr "Наш процесс"
+
+msgid "How we work to bring your vision to life"
+msgstr "Как мы работаем, чтобы превратить вашу видение в реальность"
+
+msgid "Precision Crafted Architectural Details"
+msgstr "Прецизионные архитектурные детали"
+
+msgid "We fix walls, We build Dreams"
+msgstr "Мы исправляем стены, мы строим мечты"

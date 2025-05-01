@@ -5,19 +5,19 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>About Wallmade</h1>
-        <p>Our story, values, and commitment to architectural excellence</p>
+        <h1>{{ _('About Wallmade') }}</h1>
+        <p>{{ _('Our story, values, and commitment to architectural excellence') }}</p>
     </div>
 </section>
 
 <section class="section our-story">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our Story</h2>
+            <h2 class="section-title">{{ _('Our Story') }}</h2>
         </div>
         <div class="story-content">
             <div class="story-image">
-                <img src="{{ url_for('static', filename='images/our-story.jpg') }}" alt="Wallmade founders" class="parallax-effect">
+                <img src="{{ url_for('static', filename='images/logo-karg.png') }}" alt="Wallmade founders" class="parallax-effect">
             </div>
             <div class="story-text">
                 <p>Founded in 2010 by architect John Wall and master craftsman Maria Made, Wallmade began as a small workshop dedicated to creating custom architectural details for high-end residential projects. What started as a passion project quickly grew into a respected name in the architectural community.</p>
@@ -31,15 +31,15 @@
 <section class="section our-values bg-light">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our Values</h2>
-            <p class="section-subtitle">The principles that guide everything we do</p>
+            <h2 class="section-title">{{ _('Our Values') }}</h2>
+            <p class="section-subtitle">{{ _('The principles that guide everything we do') }}</p>
         </div>
         <div class="values-grid">
             <div class="value-card">
                 <div class="value-icon">
                     <i class="fas fa-medal"></i>
                 </div>
-                <h3>Quality</h3>
+                <h3>{{ _('Quality') }}</h3>
                 <p>We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time.</p>
             </div>
             <div class="value-card">
@@ -67,43 +67,30 @@
     </div>
 </section>
 
+
+
 <section class="section our-team">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Meet Our Leadership</h2>
-            <p class="section-subtitle">The experienced professionals guiding Wallmade</p>
+            <h2 class="section-title">{{ _('Meet Our Leadership') }}</h2>
+            <p class="section-subtitle">{{ _('The experienced professionals guiding Wallmade') }}</p>
         </div>
+        
         <div class="team-grid">
+            {% for member in employees %}
             <div class="team-member">
                 <div class="member-image">
-                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="John Wall">
+                    <img src="{{ url_for('static', filename='images/employees/' + member.image) }}" alt="{{ member.name }}">
                 </div>
                 <div class="member-info">
-                    <h3>John Wall</h3>
-                    <p class="position">Co-Founder & CEO</p>
-                    <p>With over 25 years in architecture, John ensures our products meet the highest design standards.</p>
+                    <h3>{{ member.name }}</h3>
+                    <p class="position">{{ member.position }}</p>
+                    <p>{{ member.bio }}</p>
                 </div>
             </div>
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Maria Made">
-                </div>
-                <div class="member-info">
-                    <h3>Maria Made</h3>
-                    <p class="position">Co-Founder & Production Director</p>
-                    <p>Maria's craftsmanship expertise guarantees the quality of every piece we produce.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="David Stone">
-                </div>
-                <div class="member-info">
-                    <h3>David Stone</h3>
-                    <p class="position">Head of Design</p>
-                    <p>David leads our design team in creating innovative architectural solutions.</p>
-                </div>
-            </div>
+            {% endfor %}
+            
+         
         </div>
     </div>
 </section>
@@ -111,9 +98,9 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Want to Learn More About Us?</h2>
-            <p>Our team is always happy to discuss our approach and how we can contribute to your project.</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Us</a>
+            <h2>{{ _('Want to Learn More About Us?') }}</h2>
+            <p>{{ _('Our team is always happy to discuss our approach and how we can contribute to your project.') }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Contact Us') }}</a>
         </div>
     </div>
 </section>

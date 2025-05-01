@@ -22,6 +22,9 @@ msgstr "Services"
 msgid "Products"
 msgstr "Products"
 
+msgid "Explore Products"
+msgstr "Explore Products"
+
 msgid "Our Works"
 msgstr "Our Works"
 
@@ -54,3 +57,122 @@ msgstr "Privacy Policy"
 
 msgid "Terms of Service"
 msgstr "Terms of Service"
+
+msgid "Product Description"
+msgstr "Product Description"
+
+msgid "Key Features"
+msgstr "Key Features"
+
+msgid "Technical Specifications"
+msgstr "Technical Specifications"
+
+msgid "Architectural detail product"
+msgstr "Architectural detail product"
+
+msgid "Have Questions About This Product?"
+msgstr "Have Questions About This Product?"
+
+msgid "Our product specialists are ready to provide more information and technical details."
+msgstr "Our product specialists are ready to provide more information and technical details."
+
+msgid "Contact Our Team"
+msgstr "Contact Our Team"
+
+msgid "Our Products"
+msgstr "Our Products"
+
+msgid "High-quality architectural details for every project"
+msgstr "High-quality architectural details for every project"
+
+msgid "Product Categories"
+msgstr "Product Categories"
+
+msgid "Explore our range of architectural details"
+msgstr "Explore our range of architectural details"
+
+msgid "Learn more"
+msgstr "Learn more"
+
+msgid "Materials We Work With"
+msgstr "Materials We Work With"
+
+msgid "Metal"
+msgstr "Metal"
+
+msgid "Wood"
+msgstr "Wood"
+
+msgid "Stone"
+msgstr "Stone"
+
+msgid "Composite"
+msgstr "Composite"
+
+msgid "Quality materials for exceptional results"    
+msgstr "Quality materials for exceptional results"
+
+msgid "Can't Find What You're Looking For?"
+msgstr "Can't Find What You're Looking For?"
+
+msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
+msgstr "We specialize in custom solutions. Contact us to discuss your specific requirements."
+
+msgid "Request Custom Quote"
+msgstr "Request Custom Quote"
+
+msgid "About Wallmade"
+msgstr "About Wallmade"
+
+msgid "Our story, values, and commitment to architectural excellence"
+msgstr "Our story, values, and commitment to architectural excellence"
+
+msgid "Our Story"
+msgstr "Our Story"
+
+msgid "Our Values"
+msgstr "Our Values"
+
+msgid "The principles that guide everything we do"
+msgstr "The principles that guide everything we do"
+
+msgid "Meet Our Leadership"
+msgstr "Meet Our Leadership"
+
+msgid "The experienced professionals guiding Wallmade"
+msgstr "The experienced professionals guiding Wallmade"
+
+msgid "Want to Learn More About Us?"
+msgstr "Want to Learn More About Us?"
+
+msgid "Our team is always happy to discuss our approach and how we can contribute to your project."
+msgstr "Our team is always happy to discuss our approach and how we can contribute to your project."
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Comprehensive solutions for architectural detailing needs"
+msgstr "Comprehensive solutions for architectural detailing needs"
+
+msgid "Tailored Services for Every Project"
+msgstr "Tailored Services for Every Project"
+
+msgid "From concept to installation, we're with you every step of the way"
+msgstr "From concept to installation, we're with you every step of the way"
+
+
+msgid "Our Process"
+msgstr "Our Process"
+
+msgid "How we work to bring your vision to life"    
+msgstr "How we work to bring your vision to life"
+
+msgid "Precision Crafted Architectural Details"
+msgstr "Precision Crafted Architectural Details"
+
+msgid "We fix walls, We build Dreams"
+msgstr "We fix walls, We build Dreams"
+

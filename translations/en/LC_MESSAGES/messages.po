@@ -64,8 +64,8 @@ msgstr "Product Description"
 msgid "Key Features"
 msgstr "Key Features"
 
-msgid "Technical Specifications"
-msgstr "Technical Specifications"
+msgid "Key Specifications"
+msgstr "Key Specifications"
 
 msgid "Architectural detail product"
 msgstr "Architectural detail product"
@@ -176,3 +176,59 @@ msgstr "Precision Crafted Architectural Details"
 msgid "We fix walls, We build Dreams"
 msgstr "We fix walls, We build Dreams"
 
+msgid "Crafting Excellence in Architectural Details"
+msgstr "Crafting Excellence in Architectural Details"
+
+msgid "Our commitment to quality and precision sets us apart in the industry"
+msgstr "Our commitment to quality and precision sets us apart in the industry"
+
+msgid "Our Product Range"
+msgstr "Our Product Range"
+
+msgid "Explore our collection of architectural details"
+msgstr "Explore our collection of architectural details"
+
+msgid "Our Recent Works"
+msgstr "Our Recent Works"
+
+msgid "See how our products enhance architectural projects"
+msgstr "See how our products enhance architectural projects"
+
+msgid "Ready to Elevate Your Project?"
+msgstr "Ready to Elevate Your Project?"
+
+msgid "Contact us today to discuss your architectural detail needs."
+msgstr "Contact us today to discuss your architectural detail needs."
+
+msgid "Get in Touch"
+msgstr "Get in Touch"
+
+msgid "Ready to Discuss Your Project?"
+msgstr "Ready to Discuss Your Project?"
+
+msgid "Our team is ready to help you with your architectural detailing needs."    
+msgstr "Our team is ready to help you with your architectural detailing needs."
+
+msgid "Get Started"
+msgstr "Get Started"
+
+msgid "See our architectural details in completed projects"    
+msgstr "See our architectural details in completed projects"
+
+msgid "Project Portfolio"
+msgstr "Project Portfolio"
+
+msgid "Explore our completed projects featuring Wallmade products"
+msgstr "Explore our completed projects featuring Wallmade products"
+
+msgid "Our Clients"
+msgstr "Our Clients"
+
+msgid "We've had the privilege to work with"
+msgstr "We've had the privilege to work with"
+
+msgid "What Our Clients Say"
+msgstr "What Our Clients Say"
+
+msgid "Feedback from architects and builders"
+msgstr "Feedback from architects and builders"

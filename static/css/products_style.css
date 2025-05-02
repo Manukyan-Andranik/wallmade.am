@@ -74,12 +74,18 @@
     overflow: hidden;
 }
 
-.product-image img {
+/* .product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
-}
+    transition: var(--transition); */
+/* } */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    vertical-align: middle;
+  }
 
 .product-card:hover .product-image img {
     transform: scale(1.1);

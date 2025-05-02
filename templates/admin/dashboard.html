@@ -20,10 +20,6 @@
             <h3>Our Works</h3>
             <i class="fas fa-building"></i>
         </div>
-        <div class="card-body">
-            <span class="count">{{ works_count }}</span>
-            <a href="{{ url_for('admin_works') }}" class="btn-view">View All</a>
-        </div>
     </div>
     <div class="dashboard-card">
         <div class="card-header">
@@ -34,9 +30,6 @@
             <div class="quick-actions">
                 <a href="{{ url_for('admin_products') }}?action=add" class="btn-action">
                     <i class="fas fa-plus"></i> Add Product
-                </a>
-                <a href="{{ url_for('admin_works') }}?action=add" class="btn-action">
-                    <i class="fas fa-plus"></i> Add Work
                 </a>
             </div>
         </div>

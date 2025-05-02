@@ -1,14 +1,16 @@
 /* Admin Panel Styles */
 :root {
-    --admin-primary: #4361ee;
-    --admin-secondary: #3f37c9;
-    --admin-accent: #4cc9f0;
-    --admin-dark: #1b263b;
-    --admin-light: #f8f9fa;
+    --admin-primary: #e69626;
+    --admin-secondary: #333;
+    --admin-accent: #f1ad71;
+    --admin-dark: #222;
+    --admin-light: #f4f4f4;
     --admin-gray: #adb5bd;
-    --admin-danger: #ef233c;
-    --admin-success: #2ec4b6;
-    --admin-warning: #ff9f1c;
+    --admin-danger: #cd530c;
+    --admin-success: #28a745;
+    --admin-warning: #ffc107;
+    --admin-error: #dc3545;
+    --admin-info: #17a2b8;
     --admin-text: #212529;
     --admin-text-light: #6c757d;
     --admin-border: #dee2e6;
@@ -16,6 +18,15 @@
     --border-radius: 8px;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --box-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --admin-save : #28a745;
+    --admin-save-hover : #1e7e34;
+    --admin-delete : #dc3545;
+    --admin-delete-hover : #c82333;
+    --admin-edit : #007bff;
+    --admin-edit-hover : #0056b3;
+    --admin-add : #12c830;
+    --admin-add-hover : #0ca825;
+
 }
 
 /* Base Styles */
@@ -288,7 +299,7 @@
     display: inline-flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--admin-primary);
+    background-color: var(--admin-add);
     color: white;
     border-radius: var(--border-radius);
     font-size: 0.95rem;
@@ -296,7 +307,7 @@
 }
 
 .btn-add:hover {
-    background-color: var(--admin-secondary);
+    background-color: var(--admin-add-hover);
     transform: translateY(-2px);
 }
 
@@ -452,7 +463,7 @@
 
 .btn-save {
     padding: 12px 25px;
-    background-color: var(--admin-primary);
+    background-color: var(--admin-save);
     color: white;
     border: none;
     border-radius: var(--border-radius);
@@ -462,7 +473,7 @@
 }
 
 .btn-save:hover {
-    background-color: var(--admin-secondary);
+    background-color: var(--admin-save-hover);
     transform: translateY(-2px);
 }
 
@@ -518,23 +529,9 @@
     gap: 10px;
 }
 
-.btn-edit {
-    padding: 8px 15px;
-    background-color: var(--admin-warning);
-    color: white;
-    border-radius: var(--border-radius);
-    font-size: 0.85rem;
-    transition: var(--transition);
-}
-
-.btn-edit:hover {
-    background-color: #ff8500;
-    transform: translateY(-2px);
-}
-
 .btn-delete {
     padding: 8px 15px;
-    background-color: var(--admin-danger);
+    background-color: var(--admin-delete);
     color: white;
     border-radius: var(--border-radius);
     font-size: 0.85rem;
@@ -542,7 +539,7 @@
 }
 
 .btn-delete:hover {
-    background-color: #d00000;
+    background-color: var(--admin-delete-hover);
     transform: translateY(-2px);
 }
 
@@ -706,4 +703,53 @@
         width: 100%;
         text-align: center;
     }
+}
+
+
+.product-cell {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--admin-primary);
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.product-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--admin-border);
+}
+
+.product-description {
+    flex: 1;
+    font-size: 16px;
+    color: var(--admin-text);
+    line-height: 1.5;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--admin-edit);
+    color: var(--admin-light);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: var(--admin-edit-hover);
 }

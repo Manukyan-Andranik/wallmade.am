@@ -1,0 +1,166 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/admin/add_product_style.css') }}">
+{% endblock %}
+<div class="admin-header">
+    <div>
+        <a href="{{ url_for('admin_products') }}" class="btn btn-admin"><i class="fas fa-arrow-left"></i> Back to products</a>
+    </div>
+    <h2>Add New Product</h2>
+</div>
+
+<form method="POST" class="admin-form" enctype="multipart/form-data">
+    <h3>Title</h3>
+    <div class="form-group">
+        <label for="title_en">English Title*</label>
+        <input type="text" id="title_en" name="title_en" required>
+    </div>
+    <div class="form-group">
+        <label for="title_hy">Armenian Title*</label>
+        <input type="text" id="title_hy" name="title_hy" required>
+    </div>
+    <div class="form-group">
+        <label for="title_ru">Russian Title*</label>
+        <input type="text" id="title_ru" name="title_ru" required>
+    </div>
+
+    <div class="form-group">
+        <label for="images_folder_url">Images Folder URL*</label>
+        <input type="text" id="images_folder_url" name="images_folder_url" required>
+    </div>
+
+    <h3>Description</h3>
+    <div class="form-group">
+        <label for="description_en">English Description</label>
+        <textarea id="description_en" name="description_en"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="description_hy">Armenian Description</label>
+        <textarea id="description_hy" name="description_hy"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="description_ru">Russian Description</label>
+        <textarea id="description_ru" name="description_ru"></textarea>
+    </div>
+
+    <h3>Category</h3>
+    <div class="form-group">
+        <label for="category_en">English Category</label>
+        <input type="text" id="category_en" name="category_en">
+    </div>
+    <div class="form-group">
+        <label for="category_hy">Armenian Category</label>
+        <input type="text" id="category_hy" name="category_hy">
+    </div>
+    <div class="form-group">
+        <label for="category_ru">Russian Category</label>
+        <input type="text" id="category_ru" name="category_ru">
+    </div>
+
+    <h3>Material</h3>
+    <div class="form-group">
+        <label for="material_en">English Material</label>
+        <input type="text" id="material_en" name="material_en">
+    </div>
+    <div class="form-group">
+        <label for="material_hy">Armenian Material</label>
+        <input type="text" id="material_hy" name="material_hy">
+    </div>
+    <div class="form-group">
+        <label for="material_ru">Russian Material</label>
+        <input type="text" id="material_ru" name="material_ru">
+    </div>
+
+    <h3>Features (one per line)</h3>
+    <div class="form-group">
+        <label for="features_en">English Features</label>
+        <textarea id="features_en" name="features_en" placeholder="Enter each feature on a new line"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="features_hy">Armenian Features</label>
+        <textarea id="features_hy" name="features_hy" placeholder="Enter each feature on a new line"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="features_ru">Russian Features</label>
+        <textarea id="features_ru" name="features_ru" placeholder="Enter each feature on a new line"></textarea>
+    </div>
+
+    <h3>Specifications (one per line)</h3>
+    <div class="form-group">
+        <label for="specifications_en">English Specifications</label>
+        <textarea id="specifications_en" name="specifications_en" placeholder="Enter each specification on a new line"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="specifications_hy">Armenian Specifications</label>
+        <textarea id="specifications_hy" name="specifications_hy" placeholder="Enter each specification on a new line"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="specifications_ru">Russian Specifications</label>
+        <textarea id="specifications_ru" name="specifications_ru" placeholder="Enter each specification on a new line"></textarea>
+    </div>
+
+    <div id="specifications-container">
+        <!-- Dynamic specifications will be added here -->
+    </div>
+    <button type="button" id="add-specification" class="btn btn-admin">
+        <i class="fas fa-plus"></i> Add Custom Specification
+    </button>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-save"><i class="fas fa-save"></i> Create Product</button>
+    </div>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let specCount = 0;
+
+        // Add Specification
+        document.getElementById('add-specification').addEventListener('click', function () {
+            const container = document.getElementById('specifications-container');
+            const specIndex = specCount++;
+
+            const newSpec = document.createElement('div');
+            newSpec.className = 'specification-item';
+            newSpec.dataset.specIndex = specIndex;
+            newSpec.innerHTML = `
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name (English)</label>
+                        <input type="text" name="spec_${specIndex}_name_en" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Name (Armenian)</label>
+                        <input type="text" name="spec_${specIndex}_name_hy" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Name (Russian)</label>
+                        <input type="text" name="spec_${specIndex}_name_ru" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Value</label>
+                    <input type="text" name="spec_${specIndex}_value" required>
+                </div>
+                <button type="button" class="btn btn-delete btn-delete-spec">Delete Specification</button>
+                <hr>
+            `;
+
+            container.appendChild(newSpec);
+        });
+
+        // Delete Specification
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('btn-delete-spec')) {
+                if (confirm('Are you sure you want to delete this specification?')) {
+                    const specItem = e.target.closest('.specification-item');
+                    specItem.remove();
+                    specCount--;
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

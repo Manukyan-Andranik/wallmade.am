@@ -3,18 +3,19 @@ msgstr ""
 "Project-Id-Version: Wallmade Website\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
 
 msgid "Premium Architectural Details for Modern Construction"
 msgstr "Премиальные архитектурные детали для современного строительства"
 
 msgid "Architectural Details"
-msgstr "Архитектурные Детали"
+msgstr "Архитектурные детали"
 
 msgid "Home"
 msgstr "Главная"
 
 msgid "About"
-msgstr "О Нас"
+msgstr "О нас"
 
 msgid "Services"
 msgstr "Услуги"
@@ -22,8 +23,11 @@ msgstr "Услуги"
 msgid "Products"
 msgstr "Продукция"
 
+msgid "Explore Products"
+msgstr "Исследуйте продукцию"
+
 msgid "Our Works"
-msgstr "Наши Работы"
+msgstr "Наши работы"
 
 msgid "Contact"
 msgstr "Контакты"
@@ -32,10 +36,10 @@ msgid "Creating exceptional architectural details for modern construction since 
 msgstr "Создаем исключительные архитектурные детали для современного строительства с 2010 года."
 
 msgid "Quick Links"
-msgstr "Быстрые Ссылки"
+msgstr "Быстрые ссылки"
 
 msgid "Contact Us"
-msgstr "Свяжитесь с Нами"
+msgstr "Свяжитесь с нами"
 
 msgid "Newsletter"
 msgstr "Рассылка"
@@ -50,46 +54,43 @@ msgid "All rights reserved."
 msgstr "Все права защищены."
 
 msgid "Privacy Policy"
-msgstr "Политика Конфиденциальности"
+msgstr "Политика конфиденциальности"
 
 msgid "Terms of Service"
-msgstr "Условия Обслуживания"
-
-msgid "Ready to Elevate Your Project?"
-msgstr "Готовы к Увеличению Вашего Проекта?"
+msgstr "Условия обслуживания"
 
 msgid "Product Description"
-msgstr "Описание Продукта"
+msgstr "Описание продукта"
 
 msgid "Key Features"
-msgstr "Ключевые Возможности"
+msgstr "Ключевые особенности"
 
-msgid "Technical Specifications"
-msgstr "Технические Спецификации"
+msgid "Key Specifications"
+msgstr "Основные характеристики"
 
 msgid "Architectural detail product"
-msgstr "Архитектурный детальный продукт"
+msgstr "Продукция архитектурных деталей"
 
 msgid "Have Questions About This Product?"
-msgstr "Есть Вопросы О Этом Продукте?"
+msgstr "Есть вопросы об этом продукте?"
 
 msgid "Our product specialists are ready to provide more information and technical details."
-msgstr "Наши специалисты продукта готовы предоставить больше информации и технические детали."
+msgstr "Наши специалисты готовы предоставить дополнительную информацию и технические детали."
 
 msgid "Contact Our Team"
-msgstr "Свяжитесь с Нашей Командой"
+msgstr "Свяжитесь с нашей командой"
 
 msgid "Our Products"
-msgstr "Наши Продукты"
+msgstr "Наша продукция"
 
 msgid "High-quality architectural details for every project"
 msgstr "Высококачественные архитектурные детали для каждого проекта"
 
 msgid "Product Categories"
-msgstr "Категории Продуктов"
+msgstr "Категории продукции"
 
 msgid "Explore our range of architectural details"
-msgstr "Исследуйте нашу диапазон архитектурных деталей"
+msgstr "Исследуйте наш ассортимент архитектурных деталей"
 
 msgid "Learn more"
 msgstr "Узнать больше"
@@ -107,7 +108,7 @@ msgid "Stone"
 msgstr "Камень"
 
 msgid "Composite"
-msgstr "Композитный"
+msgstr "Композит"
 
 msgid "Quality materials for exceptional results"
 msgstr "Качественные материалы для исключительных результатов"
@@ -116,61 +117,118 @@ msgid "Can't Find What You're Looking For?"
 msgstr "Не можете найти то, что ищете?"
 
 msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
-msgstr "Мы специализируемся на пользовательских решениях. Свяжитесь с нами, чтобы обсудить ваши конкретные требования."
+msgstr "Мы специализируемся на индивидуальных решениях. Свяжитесь с нами для обсуждения ваших требований."
 
 msgid "Request Custom Quote"
-msgstr "Запросить Пользовательский Квоту"
+msgstr "Запросить индивидуальное предложение"
 
 msgid "About Wallmade"
-msgstr "О Нас"
+msgstr "О Wallmade"
 
 msgid "Our story, values, and commitment to architectural excellence"
 msgstr "Наша история, ценности и приверженность архитектурному совершенству"
 
 msgid "Our Story"
-msgstr "Наша История"
+msgstr "Наша история"
 
 msgid "Our Values"
-msgstr "Наши Значения"
+msgstr "Наши ценности"
 
 msgid "The principles that guide everything we do"
-msgstr "Принципы, которые направляют все, что мы делаем"
+msgstr "Принципы, которые руководят всем, что мы делаем"
 
 msgid "Meet Our Leadership"
-msgstr "Встретитесь с Нашей Лидерством"
+msgstr "Знакомьтесь с нашим руководством"
 
 msgid "The experienced professionals guiding Wallmade"
-msgstr "Опытные профессионалы, которые проводят Wallmade"
+msgstr "Опытные профессионалы, руководящие Wallmade"
 
 msgid "Want to Learn More About Us?"
 msgstr "Хотите узнать больше о нас?"
 
-msgid "Our team is always happy to discuss our approach and how we can contribute to your project." 
-msgstr "Наша команда всегда рада обсуждать наш подход и как мы можем внести свой вклад в ваш проект."
+msgid "Our team is always happy to discuss our approach and how we can contribute to your project."
+msgstr "Наша команда всегда рада обсудить наш подход и то, как мы можем помочь вашему проекту."
 
 msgid "Contact Us"
-msgstr "Свяжитесь с Нами"
+msgstr "Свяжитесь с нами"
 
 msgid "Services"
 msgstr "Услуги"
 
 msgid "Comprehensive solutions for architectural detailing needs"
-msgstr "Обширные решения для требований архитектурных деталей"
+msgstr "Комплексные решения для архитектурных деталей"
 
 msgid "Tailored Services for Every Project"
-msgstr "Совершенствованные услуги для каждого проекта"
+msgstr "Индивидуальные услуги для каждого проекта"
 
-msgid "From concept to installation, we're with you every step of the way"  
-msgstr "От концепции до установки, мы с вами каждый шаг в пути"
+msgid "From concept to installation, we're with you every step of the way"
+msgstr "От концепции до установки - мы с вами на каждом этапе"
 
 msgid "Our Process"
 msgstr "Наш процесс"
 
 msgid "How we work to bring your vision to life"
-msgstr "Как мы работаем, чтобы превратить вашу видение в реальность"
+msgstr "Как мы работаем, чтобы воплотить ваше видение в жизнь"
 
 msgid "Precision Crafted Architectural Details"
-msgstr "Прецизионные архитектурные детали"
+msgstr "Точно изготовленные архитектурные детали"
 
 msgid "We fix walls, We build Dreams"
-msgstr "Мы исправляем стены, мы строим мечты"
+msgstr "Мы чиним стены, мы строим мечты"
+
+msgid "Crafting Excellence in Architectural Details"
+msgstr "Создание превосходства в архитектурных деталях"
+
+msgid "Our commitment to quality and precision sets us apart in the industry"
+msgstr "Наша приверженность качеству и точности выделяет нас в отрасли"
+
+msgid "Our Product Range"
+msgstr "Наш ассортимент продукции"
+
+msgid "Explore our collection of architectural details"
+msgstr "Исследуйте нашу коллекцию архитектурных деталей"
+
+msgid "Our Recent Works"
+msgstr "Наши последние работы"
+
+msgid "See how our products enhance architectural projects"
+msgstr "Увидьте, как наша продукция улучшает архитектурные проекты"
+
+msgid "Ready to Elevate Your Project?"
+msgstr "Готовы поднять ваш проект на новый уровень?"
+
+msgid "Contact us today to discuss your architectural detail needs."
+msgstr "Свяжитесь с нами сегодня для обсуждения ваших потребностей в архитектурных деталях."
+
+msgid "Get in Touch"
+msgstr "Связаться"
+
+msgid "Ready to Discuss Your Project?"
+msgstr "Готовы обсудить ваш проект?"
+
+msgid "Our team is ready to help you with your architectural detailing needs."
+msgstr "Наша команда готова помочь вам с вашими потребностями в архитектурных деталях."
+
+msgid "Get Started"
+msgstr "Начать"
+
+msgid "See our architectural details in completed projects"
+msgstr "Увидьте наши архитектурные детали в завершенных проектах"
+
+msgid "Project Portfolio"
+msgstr "Портфолио проектов"
+
+msgid "Explore our completed projects featuring Wallmade products"
+msgstr "Исследуйте наши завершенные проекты с продукцией Wallmade"
+
+msgid "Our Clients"
+msgstr "Наши клиенты"
+
+msgid "We've had the privilege to work with"
+msgstr "Мы имели честь работать с"
+
+msgid "What Our Clients Say"
+msgstr "Что говорят наши клиенты"
+
+msgid "Feedback from architects and builders"
+msgstr "Отзывы архитекторов и строителей"

@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #a7502a;        
+    --secondary-color: #c1733f;      
+    --accent-color: #d6b385;         
+    --light-color: #e3cba6;          
+    --dark-color: #5a5045;           
+    --text-color: #3d372f;           
+    --text-light: #7c6f63;           
+    --white: #f5f3ee;                
+    --black: #2c2c2c;                
+    --gray: #8a817a;                 
+    --light-gray: #c9b9a7;           
+    --dark-gray: #4a4139;            
+    --edit-color: #2196F3;           /* Preserved edit color (blue) */
+    --delete-color: #f44336;         /* Preserved delete color (red) */
+    --transition: all 0.3s ease;
+    --box-shadow: 0 5px 15px rgba(44, 44, 44, 0.1);
+    --box-shadow-hover: 0 8px 25px rgba(44, 44, 44, 0.15);
+    --border-radius: 8px;
+}
+
+.products-management {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.management-header h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.card-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-action {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    color: var(--white);
+}
+
+.btn-edit {
+    background-color: var(--edit-color);
+}
+
+.btn-edit:hover {
+    background-color: #0b7dda;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background-color: var(--delete-color);
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+    transform: scale(1.1);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--light-gray);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.card-image:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: var(--white);
+}
+
+.product-description {
+    color: var(--text-color);
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.product-meta {
+    font-size: 0.85rem;
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--gray);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.no-products i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+    color: var(--accent-color);
+}
+
+.no-products p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .management-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-add {
+        width: 100%;
+        justify-content: center;
+    }
+}

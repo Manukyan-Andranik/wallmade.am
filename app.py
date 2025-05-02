@@ -1,16 +1,23 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session, abort, g
-from flask_pymongo import PyMongo
-from pymongo import MongoClient
-from werkzeug.security import generate_password_hash, check_password_hash
+# Flask APP imports
+import socket
 from functools import wraps
+from werkzeug.security import  check_password_hash
+from flask_babel import Babel, gettext as _, lazy_gettext as _l
+from flask import Flask, render_template, request, redirect, url_for, flash, session
+
+# MongoDB imports
+from pymongo import MongoClient
+from bson.objectid import ObjectId
+from pymongo.errors import ConfigurationError, ConnectionFailure, ServerSelectionTimeoutError
+
+# Cloudinary imports
+import cloudinary
 from cloudinary import CloudinaryImage
 from cloudinary.uploader import upload
 from cloudinary.utils import cloudinary_url
-import os
+
+# My Modules imports
 from config import Config
-from bson.objectid import ObjectId
-from flask_babel import Babel, gettext as _, lazy_gettext as _l
-import gettext
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -19,27 +26,33 @@ app.secret_key = app.config['SECRET_KEY']
 # Initialize Babel for translations
 babel = Babel(app)
 
-# Configure available languages
-LANGUAGES = {
-    'en': 'English',
-    'hy': 'Հայերեն',
-    'ru': 'Русский'
-}
+# Cloudinary configuration
+cloudinary.config(
+    cloud_name=app.config['CLOUDINARY_CLOUD_NAME'],
+    api_key=app.config['CLOUDINARY_API_KEY'],
+    api_secret=app.config['CLOUDINARY_API_SECRET']
+)
+LANGUAGES = app.config['LANGUAGES']
 
-@babel.localeselector
-def get_locale():
-    # Check if language is set in session
-    if 'language' in session:
-        return session['language']
-    # Fallback to browser language
-    return request.accept_languages.best_match(LANGUAGES.keys())
-
+# Get Database using MongoDB client URI
 def get_db():
-    """Get MongoDB database connection"""
-    client = MongoClient(app.config['MONGO_URI'])
-    db = client.wallmade
-    return db
+    """Get MongoDB database connection with error handling"""
+    try:
+        client = MongoClient(
+            app.config['MONGO_URI'],
+            serverSelectionTimeoutMS=5000,  # 5 second timeout
+            connectTimeoutMS=30000,        # 30 second connection timeout
+            socketTimeoutMS=30000          # 30 second socket timeout
+        )
+        # Test the connection
+        client.server_info()
+        return client.wallmade
+    except (ConfigurationError, ConnectionFailure, ServerSelectionTimeoutError, socket.gaierror) as e:
+        # Log the error and raise it to be caught by our error handler
+        app.logger.error(f"Failed to connect to MongoDB: {str(e)}")
+        raise
 
+# Get all collections from MongoDB
 def get_collections():
     """Get all required collections"""
     db = get_db()
@@ -50,13 +63,45 @@ def get_collections():
         db.employees
     )
 
-# Cloudinary configuration
-import cloudinary
-cloudinary.config(
-    cloud_name=app.config['CLOUDINARY_CLOUD_NAME'],
-    api_key=app.config['CLOUDINARY_API_KEY'],
-    api_secret=app.config['CLOUDINARY_API_SECRET']
-)
+@app.errorhandler(ConfigurationError)
+@app.errorhandler(ConnectionFailure)
+@app.errorhandler(ServerSelectionTimeoutError)
+@app.errorhandler(socket.gaierror)  # For DNS resolution errors
+def handle_db_connection_error(e):
+    error_message = "We're having trouble connecting to our database. Please try again later."
+    if isinstance(e, ConfigurationError):
+        error_message = "Database configuration error occurred. Our team has been notified."
+    elif isinstance(e, (ConnectionFailure, ServerSelectionTimeoutError)):
+        error_message = "Could not connect to the database. Please check your internet connection and try again."
+    elif isinstance(e, socket.gaierror):
+        error_message = "DNS resolution failed. Please check your network settings."
+    
+    # Log the error for debugging
+    app.logger.error(f"Database connection error: {str(e)}")
+    
+    return render_template('error.html', 
+                        error_code=503,
+                        error_message=error_message), 503
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('error.html', 
+                         error_code=500,
+                         error_message="Something went wrong, please try again later"), 500
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error.html', 
+                         error_code=404,
+                         error_message="The page you're looking for doesn't exist"), 404
+
+@babel.localeselector
+def get_locale():
+    # Check if language is set in session
+    if 'language' in session:
+        return session['language']
+    # Fallback to browser language
+    return request.accept_languages.best_match(LANGUAGES.keys())
 
 # Admin decorator
 def admin_required(f):
@@ -103,6 +148,18 @@ def services():
     ]
     return render_template('services.html', services=services, languages=LANGUAGES, current_language=get_locale())
 
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+        
+        print(f"New contact from {name} ({email}): {message}")
+        flash('Your message has been sent successfully!', 'success')
+        return redirect(url_for('contact'))
+    return render_template('contact.html', languages=LANGUAGES, current_language=get_locale())
+
 @app.route('/products')
 def products():
     products, _, _, _ = get_collections()
@@ -112,7 +169,7 @@ def products():
 @app.route('/product/<product_id>')
 def product_detail(product_id):
     products, _, _, _ = get_collections()
-    product = products.find_one({"_id": product_id})
+    product = products.find_one({"_id": ObjectId(product_id)})
     if not product:
         return redirect(url_for('products'))
     return render_template('product_detail.html', product=product, languages=LANGUAGES, current_language=get_locale())
@@ -131,19 +188,13 @@ def work_detail(work_id):
         return redirect(url_for('works'))
     return render_template('work_detail.html', work=work, languages=LANGUAGES, current_language=get_locale())
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        message = request.form.get('message')
-        
-        print(f"New contact from {name} ({email}): {message}")
-        flash('Your message has been sent successfully!', 'success')
-        return redirect(url_for('contact'))
-    return render_template('contact.html', languages=LANGUAGES, current_language=get_locale())
-
 # Admin Routes
+@app.route('/admin')
+def admin():
+    if 'admin_logged_in' in session:
+        return redirect(url_for('admin_dashboard'))
+    return redirect(url_for('admin_login'))
+
 @app.route('/admin/login', methods=['GET', 'POST'])
 def admin_login():
     if request.method == 'POST':
@@ -226,15 +277,192 @@ def admin_products():
     all_products = list(products.find())
     return render_template('admin/products.html', products=all_products, languages=LANGUAGES, current_language=get_locale())
 
-@app.route('/admin/product/delete/<product_id>')
+@app.route('/admin/products/edit/<product_id>', methods=['GET', 'POST'])
+@admin_required
+def admin_edit_product(product_id):
+    try:
+        products, _, _, _ = get_collections()
+        product = products.find_one({"_id": ObjectId(product_id)})
+        
+        if not product:
+            flash('Product not found', 'error')
+            return redirect(url_for('admin_products'))
+        
+        if request.method == 'POST':
+            # Handle multilingual fields
+            title = {
+                'en': request.form.get('title_en', ''),
+                'hy': request.form.get('title_hy', ''),
+                'ru': request.form.get('title_ru', '')
+            }
+            
+            description = {
+                'en': request.form.get('description_en', ''),
+                'hy': request.form.get('description_hy', ''),
+                'ru': request.form.get('description_ru', '')
+            }
+            
+            # Handle features as array
+            features = {
+                'en': [f.strip() for f in request.form.get('features_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('features_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('features_ru', '').split('\n') if f.strip()]
+            }
+            specifications = {
+                'en': [f.strip() for f in request.form.get('specifications_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('specifications_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('specifications_ru', '').split('\n') if f.strip()]
+            }
+            
+            updates = {
+                'title': title,
+                'Images_folder_url': request.form.get('images_folder_url', ''),
+                'description': description,
+                'category': {
+                    'en': request.form.get('category_en', ''),
+                    'hy': request.form.get('category_hy', ''),
+                    'ru': request.form.get('category_ru', '')
+                },
+                'material': {
+                    'en': request.form.get('material_en', ''),
+                    'hy': request.form.get('material_hy', ''),
+                    'ru': request.form.get('material_ru', '')
+                },
+                'features': features,
+                'specifications': specifications
+            }
+            
+            # Update product
+            result = products.update_one(
+                {'_id': product['_id']},
+                {'$set': updates}
+            )
+            
+            flash('Product updated successfully', 'success')
+            return redirect(url_for('admin_edit_product', product_id=product_id))
+        
+        return render_template('admin/edit_product.html', product=product)
+        
+    except Exception as e:
+        flash(f'An error occurred: {str(e)}', 'error')
+        return redirect(url_for('admin_products'))
+    
+@app.route('/admin/products/delete/<product_id>')
 @admin_required
 def admin_delete_product(product_id):
     products, _, _, _ = get_collections()
-    products.delete_one({"_id": product_id})
-    flash('Product deleted successfully', 'success')
-    return redirect(url_for('admin_products'), languages=LANGUAGES, current_language=get_locale())
-
+    result = products.delete_one({"_id": ObjectId(product_id)})
+    if result.deleted_count > 0:
+        flash('Product deleted successfully', 'success')
+    else:
+        flash('Product not found', 'error')
+    return redirect(url_for('admin_products'))
 @app.route('/admin/works', methods=['GET', 'POST'])
+
+@app.route('/admin/products/add', methods=['GET', 'POST'])
+@admin_required
+def admin_add_product():
+    products, _, _, _ = get_collections()
+    
+    if request.method == 'POST':
+        try:
+            # Handle multilingual fields
+            title = {
+                'en': request.form.get('title_en', ''),
+                'hy': request.form.get('title_hy', ''),
+                'ru': request.form.get('title_ru', '')
+            }
+            
+            description = {
+                'en': request.form.get('description_en', ''),
+                'hy': request.form.get('description_hy', ''),
+                'ru': request.form.get('description_ru', '')
+            }
+            
+            # Handle features as array
+            features = {
+                'en': [f.strip() for f in request.form.get('features_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('features_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('features_ru', '').split('\n') if f.strip()]
+            }
+            
+            # Handle specifications as array
+            specifications = {
+                'en': [f.strip() for f in request.form.get('specifications_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('specifications_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('specifications_ru', '').split('\n') if f.strip()]
+            }
+            
+            # Handle dynamic specifications
+            dynamic_specs = []
+            i = 0
+            while True:
+                name_en = request.form.get(f'spec_{i}_name_en')
+                if not name_en:  # No more specifications
+                    break
+                
+                dynamic_specs.append({
+                    'name': {
+                        'en': name_en,
+                        'hy': request.form.get(f'spec_{i}_name_hy', ''),
+                        'ru': request.form.get(f'spec_{i}_name_ru', '')
+                    },
+                    'value': request.form.get(f'spec_{i}_value', '')
+                })
+                i += 1
+            
+            # Create new product data
+            new_product = {
+                '_id': ObjectId(),
+                'title': title,
+                'Images_folder_url': request.form.get('images_folder_url', ''),
+                'description': description,
+                'category': {
+                    'en': request.form.get('category_en', ''),
+                    'hy': request.form.get('category_hy', ''),
+                    'ru': request.form.get('category_ru', '')
+                },
+                'material': {
+                    'en': request.form.get('material_en', ''),
+                    'hy': request.form.get('material_hy', ''),
+                    'ru': request.form.get('material_ru', '')
+                },
+                'features': features,
+                'specifications': specifications,
+                'dynamic_specifications': dynamic_specs,
+                'created_at': datetime.datetime.utcnow(),
+                'updated_at': datetime.datetime.utcnow()
+            }
+            
+            # Handle image upload if present
+            if 'image' in request.files and request.files['image'].filename != '':
+                image = request.files['image']
+                upload_result = upload(image)  # Your upload function
+                new_product['Images_folder_url'] = upload_result['secure_url']
+            
+            # Insert the new product
+            products.insert_one(new_product)
+            
+            flash('Product created successfully!', 'success')
+            return redirect(url_for('admin_products'))
+            
+        except Exception as e:
+            flash(f'Error creating product: {str(e)}', 'error')
+            return redirect(url_for('admin_add_product'))
+    
+    # GET request - show empty form
+    empty_product = {
+        'title': {'en': '', 'hy': '', 'ru': ''},
+        'description': {'en': '', 'hy': '', 'ru': ''},
+        'category': {'en': '', 'hy': '', 'ru': ''},
+        'material': {'en': '', 'hy': '', 'ru': ''},
+        'features': {'en': [], 'hy': [], 'ru': []},
+        'specifications': {'en': [], 'hy': [], 'ru': []},
+        'Images_folder_url': ''
+    }
+    
+    return render_template('admin/add_product.html', product=empty_product)
+
 @admin_required
 def admin_works():
     _, works, _, _ = get_collections()

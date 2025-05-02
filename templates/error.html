@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ en }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Error {{ error_code }} | Wallmade
+    </title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error_style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-icon">
+                {% if error_code == 503 %}
+                    <i class="bi bi-database-exclamation"></i>
+                {% elif error_code == 404 %}
+                    <i class="bi bi-exclamation-octagon"></i>
+                {% elif error_code == 500 %}
+                    <i class="bi bi-bug"></i>
+                {% else %}
+                    <i class="bi bi-exclamation-triangle"></i>
+                {% endif %}
+            </div>
+            
+            <h1 class="error-title">
+                Error {{ error_code }}
+            </h1>
+            
+            <p class="error-message">
+                {{ error_message }}
+            </p>
+            
+            <div class="error-actions">
+                <a href="{{ url_for('home') }}" class="btn-error">
+                    <i class="bi bi-house-door"></i>
+                    Home
+                </a>
+                <a href="{{ url_for('contact') }}" class="btn-error btn-secondary">
+                    <i class="bi bi-envelope"></i>
+                    Contact
+                </a>
+            </div>
+            
+            {% if error_code == 503 %}
+            <div class="error-details">
+                <p><i class="bi bi-info-circle"></i>
+                    We're experiencing database connection issues. Our team has been notified.
+                </p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Wallmade
+        All rights reserved
+    </footer>
+</body>
+</html>

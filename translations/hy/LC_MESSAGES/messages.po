@@ -3,18 +3,19 @@ msgstr ""
 "Project-Id-Version: Wallmade Website\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hy\n"
 
 msgid "Premium Architectural Details for Modern Construction"
-msgstr "Մոդեռն շինարարության համար պրեմիում ճարտարապետական մանրամասներ"
+msgstr "Պրեմիում ճարտարապետական մանրամասներ ժամանակակից շինարարության համար"
 
 msgid "Architectural Details"
-msgstr "Ճարտարապետական Մանրամասներ"
+msgstr "Ճարտարապետական մանրամասներ"
 
 msgid "Home"
 msgstr "Գլխավոր"
 
 msgid "About"
-msgstr "Մեր Մասին"
+msgstr "Մեր մասին"
 
 msgid "Services"
 msgstr "Ծառայություններ"
@@ -22,155 +23,212 @@ msgstr "Ծառայություններ"
 msgid "Products"
 msgstr "Ապրանքներ"
 
+msgid "Explore Products"
+msgstr "Բացահայտեք մեր ապրանքները"
+
 msgid "Our Works"
-msgstr "Մեր Աշխատանքները"
+msgstr "Մեր աշխատանքները"
 
 msgid "Contact"
 msgstr "Կապ"
 
 msgid "Creating exceptional architectural details for modern construction since 2010."
-msgstr "2010 թվականից ստեղծում ենք բացառիկ ճարտարապետական մանրամասներ ժամանակակից շինարարության համար։"
+msgstr "2010 թվականից ստեղծում ենք բացառիկ ճարտարապետական մանրամասներ ժամանակակից շինարարության համար"
 
 msgid "Quick Links"
-msgstr "Արագ Հղումներ"
+msgstr "Արագ հղումներ"
 
 msgid "Contact Us"
-msgstr "Կապ Մեզ Հետ"
+msgstr "Կապ մեզ հետ"
 
 msgid "Newsletter"
-msgstr "Հետադարձ կապ"
+msgstr "Նամակագրություն"
 
 msgid "Subscribe to our newsletter for the latest updates."
-msgstr "Բաժանորդագրվեք մեր նամակագրությանը՝ նորությունների համար։"
+msgstr "Բաժանորդագրվեք մեր նամակագրությանը՝ նորությունների համար"
 
 msgid "Your email address"
 msgstr "Ձեր էլ. փոստի հասցեն"
 
 msgid "All rights reserved."
-msgstr "Բոլոր իրավունքները պաշտպանված են։"
+msgstr "Բոլոր իրավունքները պաշտպանված են:"
 
 msgid "Privacy Policy"
-msgstr "Գաղտնիության Քաղաքականություն"
+msgstr "Գաղտնիության քաղաքականություն"
 
 msgid "Terms of Service"
-msgstr "Ծառայությունների Պայմաններ"
-
-msgid "Ready to Elevate Your Project?"
-msgstr "Պահպանվու՞մ եք ձեր ծրագրի հետևելու համար։"
+msgstr "Ծառայության պայմաններ"
 
 msgid "Product Description"
-msgstr "Ապրանքի Նկարագրություն"
+msgstr "Ապրանքի նկարագրություն"
 
 msgid "Key Features"
-msgstr "Հատուկ Յգտագործողություններ"
+msgstr "Հիմնական հատկանիշներ"
 
-msgid "Technical Specifications"
-msgstr "Տեխնիկական բնութագիր"
+msgid "Key Specifications"
+msgstr "Հիմնական բնութագրեր"
 
 msgid "Architectural detail product"
-msgstr "Ճարտարապետական դետալներ.
+msgstr "Ճարտարապետական մանրամասների ապրանք"
 
 msgid "Have Questions About This Product?"
-msgstr "Դուք կարող եք կատարել հարցումներ այս ապրանքի մասին։"
+msgstr "Հարցեր ունե՞ք այս ապրանքի վերաբերյալ"
 
 msgid "Our product specialists are ready to provide more information and technical details."
-msgstr "Մեր ապրանքի հարկավորողները պահանջում են լինել ավելի շատ տեղեկություն և տեխնիկական տեղեկություններ։"
+msgstr "Մեր մասնագետները պատրաստ են տրամադրել լրացուցիչ տեղեկություններ և տեխնիկական մանրամասներ:"
 
 msgid "Contact Our Team"
-msgstr "Կապվեք մեզ հետ"
+msgstr "Կապնվել մեր թիմի հետ"
 
 msgid "Our Products"
-msgstr "Մեր Ապրանքները"
+msgstr "Մեր ապրանքները"
 
 msgid "High-quality architectural details for every project"
-msgstr "Մեդեռն շինարարության համար պրեմիում ճարտարապետական մանրամասներ"
+msgstr "Բարձրորակ ճարտարապետական մանրամասներ յուրաքանչյուր նախագծի համար"
 
 msgid "Product Categories"
-msgstr "Ապրանքի կատեգորիաներ"
+msgstr "Ապրանքների կատեգորիաներ"
 
 msgid "Explore our range of architectural details"
-msgstr "Զննեք մեր ճարտարապետական ​​​​մանրամասների տեսականին"
+msgstr "Բացահայտեք մեր ճարտարապետական մանրամասների տեսականին"
 
 msgid "Learn more"
-msgstr "Կարդալ ավելին"
+msgstr "Իմանալ ավելին"
 
 msgid "Materials We Work With"
-msgstr "Ինչ նյութերի հետ ենք աշխատում"
+msgstr "Նյութեր, որոնց հետ աշխատում ենք"
 
 msgid "Metal"
-msgstr "Մետակայություն"
+msgstr "Մետաղ"
 
 msgid "Wood"
-msgstr "Գուուդ"
+msgstr "Փայտ"
 
 msgid "Stone"
-msgstr "Աղբյուր"
+msgstr "Քար"
 
 msgid "Composite"
-msgstr "Հավանական"
+msgstr "Կոմպոզիտ"
 
 msgid "Quality materials for exceptional results"
-msgstr "Հավանական սարքեր պրեմիում ճարտարապետական արդյունքների համար։"
+msgstr "Որակյալ նյութեր բացառիկ արդյունքների համար"
 
 msgid "Can't Find What You're Looking For?"
-msgstr "Չե՞ք կարողանում գտնել այն, ինչ փնտրում եք։"
+msgstr "Չե՞ք գտնում այն, ինչ փնտրում եք:"
 
 msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
-msgstr "Մենք մասնագիտանում ենք անհատական ​​լուծումների մեջ: Կապվեք մեզ հետ՝ ձեր կոնկրետ պահանջները քննարկելու համար:"
+msgstr "Մենք մասնագիտացած ենք անհատական լուծումներում: Կապնվեք մեզ հետ՝ քննարկելու ձեր պահանջները:"
 
 msgid "Request Custom Quote"
-msgstr "Պատվիրեք անհատական ​​գնանշում"
+msgstr "Հարցում անհատական գնահատման համար"
 
 msgid "About Wallmade"
-msgstr "Մեր Մասին"
+msgstr "Wallmade-ի մասին"
 
 msgid "Our story, values, and commitment to architectural excellence"
-msgstr "Մեր պատմությունը, արժեքները և ճարտարապետական ​​​​գերազանցության հանդեպ նվիրվածությունը"
+msgstr "Մեր պատմությունը, արժեքները և նվիրվածությունը ճարտարապետական գերազանցությանը"
 
 msgid "Our Story"
-msgstr "Մեր Պատմությունը"
+msgstr "Մեր պատմությունը"
 
 msgid "Our Values"
-msgstr "Մեր Արժեքները"
+msgstr "Մեր արժեքները"
 
 msgid "The principles that guide everything we do"
-msgstr "Հասկացություններ, որոնք կարող են համակարգել մեր գործողությունը"
+msgstr "Սկզբունքները, որոնք ուղղորդում են մեր բոլոր գործողությունները"
 
 msgid "Meet Our Leadership"
-msgstr "Մեզ հետ համակարգելու համար"
+msgstr "Հանդիպեք մեր ղեկավարությանը"
 
 msgid "The experienced professionals guiding Wallmade"
-msgstr "Հաշվարկող պրոցը կարող են համակարգել Wallmade"
+msgstr "Փորձառու մասնագետները, որոնք ղեկավարում են Wallmade-ը"
 
 msgid "Want to Learn More About Us?"
-msgstr "Ցանկանո՞ւմ եք ավելին իմանալ մեր մասին։"
+msgstr "Ցանկանու՞մ եք ավելին իմանալ մեր մասին:"
 
 msgid "Our team is always happy to discuss our approach and how we can contribute to your project."
-msgstr "Մեր թիմը միշտ ուրախ է քննարկել մեր մոտեցումը և թե ինչպես կարող ենք ներդրում ունենալ ձեր նախագծի իրականացման գործում։"
+msgstr "Մեր թիմը միշտ ուրախ է քննարկել մեր մոտեցումը և այն, թե ինչպես կարող ենք նպաստել ձեր նախագծին:"
 
 msgid "Contact Us"
-msgstr "Կապվեք մեզ հետ"
+msgstr "Կապնվել մեզ հետ"
 
 msgid "Services"
 msgstr "Ծառայություններ"
 
 msgid "Comprehensive solutions for architectural detailing needs"
-msgstr "Համապարփակ լուծումներ ճարտարապետական ​​​​մանրամասնությունների կարիքների համար"
+msgstr "Համապարփակ լուծումներ ճարտարապետական մանրամասների համար"
 
 msgid "Tailored Services for Every Project"
 msgstr "Անհատականացված ծառայություններ յուրաքանչյուր նախագծի համար"
 
 msgid "From concept to installation, we're with you every step of the way"
-msgstr "Մտահղացումից մինչև տեղադրում, մենք ձեզ հետ ենք ամեն քայլափոխի"
+msgstr "Գաղափարից մինչև տեղադրում՝ մենք ձեր կողքին ենք ամեն քայլափոխի"
 
 msgid "Our Process"
-msgstr "Մեր գործողությունը"
+msgstr "Մեր գործընթացը"
 
 msgid "How we work to bring your vision to life"
-msgstr "Ինչպես ենք մենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
+msgstr "Ինչպես ենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
 
 msgid "Precision Crafted Architectural Details"
-msgstr "Ճշգրիտ մշակված ճարտարապետական ​​​​մանրամասներ"
+msgstr "Ճշգրիտ պատրաստված ճարտարապետական մանրամասներ"
 
 msgid "We fix walls, We build Dreams"
-msgstr "Ուղղելով պատերը՝ Կառուցելով երազանքեր"
+msgstr "Մենք ուղղում ենք պատերը, կառուցում երազանքներ"
+
+msgid "Crafting Excellence in Architectural Details"
+msgstr "Գերազանցության հասնել ճարտարապետական մանրամասներում"
+
+msgid "Our commitment to quality and precision sets us apart in the industry"
+msgstr "Որակի և ճշգրտության հանդեպ մեր նվիրվածությունը մեզ առանձնացնում է այս ոլորտում"
+
+msgid "Our Product Range"
+msgstr "Մեր ապրանքատեսականին"
+
+msgid "Explore our collection of architectural details"
+msgstr "Բացահայտեք մեր ճարտարապետական մանրամասների հավաքածուն"
+
+msgid "Our Recent Works"
+msgstr "Մեր վերջին աշխատանքները"
+
+msgid "See how our products enhance architectural projects"
+msgstr "Տեսեք, թե ինչպես են մեր ապրանքները բարելավում ճարտարապետական նախագծերը"
+
+msgid "Ready to Elevate Your Project?"
+msgstr "Պատրաստ եք բարձրացնել ձեր նախագիծը?"
+
+msgid "Contact us today to discuss your architectural detail needs."
+msgstr "Կապնվեք մեզ այսօր՝ քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+
+msgid "Get in Touch"
+msgstr "Կապ հաստատել"
+
+msgid "Ready to Discuss Your Project?"
+msgstr "Պատրա՞ստ եք քննարկել ձեր նախագիծը:"
+
+msgid "Our team is ready to help you with your architectural detailing needs."
+msgstr "Մեր թիմը պատրաստ է օգնել ձեզ ձեր ճարտարապետական մանրամասների կարիքների հարցում:"
+
+msgid "Get Started"
+msgstr "Սկսել"
+
+msgid "See our architectural details in completed projects"
+msgstr "Տեսեք մեր ճարտարապետական մանրամասներն ավարտված նախագծերում"
+
+msgid "Project Portfolio"
+msgstr "Նախագծերի պորտֆոլիո"
+
+msgid "Explore our completed projects featuring Wallmade products"
+msgstr "Բացահայտեք մեր ավարտված նախագծերը Wallmade ապրանքներով"
+
+msgid "Our Clients"
+msgstr "Մեր հաճախորդները"
+
+msgid "We've had the privilege to work with"
+msgstr "Մենք պատիվ ենք ունեցել աշխատել հետևյալների հետ"
+
+msgid "What Our Clients Say"
+msgstr "Ինչ են ասում մեր հաճախորդները"
+
+msgid "Feedback from architects and builders"
+msgstr "Կարծիքներ ճարտարապետների և շինարարների կողմից"

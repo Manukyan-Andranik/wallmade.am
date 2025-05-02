@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--dark-color);
+    color: var(--white);
 }
 
 a {
@@ -54,7 +54,7 @@ ul {
     list-style: none;
 }
 
-img {
+.logo img {
     max-width: 130px;
     height: auto;
     display: block;
@@ -221,6 +221,7 @@ section {
     height: 60px; /* or any desired height */
     display: flex;
     align-items: center; /* vertical alignment */
+    gap: 30px;
 }
 
 .main-nav ul {
@@ -229,7 +230,7 @@ section {
     gap: 30px;
     list-style: none;
     margin-left: 10px;
-    padding: 0;
+    padding: 30px;
 }
 
 .main-nav a {

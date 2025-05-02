@@ -2,151 +2,64 @@
 
 {% block title %}Products{% endblock %}
 {% block page_title %}Products Management{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/admin/products_style.css') }}">
+{% endblock %}
 
 {% block content %}
-<div class="management-header">
-    <h3>All Products</h3>
-    <a href="{{ url_for('admin_products') }}?action=add" class="btn-add">
-        <i class="fas fa-plus"></i> Add Product
-    </a>
-</div>
+<div class="products-management">
+    <div class="management-header">
+        <h3>All Products</h3>
+        <a href="{{ url_for('admin_add_product') }}?action=add" class="btn-add">
+            <i class="fas fa-plus"></i> Add Product
+        </a>
+    </div>
 
-{% if request.args.get('action') == 'add' or request.args.get('action') == 'edit' %}
-<div class="form-container">
-    <form method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="product_id" value="{{ product._id if product else '' }}">
-        
-        <div class="form-row">
-            <div class="form-group">
-                <label for="title">Product Title</label>
-                <input type="text" id="title" name="title" value="{{ product.title if product else '' }}" required>
-            </div>
-            <div class="form-group">
-                <label for="category">Category</label>
-                <select id="category" name="category" required>
-                    <option value="facade" {% if product and product.category == 'facade' %}selected{% endif %}>Facade Elements</option>
-                    <option value="interior" {% if product and product.category == 'interior' %}selected{% endif %}>Interior Details</option>
-                    <option value="structural" {% if product and product.category == 'structural' %}selected{% endif %}>Structural Components</option>
-                    <option value="decorative" {% if product and product.category == 'decorative' %}selected{% endif %}>Decorative Pieces</option>
-                </select>
-            </div>
-        </div>
-        
-        <div class="form-row">
-            <div class="form-group">
-                <label for="material">Material</label>
-                <input type="text" id="material" name="material" value="{{ product.material if product else '' }}" required>
-            </div>
-            <div class="form-group">
-                <label for="image">Product Image</label>
-                <input type="file" id="image" name="image" accept="image/*">
-                {% if product and product.Images_folder_url %}
-                <div class="current-image">
-                    <img src="{{ product.Images_folder_url }}" alt="Current product image">
-                    <span>Current Image</span>
-                </div>
-                {% endif %}
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <label for="description">Description</label>
-            <textarea id="description" name="description" rows="5" required>{{ product.description if product else '' }}</textarea>
-        </div>
-        
-        <div class="form-group">
-            <label for="features">Features (one per line)</label>
-            <textarea id="features" name="features" rows="3">{% if product and product.features %}{{ '\n'.join(product.features) }}{% endif %}</textarea>
-        </div>
-        
-        <div class="specifications">
-            <label>Specifications</label>
-            <div id="specifications-container">
-                {% if product and product.specifications %}
-                    {% for spec in product.specifications %}
-                    <div class="spec-row">
-                        <input type="text" name="spec_name[]" placeholder="Name" value="{{ spec.name }}">
-                        <input type="text" name="spec_value[]" placeholder="Value" value="{{ spec.value }}">
-                        <button type="button" class="btn-remove-spec"><i class="fas fa-times"></i></button>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                <div class="spec-row">
-                    <input type="text" name="spec_name[]" placeholder="Name">
-                    <input type="text" name="spec_value[]" placeholder="Value">
-                    <button type="button" class="btn-remove-spec"><i class="fas fa-times"></i></button>
-                </div>
-                {% endif %}
-            </div>
-            <button type="button" id="add-spec" class="btn-add-spec">
-                <i class="fas fa-plus"></i> Add Specification
-            </button>
-        </div>
-        
-        <div class="form-actions">
-            <button type="submit" class="btn-save">Save Product</button>
-            <a href="{{ url_for('admin_products') }}" class="btn-cancel">Cancel</a>
-        </div>
-    </form>
-</div>
-{% else %}
-<div class="table-container">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Material</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for product in products %}
-            <tr>
-                <td>{{ product.title }}</td>
-                <td>{{ product.category | capitalize }}</td>
-                <td>{{ product.material }}</td>
-                <td class="actions">
-                    <a href="{{ url_for('admin_products') }}?action=edit&id={{ product._id }}" class="btn-edit">
+    <div class="products-grid">
+        {% for product in products %}
+        <div class="product-card">
+            <div class="card-header">
+                <h3 class="product-title">{{ product.title.get('hy', product._id) }}</h3>
+                <div class="card-actions">
+                    <a href="{{ url_for('admin_edit_product', product_id=product._id) }}" class="btn-edit">
                         <i class="fas fa-edit"></i> Edit
                     </a>
-                    <a href="{{ url_for('admin_delete_product', product_id=product._id) }}" class="btn-delete" onclick="return confirm('Are you sure you want to delete this product?')">
-                        <i class="fas fa-trash"></i> Delete
+                    <a href="{{ url_for('admin_delete_product', product_id=product._id) }}" class="btn-delete">
+                        <i class="fas fa-edit"></i> Delete
                     </a>
-                </td>
-            </tr>
-            {% else %}
-            <tr>
-                <td colspan="4" class="no-data">No products found</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('hy', product._id) }}">
+            </div>
+            <div class="card-body">
+                <p class="product-description">{{ product.description.get('hy', '')|truncate(100) }}</p>
+                <div class="product-meta">
+                    <span class="product-id">ID: {{ product._id }}</span>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="no-products">
+            <i class="fas fa-box-open"></i>
+            <p>No products found</p>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-{% endif %}
 {% endblock %}
 
 {% block extra_js %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Add specification row
-    document.getElementById('add-spec').addEventListener('click', function() {
-        const container = document.getElementById('specifications-container');
-        const newRow = document.createElement('div');
-        newRow.className = 'spec-row';
-        newRow.innerHTML = `
-            <input type="text" name="spec_name[]" placeholder="Name">
-            <input type="text" name="spec_value[]" placeholder="Value">
-            <button type="button" class="btn-remove-spec"><i class="fas fa-times"></i></button>
-        `;
-        container.appendChild(newRow);
-    });
-    
-    // Remove specification row
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('btn-remove-spec')) {
-            e.target.closest('.spec-row').remove();
-        }
+    // Delete product confirmation
+    document.querySelectorAll('.btn-delete').forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = this.getAttribute('data-id');
+            if (confirm('Are you sure you want to delete this product?')) {
+                window.location.href = `/admin/products/delete/${productId}`;
+            }
+        });
     });
 });
 </script>

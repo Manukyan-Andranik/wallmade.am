@@ -24,7 +24,10 @@ msgid "Products"
 msgstr "Ապրանքներ"
 
 msgid "Explore Products"
-msgstr "Բացահայտեք մեր ապրանքները"
+msgstr "Մեր ապրանքները"
+
+msgid "Explore Services"
+msgstr "Մեր ծառայությունները"
 
 msgid "Our Works"
 msgstr "Մեր աշխատանքները"
@@ -90,7 +93,7 @@ msgid "Product Categories"
 msgstr "Ապրանքների կատեգորիաներ"
 
 msgid "Explore our range of architectural details"
-msgstr "Բացահայտեք մեր ճարտարապետական մանրամասների տեսականին"
+msgstr "եր ճարտարապետական մանրամասների տեսականին"
 
 msgid "Learn more"
 msgstr "Իմանալ ավելին"
@@ -120,7 +123,7 @@ msgid "We specialize in custom solutions. Contact us to discuss your specific re
 msgstr "Մենք մասնագիտացած ենք անհատական լուծումներում: Կապնվեք մեզ հետ՝ քննարկելու ձեր պահանջները:"
 
 msgid "Request Custom Quote"
-msgstr "Հարցում անհատական գնահատման համար"
+msgstr "Կապվեք մեզ հետ"
 
 msgid "About Wallmade"
 msgstr "Wallmade-ի մասին"
@@ -171,7 +174,7 @@ msgid "How we work to bring your vision to life"
 msgstr "Ինչպես ենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
 
 msgid "Precision Crafted Architectural Details"
-msgstr "Ճշգրիտ պատրաստված ճարտարապետական մանրամասներ"
+msgstr "Ճշգրիտ պատրաստված ճարտարապետական դետալներ"
 
 msgid "We fix walls, We build Dreams"
 msgstr "Մենք ուղղում ենք պատերը, կառուցում երազանքներ"
@@ -186,7 +189,7 @@ msgid "Our Product Range"
 msgstr "Մեր ապրանքատեսականին"
 
 msgid "Explore our collection of architectural details"
-msgstr "Բացահայտեք մեր ճարտարապետական մանրամասների հավաքածուն"
+msgstr "եր ճարտարապետական մանրամասների հավաքածուն"
 
 msgid "Our Recent Works"
 msgstr "Մեր վերջին աշխատանքները"
@@ -213,13 +216,13 @@ msgid "Get Started"
 msgstr "Սկսել"
 
 msgid "See our architectural details in completed projects"
-msgstr "Տեսեք մեր ճարտարապետական մանրամասներն ավարտված նախագծերում"
+msgstr "Տեսեք մեր աշխատանքները ավարտված նախագծերում"
 
 msgid "Project Portfolio"
 msgstr "Նախագծերի պորտֆոլիո"
 
 msgid "Explore our completed projects featuring Wallmade products"
-msgstr "Բացահայտեք մեր ավարտված նախագծերը Wallmade ապրանքներով"
+msgstr "եր ավարտված նախագծերը Wallmade ապրանքներով"
 
 msgid "Our Clients"
 msgstr "Մեր հաճախորդները"
@@ -232,3 +235,219 @@ msgstr "Ինչ են ասում մեր հաճախորդները"
 
 msgid "Feedback from architects and builders"
 msgstr "Կարծիքներ ճարտարապետների և շինարարների կողմից"
+
+msgid "Quality"
+msgstr "Որակ"
+
+msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
+msgstr "Մենք երբեք չենք խախտում նյութերի կամ արհեստագործության սկզբունքները: Յուրաքանչյուր մանրուք կարևոր է ժամանակի դիմացող արտադրանք ստեղծելու համար:"
+
+msgid "Innovation"
+msgstr "Նորարարություն"
+
+msgid "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
+msgstr "Մենք անընդհատ ուսումնասիրում ենք նոր տեխնիկաներ և նյութեր՝ ժամանակակից ճարտարապետության համար առաջատար լուծումներ առաջարկելու համար:"
+
+msgid "Collaboration"
+msgstr "Համագործակցություն"
+
+msgid "We work closely with architects and builders to understand their vision and bring it to life."
+msgstr "Մենք սերտորեն համագործակցում ենք ճարտարապետների և շինարարների հետ՝ հասկանալու նրանց տեսլականն ու այն կյանքի կոչելու համար:"
+
+msgid "Sustainability"
+msgstr "Կայունություն"
+
+msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
+msgstr "Մենք պարտավորված ենք բնապահպանական պատասխանատու գործելակերպին՝ մեր նյութերի հայթայթման և արտադրության մեջ:"
+
+msgid "Our Process"
+msgstr "Մեր գործընթացը"
+
+msgid "How we work to bring your vision to life"
+msgstr "Ինչպես ենք մենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
+
+msgid "Consultation"
+msgstr "Խորհրդատվություն"
+
+msgid "We begin by understanding your project requirements, design intent, and technical specifications."
+msgstr "Մենք սկսում ենք ձեր նախագծի պահանջները, դիզայնի մտահղացումը և տեխնիկական բնութագրերը հասկանալով:"
+
+msgid "Design & Prototyping"
+msgstr "Դիզայն և նախատիպերի ստեղծում"
+
+msgid "Our team creates detailed designs and produces prototypes for your approval."
+msgstr "Մեր թիմը մշակում է մանրամասն դիզայն և ստեղծում նախատիպեր ձեր հաստատման համար:"
+
+msgid "Production"
+msgstr "Արտադրություն"
+
+msgid "Once approved, we manufacture your components with precision and care."
+msgstr "Հաստատվելուց հետո մենք արտադրում ենք ձեր բաղադրիչները ճշգրտությամբ և ուշադրությամբ:"
+
+msgid "Delivery & Support"
+msgstr "Առաքում և աջակցություն"
+
+msgid "We ensure safe delivery and provide ongoing support for installation."
+msgstr "Մենք ապահովում ենք անվտանգ առաքում և տրամադրում շարունակական աջակցություն տեղադրման համար:"
+
+msgid "Custom Architectural Details"
+msgstr "Անհատական Ճարտարապետական Մանրամասներ"
+
+msgid "Bespoke design solutions"
+msgstr "Անհատականացված դիզայնի լուծումներ"
+
+msgid "Material selection guidance"
+msgstr "Նյութերի ընտրության ղեկավարում"
+
+msgid "Prototyping and sampling"
+msgstr "Նախատիպավորում և նմուշավորում"
+
+msgid "High-volume manufacturing"
+msgstr "Զանգվածային արտադրություն"
+
+msgid "Consistent quality control"
+msgstr "Համակարգված որակի հսկողություն"
+
+msgid "Just-in-time delivery"
+msgstr "Ճիշտ ժամանակին առաքում"
+
+msgid "Technical drawings"
+msgstr "Տեխնիկական գծագրեր"
+
+msgid "Material specifications"
+msgstr "Նյութերի բնութագրեր"
+
+msgid "Integration advice"
+msgstr "Ինտեգրման խորհրդատվություն"
+
+msgid "Installation guides"
+msgstr "Տեղադրման ուղեցույցներ"
+
+msgid "On-site training"
+msgstr "Վերապատրաստում տեղում"
+
+msgid "Troubleshooting assistance"
+msgstr "Խնդիրների լուծման աջակցություն"
+
+msgid "Want to Feature Your Project Here?"
+msgstr "Ցանկանու՞մ եք Ձեր նախագիծն այստեղ ներկայացնել։"
+
+msgid "Contact us to discuss how Wallmade products can enhance your next architectural project."
+msgstr "Կապվեք մեզ հետ՝ քննարկելու, թե ինչպես կարող են Wallmade արտադրանքները բարելավել Ձեր հաջորդ ճարտարապետական նախագիծը։"
+
+msgid "Start a Conversation"
+msgstr "Սկսել հարցումը"
+
+msgid "Contact Us"
+msgstr "Կապ Մեզ Հետ"
+
+msgid "Get in touch with our team"
+msgstr "Կապ հաստատեք մեր թիմի հետ"
+
+msgid "Let's Start a Conversation"
+msgstr "Եկեք զրուցենք"
+
+msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
+msgstr "Եթե հարցեր ունեք մեր արտադրանքի վերաբերյալ, անհրաժեշտ է գնահատում կամ ցանկանում եք քննարկել անհատական նախագիծ, մեր թիմը պատրաստ է օգնել ձեզ:"
+
+msgid "Our Location"
+msgstr "Մեր Հասցեն"
+
+msgid "Phone"
+msgstr "Հեռախոս"
+
+msgid "Mon-Fri: 9:00 AM - 6:00 PM"
+msgstr "Երկ-Ուրբ: 09:00 - 18:00"
+
+msgid "Email"
+msgstr "Էլ. Փոստ"
+
+msgid "Thank You for Your Message!"
+msgstr "Շնորհակալություն Ձեր Հաղորդագրության Համար!"
+
+msgid "We've received your inquiry and will get back to you within 24 hours."
+msgstr "Մենք ստացել ենք Ձեր հարցումը և կպատասխանենք 24 ժամվա ընթացքում:"
+
+msgid "Send Us a Message"
+msgstr "Ուղարկեք Մեզ Նամակ"
+
+msgid "Your Name"
+msgstr "Ձեր Անունը"
+
+msgid "Email Address"
+msgstr "Էլ. Փոստի Հասցե"
+
+msgid "Phone Number"
+msgstr "Հեռախոսահամար"
+
+msgid "Subject"
+msgstr "Թեմա"
+
+msgid "General Inquiry"
+msgstr "Ընդհանուր Հարցում"
+
+msgid "Product Information"
+msgstr "Արտադրանքի Մասին Տեղեկություն"
+
+msgid "Request a Quote"
+msgstr "Հարցում Գնահատման Համար"
+
+msgid "Custom Project"
+msgstr "Անհատական Նախագիծ"
+
+msgid "Other"
+msgstr "Այլ"
+
+msgid "Your Message"
+msgstr "Ձեր Հաղորդագրությունը"
+
+msgid "Send Message"
+msgstr "Ուղարկել Հաղորդագրություն"
+
+msgid "Ready to Start Your Project?"
+msgstr "Պատրա՞ստ եք Սկսել Ձեր Նախագիծը:"
+
+msgid "Contact us today to discuss your architectural detailing needs."
+msgstr "Կապվեք մեզ հետ այսօր՝ քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+
+msgid "Project Overview"
+msgstr "Նախագիծի բովանդակություն"
+
+msgid "Wallmade Products Used"
+msgstr "Օգտագործված Նյութեր Wallmade"
+
+msgid "View Project"
+msgstr "Դիտել նախագիծը"
+
+msgid "View Details"
+msgstr "Դիտել Մանրամասները"
+
+msgid "Featured project using Wallmade architectural details"
+msgstr "Նախագիծ, որը օգտագործվում է Wallmade ճարտարապետական մանրամասները"
+
+msgid "Location"
+msgstr "Տեղեկատվություն"
+
+msgid "Project Type"
+msgstr "Նախագիծի տեսակ"
+
+msgid "Year Completed"
+msgstr "Ավարտված տարի"
+
+msgid "Architect"
+msgstr "Արտադրող"
+
+msgid "Project Details"
+msgstr "Նախագիծի Մանրամասներ"
+
+msgid "Additional views and details"
+msgstr "Ավելի տեսանելու և մանրամասներ"
+
+msgid "Contact us to discuss how we can contribute to your next architectural endeavor."
+msgstr "Կապվեք մեզ հետ, որպեսզի քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+
+msgid "View All Products"
+msgstr "Տեսնել բոլոր արտադրանքները"
+
+msgid "View All Works"
+msgstr "Տեսնել բոլոր աշխատանքները"

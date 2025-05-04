@@ -1,20 +1,24 @@
 /* Base Styles */
 :root {
-    --primary-color: #a7502a;        
-    --secondary-color: #c1733f;      
-    --accent-color: #d6b385;         
-    --light-color: #e3cba6;          
-    --dark-color: #5a5045;           
-    --text-color: #3d372f;           
-    --text-light: #7c6f63;           
-    --white: #f5f3ee;                
-    --black: #2c2c2c;                
-    --gray: #8a817a;                 
-    --light-gray: #c9b9a7;           
-    --dark-gray: #4a4139;            
+    --main-header: #f8f5f0;           /* Soft warm ivory (lighter for modernity) */
+    --primary-color: #7d2a35;         /* Deep muted crimson (more versatile) */
+    --secondary-color: #5e2c3e;       /* Romantic burgundy (softer than original) */
+    --accent-color: #dcaa6d;          /* Fresh teal (brighter but still muted) */
+    --light-color: #d4c9c9;           /* Warm porcelain (less brown/gray) */
+    --dark-color: #0a4f4f;            /* Rich peacock (deeper and more saturated) */
+    --menu-color: #207676;            /* Rich peacock (deeper and more saturated) */ 
+
+    --text-color: #333333;            /* True soft black (better readability) */
+    --text-light: #c07c81;            /* Blush rose (warmer and more organic) */
+    --white: #f8f5f0;                 /* Matches main-header for consistency */
+    --black: #1a1a1a;                 /* Softened true black (less harsh) */
+    --gray: #5a7d7d;                  /* Misty slate (modern neutral) */
+    --light-gray: #d4c9c9;            /* Matches light-color for system cohesion */
+    --dark-gray: #2c3a5a;             /* Twilight blue-gray (more contemporary) */
+    --success-color: #2e8b57;         /* Updated earthy green (natural feel) */
     --transition: all 0.3s ease;
-    --box-shadow: 0 5px 15px rgba(44, 44, 44, 0.1);
-    --box-shadow-hover: 0 8px 25px rgba(44, 44, 44, 0.15);
+    --box-shadow: 0 5px 15px rgba(26, 26, 26, 0.08);  /* Softer transparency */
+    --box-shadow-hover: 0 8px 25px rgba(26, 26, 26, 0.12);  /* Subtle depth */
     --border-radius: 8px;
 }
 
@@ -177,7 +181,7 @@ section {
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background-color: var(--white);
+    background-color: var(--main-header);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: var(--transition);
@@ -278,7 +282,7 @@ section {
 }
 
 .btn-contact:hover {
-    background-color: var(--primary-color);
+    background-color: var(--text-light);
     transform: translateY(-3px);
     box-shadow: var(--box-shadow-hover);
 }

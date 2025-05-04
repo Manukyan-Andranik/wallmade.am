@@ -75,7 +75,7 @@
             {% for related in product.related_products %}
             <div class="product-card">
                 <div class="product-image">
-                    <img src="{{ related.Images_folder_url }}/1.jpg" alt="{{ related.title.get(current_language, related.title.get('en', 'Product')) }}">
+                    <img src="{{ related.Images_folder_url }}" alt="{{ related.title.get(current_language, related.title.get('en', 'Product')) }}">
                     <div class="product-overlay">
                         <a href="{{ url_for('product_detail', product_id=related._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>

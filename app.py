@@ -1,5 +1,6 @@
 # Flask APP imports
 import socket
+import datetime
 from functools import wraps
 from werkzeug.security import  check_password_hash
 from flask_babel import Babel, gettext as _, lazy_gettext as _l
@@ -140,12 +141,23 @@ def about():
 
 @app.route('/services')
 def services():
-    services = [
-        {"title": "Custom Architectural Details", "icon": "design", "description": "Tailored solutions for unique architectural elements."},
-        {"title": "Mass Production", "icon": "factory", "description": "High-quality, consistent production of architectural components."},
-        {"title": "Design Consultation", "icon": "consult", "description": "Expert advice on material selection and design integration."},
-        {"title": "Installation Support", "icon": "install", "description": "Professional guidance for proper installation."}
-    ]
+    services = [{
+        "en": {"title": "Custom Architectural Details", "icon": "design", "description": "Tailored solutions for unique architectural elements."},
+        "ru": {"title": "Индивидуальные Архитектурные Элементы", "icon": "design", "description": "Персонализированные решения для уникальных архитектурных элементов."},
+        "hy": {"title": "Անհատական Ճարտարապետական Մանրամասներ", "icon": "design", "description": "Անհատականացված լուծումներ յուրահատուկ ճարտարապետական տարրերի համար։"}
+        }, 
+        {"en": {"title": "Mass Production", "icon": "factory", "description": "High-quality, consistent production of architectural components."},
+        "ru": {"title": "Массовое Производство", "icon": "factory", "description": "Высококачественное, стандартизированное производство архитектурных компонентов."},
+        "hy": {"title": "Զանգվածային Արտադրություն", "icon": "factory", "description": "Ճարտարապետական բաղադրիչների բարձրորակ, հավասարաչափ արտադրություն։"}
+        },
+        {"en": {"title": "Design Consultation", "icon": "consult", "description": "Expert advice on material selection and design integration."},
+        "ru": {"title": "Дизайн-Консультации", "icon": "consult", "description": "Экспертные рекомендации по подбору материалов и интеграции дизайна."},
+        "hy": {"title": "Դիզայնի Խորհրդատվություն", "icon": "consult", "description": "Փորձագիտական խորհրդատվություն նյութերի ընտրության և դիզայնի ինտեգրման վերաբերյալ։"}
+        },
+        {"en": {"title": "Installation Support", "icon": "install", "description": "Professional guidance for proper installation."},
+        "ru": {"title": "Поддержка Монтажа", "icon": "install", "description": "Профессиональное руководство по правильной установке."},
+        "hy": {"title": "Տեղադրման Աջակցություն", "icon": "install", "description": "Պրոֆեսիոնալ ուղղորդում ճիշտ տեղադրման համար։"}
+        }]
     return render_template('services.html', services=services, languages=LANGUAGES, current_language=get_locale())
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -182,8 +194,9 @@ def works():
 
 @app.route('/work/<work_id>')
 def work_detail(work_id):
+    print(work_id)
     _, works, _, _ = get_collections()
-    work = works.find_one({"_id": work_id})
+    work = works.find_one({"_id": ObjectId(work_id)})
     if not work:
         return redirect(url_for('works'))
     return render_template('work_detail.html', work=work, languages=LANGUAGES, current_language=get_locale())
@@ -357,12 +370,30 @@ def admin_delete_product(product_id):
     else:
         flash('Product not found', 'error')
     return redirect(url_for('admin_products'))
-@app.route('/admin/works', methods=['GET', 'POST'])
 
-@app.route('/admin/products/add', methods=['GET', 'POST'])
+@app.route('/admin/products/add')
 @admin_required
-def admin_add_product():
+def admin_add_product(product_id):
     products, _, _, _ = get_collections()
+    result = products.delete_one({"_id": ObjectId(product_id)})
+    if result.deleted_count > 0:
+        flash('Product deleted successfully', 'success')
+    else:
+        flash('Product not found', 'error')
+    return redirect(url_for('admin_products'))
+
+
+@app.route('/admin/works')
+@admin_required
+def admin_works():
+    _, works, _, _ = get_collections()
+    all_works = list(works.find())
+    return render_template('admin/works.html', works=all_works, languages=LANGUAGES, current_language=get_locale())
+
+@app.route('/admin/works/add', methods=['GET', 'POST'])
+@admin_required
+def admin_add_work():
+    _, works, _, _ = get_collections()
     
     if request.method == 'POST':
         try:
@@ -379,57 +410,64 @@ def admin_add_product():
                 'ru': request.form.get('description_ru', '')
             }
             
-            # Handle features as array
-            features = {
-                'en': [f.strip() for f in request.form.get('features_en', '').split('\n') if f.strip()],
-                'hy': [f.strip() for f in request.form.get('features_hy', '').split('\n') if f.strip()],
-                'ru': [f.strip() for f in request.form.get('features_ru', '').split('\n') if f.strip()]
+            location = {
+                'en': request.form.get('location_en', ''),
+                'hy': request.form.get('location_hy', ''),
+                'ru': request.form.get('location_ru', '')
             }
             
-            # Handle specifications as array
-            specifications = {
-                'en': [f.strip() for f in request.form.get('specifications_en', '').split('\n') if f.strip()],
-                'hy': [f.strip() for f in request.form.get('specifications_hy', '').split('\n') if f.strip()],
-                'ru': [f.strip() for f in request.form.get('specifications_ru', '').split('\n') if f.strip()]
+            project_type = {
+                'en': request.form.get('project_type_en', ''),
+                'hy': request.form.get('project_type_hy', ''),
+                'ru': request.form.get('project_type_ru', '')
             }
             
-            # Handle dynamic specifications
-            dynamic_specs = []
-            i = 0
-            while True:
-                name_en = request.form.get(f'spec_{i}_name_en')
-                if not name_en:  # No more specifications
-                    break
-                
-                dynamic_specs.append({
-                    'name': {
-                        'en': name_en,
-                        'hy': request.form.get(f'spec_{i}_name_hy', ''),
-                        'ru': request.form.get(f'spec_{i}_name_ru', '')
-                    },
-                    'value': request.form.get(f'spec_{i}_value', '')
-                })
-                i += 1
+            architect = {
+                'en': request.form.get('architect_en', ''),
+                'hy': request.form.get('architect_hy', ''),
+                'ru': request.form.get('architect_ru', '')
+            }
             
-            # Create new product data
-            new_product = {
+            # Handle products used as arrays
+            products_used = {
+                'en': [f.strip() for f in request.form.get('products_used_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('products_used_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('products_used_ru', '').split('\n') if f.strip()]
+            }
+            
+            # Handle testimonial
+            testimonial_text = {
+                'en': request.form.get('testimonial_text_en', ''),
+                'hy': request.form.get('testimonial_text_hy', ''),
+                'ru': request.form.get('testimonial_text_ru', '')
+            }
+            
+            testimonial_position = {
+                'en': request.form.get('testimonial_position_en', ''),
+                'hy': request.form.get('testimonial_position_hy', ''),
+                'ru': request.form.get('testimonial_position_ru', '')
+            }
+            
+            testimonial = None
+            if request.form.get('testimonial_author'):
+                testimonial = {
+                    'text': testimonial_text,
+                    'author': request.form.get('testimonial_author', ''),
+                    'position': testimonial_position
+                }
+            
+            # Create new work data
+            new_work = {
                 '_id': ObjectId(),
                 'title': title,
-                'Images_folder_url': request.form.get('images_folder_url', ''),
+                'Images_folder_url': request.form.get('image', ''),
                 'description': description,
-                'category': {
-                    'en': request.form.get('category_en', ''),
-                    'hy': request.form.get('category_hy', ''),
-                    'ru': request.form.get('category_ru', '')
-                },
-                'material': {
-                    'en': request.form.get('material_en', ''),
-                    'hy': request.form.get('material_hy', ''),
-                    'ru': request.form.get('material_ru', '')
-                },
-                'features': features,
-                'specifications': specifications,
-                'dynamic_specifications': dynamic_specs,
+                'location': location,
+                'project_type': project_type,
+                'year': request.form.get('year', ''),
+                'architect': architect,
+                'products_used': products_used,
+                'testimonial': testimonial,
                 'created_at': datetime.datetime.utcnow(),
                 'updated_at': datetime.datetime.utcnow()
             }
@@ -437,96 +475,156 @@ def admin_add_product():
             # Handle image upload if present
             if 'image' in request.files and request.files['image'].filename != '':
                 image = request.files['image']
-                upload_result = upload(image)  # Your upload function
-                new_product['Images_folder_url'] = upload_result['secure_url']
+                upload_result = upload(image)
+                new_work['Images_folder_url'] = upload_result['secure_url']
             
-            # Insert the new product
-            products.insert_one(new_product)
+            # Insert the new work
+            works.insert_one(new_work)
             
-            flash('Product created successfully!', 'success')
-            return redirect(url_for('admin_products'))
+            flash('Work created successfully!', 'success')
+            return redirect(url_for('admin_works'))
             
         except Exception as e:
-            flash(f'Error creating product: {str(e)}', 'error')
-            return redirect(url_for('admin_add_product'))
+            flash(f'Error creating work: {str(e)}', 'error')
+            return redirect(url_for('admin_add_work'))
     
     # GET request - show empty form
-    empty_product = {
+    empty_work = {
         'title': {'en': '', 'hy': '', 'ru': ''},
         'description': {'en': '', 'hy': '', 'ru': ''},
-        'category': {'en': '', 'hy': '', 'ru': ''},
-        'material': {'en': '', 'hy': '', 'ru': ''},
-        'features': {'en': [], 'hy': [], 'ru': []},
-        'specifications': {'en': [], 'hy': [], 'ru': []},
-        'Images_folder_url': ''
+        'location': {'en': '', 'hy': '', 'ru': ''},
+        'project_type': {'en': '', 'hy': '', 'ru': ''},
+        'architect': {'en': '', 'hy': '', 'ru': ''},
+        'products_used': {'en': [], 'hy': [], 'ru': []},
+        'Images_folder_url': '',
+        'year': '',
+        'testimonial': None
     }
     
-    return render_template('admin/add_product.html', product=empty_product)
+    return render_template('admin/edit_work.html', work=empty_work, is_new=True)
 
+@app.route('/admin/works/edit/<work_id>', methods=['GET', 'POST'])
 @admin_required
-def admin_works():
-    _, works, _, _ = get_collections()
-    
-    if request.method == 'POST':
-        # Handle work creation or update
-        work_id = request.form.get('work_id')
-        title = request.form.get('title')
-        description = request.form.get('description')
-        location = request.form.get('location')
-        project_type = request.form.get('project_type')
-        year = request.form.get('year')
-        architect = request.form.get('architect')
+def admin_edit_work(work_id):
+    try:
+        _, works, _, _ = get_collections()
+        work = works.find_one({"_id": ObjectId(work_id)})
         
-        work_data = {
-            "title": title,
-            "description": description,
-            "location": location,
-            "project_type": project_type,
-            "year": year,
-            "architect": architect,
-            "products_used": request.form.get('products_used', '').split('\n')
-        }
+        if not work:
+            flash('Work not found', 'error')
+            return redirect(url_for('admin_works'))
         
-        # Handle testimonial if provided
-        testimonial_text = request.form.get('testimonial_text')
-        testimonial_author = request.form.get('testimonial_author')
-        testimonial_position = request.form.get('testimonial_position')
-        
-        if testimonial_text and testimonial_author:
-            work_data["testimonial"] = {
-                "text": testimonial_text,
-                "author": testimonial_author,
-                "position": testimonial_position
+        if request.method == 'POST':
+            # Handle multilingual fields
+            title = {
+                'en': request.form.get('title_en', ''),
+                'hy': request.form.get('title_hy', ''),
+                'ru': request.form.get('title_ru', '')
             }
+            
+            description = {
+                'en': request.form.get('description_en', ''),
+                'hy': request.form.get('description_hy', ''),
+                'ru': request.form.get('description_ru', '')
+            }
+            
+            location = {
+                'en': request.form.get('location_en', ''),
+                'hy': request.form.get('location_hy', ''),
+                'ru': request.form.get('location_ru', '')
+            }
+            
+            project_type = {
+                'en': request.form.get('project_type_en', ''),
+                'hy': request.form.get('project_type_hy', ''),
+                'ru': request.form.get('project_type_ru', '')
+            }
+            
+            architect = {
+                'en': request.form.get('architect_en', ''),
+                'hy': request.form.get('architect_hy', ''),
+                'ru': request.form.get('architect_ru', '')
+            }
+            
+            # Handle products used as arrays
+            products_used = {
+                'en': [f.strip() for f in request.form.get('products_used_en', '').split('\n') if f.strip()],
+                'hy': [f.strip() for f in request.form.get('products_used_hy', '').split('\n') if f.strip()],
+                'ru': [f.strip() for f in request.form.get('products_used_ru', '').split('\n') if f.strip()]
+            }
+            
+            # Handle testimonial
+            testimonial_text = {
+                'en': request.form.get('testimonial_text_en', ''),
+                'hy': request.form.get('testimonial_text_hy', ''),
+                'ru': request.form.get('testimonial_text_ru', '')
+            }
+            
+            testimonial_position = {
+                'en': request.form.get('testimonial_position_en', ''),
+                'hy': request.form.get('testimonial_position_hy', ''),
+                'ru': request.form.get('testimonial_position_ru', '')
+            }
+            
+            testimonial = None
+            if request.form.get('testimonial_author'):
+                testimonial = {
+                    'text': testimonial_text,
+                    'author': request.form.get('testimonial_author', ''),
+                    'position': testimonial_position
+                }
+            
+            updates = {
+                'title': title,
+                'description': description,
+                'location': location,
+                'project_type': project_type,
+                'year': request.form.get('year', ''),
+                'architect': architect,
+                'products_used': products_used,
+                'testimonial': testimonial,
+                'updated_at': datetime.datetime.utcnow()
+            }
+            
+            # Handle image URL or upload
+            if request.form.get('image'):
+                updates['Images_folder_url'] = request.form.get('image')
+            
+            if 'image' in request.files and request.files['image'].filename != '':
+                image = request.files['image']
+                upload_result = upload(image)
+                updates['Images_folder_url'] = upload_result['secure_url']
+            
+            # Update work
+            works.update_one(
+                {'_id': work['_id']},
+                {'$set': updates}
+            )
+            
+            flash('Work updated successfully', 'success')
+            return redirect(url_for('admin_edit_work', work_id=work_id))
         
-        # Handle image upload
-        if 'image' in request.files and request.files['image'].filename != '':
-            image = request.files['image']
-            upload_result = upload(image)
-            work_data["Images_folder_url"] = upload_result['secure_url']
+        return render_template('admin/edit_work.html', work=work, is_new=False)
         
-        if work_id:
-            # Update existing work
-            works.update_one({"_id": work_id}, {"$set": work_data})
-            flash('Work updated successfully!', 'success')
-        else:
-            # Create new work
-            work_data["_id"] = str(ObjectId())
-            works.insert_one(work_data)
-            flash('Work created successfully!', 'success')
-        
+    except Exception as e:
+        flash(f'An error occurred: {str(e)}', 'error')
         return redirect(url_for('admin_works'))
-    
-    all_works = list(works.find())
-    return render_template('admin/works.html', works=all_works, languages=LANGUAGES, current_language=get_locale())
 
-@app.route('/admin/work/delete/<work_id>')
+@app.route('/admin/works/delete/<work_id>')
 @admin_required
 def admin_delete_work(work_id):
-    _, works, _, _ = get_collections()
-    works.delete_one({"_id": work_id})
-    flash('Work deleted successfully', 'success')
-    return redirect(url_for('admin_works'), languages=LANGUAGES, current_language=get_locale())
-
+    try:
+        _, works, _, _ = get_collections()
+        result = works.delete_one({"_id": ObjectId(work_id)})
+        
+        if result.deleted_count == 1:
+            flash('Work deleted successfully', 'success')
+        else:
+            flash('Work not found', 'error')
+            
+        return redirect(url_for('admin_works'))
+    except Exception as e:
+        flash(f'Error deleting work: {str(e)}', 'error')
+        return redirect(url_for('admin_works'))
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)

@@ -5,8 +5,8 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our team</p>
+        <h1>{{ _('Contact Us') }}</h1>
+        <p>{{ _('Get in touch with our team') }}</p>
     </div>
 </section>
 
@@ -14,13 +14,13 @@
     <div class="container">
         <div class="contact-content">
             <div class="contact-info">
-                <h2>Let's Start a Conversation</h2>
-                <p>Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you.</p>
+                <h2>{{ _('Let\'s Start a Conversation') }}</h2>
+                <p>{{ _('Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you.') }}</p>
                 
                 <div class="info-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h3>Our Location</h3>
+                        <h3>{{ _('Our Location') }}</h3>
                         <p>
                             <a href="https://www.google.com/maps/search/?api=1&query=Yerevan,+Arshakunyats+Avenue,+25%2F1" target="_blank">
                                 Yerevan, Arshakunyats Avenue, 25/1
@@ -32,16 +32,16 @@
                 <div class="info-card">
                     <i class="fas fa-phone"></i>
                     <div>
-                        <h3>Phone</h3>
+                        <h3>{{ _('Phone') }}</h3>
                         <p><a href="tel:+37495095955">+374 95 095955</a></p>
-                        <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        <p>{{ _('Mon-Fri: 9:00 AM - 6:00 PM') }}</p>
                     </div>
                 </div>
                 
                 <div class="info-card">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <h3>Email</h3>
+                        <h3>{{ _('Email') }}</h3>
                         <p><a href="mailto:wallmade_kh@wallmade.am">wallmade_kh@wallmade.am</a></p>
                     </div>
                 </div>
@@ -58,40 +58,40 @@
                 {% if success %}
                 <div class="form-success">
                     <i class="fas fa-check-circle"></i>
-                    <h3>Thank You for Your Message!</h3>
-                    <p>We've received your inquiry and will get back to you within 24 hours.</p>
+                    <h3>{{ _('Thank You for Your Message!') }}</h3>
+                    <p>{{ _('We\'ve received your inquiry and will get back to you within 24 hours.') }}</p>
                     <a href="{{ url_for('home') }}" class="btn-primary">Back to Home</a>
                 </div>
                 {% else %}
-                <h2>Send Us a Message</h2>
+                <h2>{{ _('Send Us a Message') }}</h2>
                 <form method="POST" action="{{ url_for('contact') }}">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
+                        <label for="name">{{ _('Your Name') }}</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+                        <label for="email">{{ _('Email Address') }}</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
+                        <label for="phone">{{ _('Phone Number') }}</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
+                        <label for="subject">{{ _('Subject') }}</label>
                         <select id="subject" name="subject">
-                            <option value="general">General Inquiry</option>
-                            <option value="products">Product Information</option>
-                            <option value="quote">Request a Quote</option>
-                            <option value="custom">Custom Project</option>
-                            <option value="other">Other</option>
+                            <option value="general">{{ _('General Inquiry') }}</option>
+                            <option value="products">{{ _('Product Information') }}</option>
+                            <option value="quote">{{ _('Request a Quote') }}</option>
+                            <option value="custom">{{ _('Custom Project') }}</option>
+                            <option value="other">{{ _('Other') }}</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
+                        <label for="message">{{ _('Your Message') }}</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary">{{ _('Send Message') }}</button>
                 </form>
                 {% endif %}
             </div>
@@ -118,9 +118,9 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Ready to Start Your Project?</h2>
-            <p>Contact us today to discuss your architectural detailing needs.</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">Get in Touch</a>
+            <h2>{{ _('Ready to Start Your Project?') }}</h2>
+            <p>{{ _('Contact us today to discuss your architectural detailing needs.') }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Get in Touch') }}</a>
         </div>
     </div>
 </section>

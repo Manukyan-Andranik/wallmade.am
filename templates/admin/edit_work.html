@@ -1,0 +1,152 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if work %}Edit Work{% else %}Add New Work{% endif %}{% endblock %}
+{% block page_title %}{% if work %}Edit Work{% else %}Add New Work{% endif %}{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <form method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="work_id" value="{{ work._id if work else '' }}">
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="title_en">Title (English)</label>
+                <input type="text" id="title_en" name="title_en" value="{{ work.title.en if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="title_hy">Title (Armenian)</label>
+                <input type="text" id="title_hy" name="title_hy" value="{{ work.title.hy if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="title_ru">Title (Russian)</label>
+                <input type="text" id="title_ru" name="title_ru" value="{{ work.title.ru if work else '' }}" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="location_en">Location (English)</label>
+                <input type="text" id="location_en" name="location_en" value="{{ work.location.en if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="location_hy">Location (Armenian)</label>
+                <input type="text" id="location_hy" name="location_hy" value="{{ work.location.hy if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="location_ru">Location (Russian)</label>
+                <input type="text" id="location_ru" name="location_ru" value="{{ work.location.ru if work else '' }}" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="project_type_en">Project Type (English)</label>
+                <input type="text" id="project_type_en" name="project_type_en" value="{{ work.project_type.en if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="project_type_hy">Project Type (Armenian)</label>
+                <input type="text" id="project_type_hy" name="project_type_hy" value="{{ work.project_type.hy if work else '' }}" required>
+            </div>
+            <div class="form-group">
+                <label for="project_type_ru">Project Type (Russian)</label>
+                <input type="text" id="project_type_ru" name="project_type_ru" value="{{ work.project_type.ru if work else '' }}" required>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="year">Year Completed</label>
+            <input type="text" id="year" name="year" value="{{ work.year if work else '' }}" required>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="architect_en">Architect (English)</label>
+                <input type="text" id="architect_en" name="architect_en" value="{{ work.architect.en if work else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="architect_hy">Architect (Armenian)</label>
+                <input type="text" id="architect_hy" name="architect_hy" value="{{ work.architect.hy if work else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="architect_ru">Architect (Russian)</label>
+                <input type="text" id="architect_ru" name="architect_ru" value="{{ work.architect.ru if work else '' }}">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="image">Work Image URL</label>
+            <input type="text" id="image" name="image" value="{{ work.Images_folder_url if work else '' }}" required>
+            {% if work and work.Images_folder_url %}
+            <div class="current-image">
+                <img src="{{ work.Images_folder_url }}" alt="Current work image">
+                <span>Current Image</span>
+            </div>
+            {% endif %}
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="description_en">Description (English)</label>
+                <textarea id="description_en" name="description_en" rows="5" required>{{ work.description.en if work else '' }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="description_hy">Description (Armenian)</label>
+                <textarea id="description_hy" name="description_hy" rows="5" required>{{ work.description.hy if work else '' }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="description_ru">Description (Russian)</label>
+                <textarea id="description_ru" name="description_ru" rows="5" required>{{ work.description.ru if work else '' }}</textarea>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="products_used_en">Products Used (English, one per line)</label>
+                <textarea id="products_used_en" name="products_used_en" rows="3">{% if work and work.products_used.en %}{{ '\n'.join(work.products_used.en) }}{% endif %}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="products_used_hy">Products Used (Armenian, one per line)</label>
+                <textarea id="products_used_hy" name="products_used_hy" rows="3">{% if work and work.products_used.hy %}{{ '\n'.join(work.products_used.hy) }}{% endif %}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="products_used_ru">Products Used (Russian, one per line)</label>
+                <textarea id="products_used_ru" name="products_used_ru" rows="3">{% if work and work.products_used.ru %}{{ '\n'.join(work.products_used.ru) }}{% endif %}</textarea>
+            </div>
+        </div>
+        
+        <div class="testimonial-group">
+            <label>Testimonial (Optional)</label>
+            <div class="form-group">
+                <input type="text" name="testimonial_author" placeholder="Author Name" value="{{ work.testimonial.author if work and work.testimonial else '' }}">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" name="testimonial_position_en" placeholder="Author Position (English)" value="{{ work.testimonial.position.en if work and work.testimonial else '' }}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="testimonial_position_hy" placeholder="Author Position (Armenian)" value="{{ work.testimonial.position.hy if work and work.testimonial else '' }}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="testimonial_position_ru" placeholder="Author Position (Russian)" value="{{ work.testimonial.position.ru if work and work.testimonial else '' }}">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <textarea name="testimonial_text_en" placeholder="Testimonial Text (English)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.en }}{% endif %}</textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="testimonial_text_hy" placeholder="Testimonial Text (Armenian)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.hy }}{% endif %}</textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="testimonial_text_ru" placeholder="Testimonial Text (Russian)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.ru }}{% endif %}</textarea>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn-save">Save Work</button>
+            <a href="{{ url_for('admin_works') }}" class="btn-cancel">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

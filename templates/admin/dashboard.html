@@ -15,12 +15,18 @@
             <a href="{{ url_for('admin_products') }}" class="btn-view">View All</a>
         </div>
     </div>
+
     <div class="dashboard-card">
         <div class="card-header">
-            <h3>Our Works</h3>
-            <i class="fas fa-building"></i>
+            <h3>Works</h3>
+            <i class="fas fa-box-open"></i>
+        </div>
+        <div class="card-body">
+            <span class="count">{{ works_count }}</span>
+            <a href="{{ url_for('admin_works') }}" class="btn-view">View All</a>
         </div>
     </div>
+
     <div class="dashboard-card">
         <div class="card-header">
             <h3>Quick Actions</h3>

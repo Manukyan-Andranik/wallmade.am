@@ -25,6 +25,9 @@ msgstr "Products"
 msgid "Explore Products"
 msgstr "Explore Products"
 
+msgid "Explore Services"
+msgstr "Explore Services"
+
 msgid "Our Works"
 msgstr "Our Works"
 
@@ -232,3 +235,219 @@ msgstr "What Our Clients Say"
 
 msgid "Feedback from architects and builders"
 msgstr "Feedback from architects and builders"
+
+msgid "Quality"
+msgstr "Quality"
+
+msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
+msgstr "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
+
+msgid "Innovation"
+msgstr "Innovation"
+
+msgid "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
+msgstr "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
+
+msgid "Collaboration"
+msgstr "Collaboration"
+
+msgid "We work closely with architects and builders to understand their vision and bring it to life."
+msgstr "We work closely with architects and builders to understand their vision and bring it to life."
+
+msgid "Sustainability"
+msgstr "Sustainability"
+
+msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
+msgstr "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
+
+msgid "Our Process"
+msgstr "Our Process"
+
+msgid "How we work to bring your vision to life"
+msgstr "How we work to bring your vision to life"
+
+msgid "Consultation"
+msgstr "Consultation"
+
+msgid "We begin by understanding your project requirements, design intent, and technical specifications."
+msgstr "We begin by understanding your project requirements, design intent, and technical specifications."
+
+msgid "Design & Prototyping"
+msgstr "Design & Prototyping"
+
+msgid "Our team creates detailed designs and produces prototypes for your approval."
+msgstr "Our team creates detailed designs and produces prototypes for your approval."
+
+msgid "Production"
+msgstr "Production"
+
+msgid "Once approved, we manufacture your components with precision and care."
+msgstr "Once approved, we manufacture your components with precision and care."
+
+msgid "Delivery & Support"
+msgstr "Delivery & Support"
+
+msgid "We ensure safe delivery and provide ongoing support for installation."
+msgstr "We ensure safe delivery and provide ongoing support for installation."
+
+msgid "Custom Architectural Details"
+msgstr "Custom Architectural Details"
+
+msgid "Bespoke design solutions"
+msgstr "Bespoke design solutions"
+
+msgid "Material selection guidance"
+msgstr "Material selection guidance"
+
+msgid "Prototyping and sampling"
+msgstr "Prototyping and sampling"
+
+msgid "High-volume manufacturing"
+msgstr "High-volume manufacturing"
+
+msgid "Consistent quality control"
+msgstr "Consistent quality control"
+
+msgid "Just-in-time delivery"
+msgstr "Just-in-time delivery"
+
+msgid "Technical drawings"
+msgstr "Technical drawings"
+
+msgid "Material specifications"
+msgstr "Material specifications"
+
+msgid "Integration advice"
+msgstr "Integration advice"
+
+msgid "Installation guides"
+msgstr "Installation guides"
+
+msgid "On-site training"
+msgstr "On-site training"
+
+msgid "Troubleshooting assistance"
+msgstr "Troubleshooting assistance"
+
+msgid "Want to Feature Your Project Here?"
+msgstr "Want to Feature Your Project Here?"
+
+msgid "Contact us to discuss how Wallmade products can enhance your next architectural project."
+msgstr "Contact us to discuss how Wallmade products can enhance your next architectural project."
+
+msgid "Start a Conversation"
+msgstr "Start a Conversation"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Get in touch with our team"
+msgstr "Get in touch with our team"
+
+msgid "Let's Start a Conversation"
+msgstr "Let's Start a Conversation"
+
+msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
+msgstr "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
+
+msgid "Our Location"
+msgstr "Our Location"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Mon-Fri: 9:00 AM - 6:00 PM"
+msgstr "Mon-Fri: 9:00 AM - 6:00 PM"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Thank You for Your Message!"
+msgstr "Thank You for Your Message!"
+
+msgid "We've received your inquiry and will get back to you within 24 hours."
+msgstr "We've received your inquiry and will get back to you within 24 hours."
+
+msgid "Send Us a Message"
+msgstr "Send Us a Message"
+
+msgid "Your Name"
+msgstr "Your Name"
+
+msgid "Email Address"
+msgstr "Email Address"
+
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgid "Subject"
+msgstr "Subject"
+
+msgid "General Inquiry"
+msgstr "General Inquiry"
+
+msgid "Product Information"
+msgstr "Product Information"
+
+msgid "Request a Quote"
+msgstr "Request a Quote"
+
+msgid "Custom Project"
+msgstr "Custom Project"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "Your Message"
+msgstr "Your Message"
+
+msgid "Send Message"
+msgstr "Send Message"
+
+msgid "Ready to Start Your Project?"
+msgstr "Ready to Start Your Project?"
+
+msgid "Contact us today to discuss your architectural detailing needs."
+msgstr "Contact us today to discuss your architectural detailing needs."
+
+msgid "Project Overview"
+msgstr "Project Overview"
+
+msgid "Wallmade Products Used"
+msgstr "Wallmade Products Used"
+
+msgid "View Details"
+msgstr "View Details"
+
+msgid "View Project"
+msgstr "View Project"
+
+msgid "Featured project using Wallmade architectural details"
+msgstr "Featured project using Wallmade architectural details"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Project Type"
+msgstr "Project Type"
+
+msgid "Year Completed"
+msgstr "Year Completed"
+
+msgid "Architect"    
+msgstr "Architect"
+
+msgid "Project Details"
+msgstr "Project Details"
+
+msgid "Additional views and details"
+msgstr "Additional views and details"
+
+msgid "Contact us to discuss how we can contribute to your next architectural endeavor."
+msgstr "Contact us to discuss how we can contribute to your next architectural endeavor."
+
+msgid "View All Products"
+msgstr "View All Products"
+
+msgid "View All Works"
+msgstr "View All Works"

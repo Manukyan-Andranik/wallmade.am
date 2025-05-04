@@ -30,25 +30,25 @@
                 <i class="fas fa-{{ service.icon }}"></i>
             </div>
             <div class="service-content">
-                <h3>{{ service.title }}</h3>
-                <p>{{ service.description }}</p>
+                <h3>{{ service[current_language].title }}</h3>
+                <p>{{ service[current_language].description }}</p>
                 <ul class="service-features">
-                    {% if service.title == "Custom Architectural Details" %}
-                    <li><i class="fas fa-check"></i> Bespoke design solutions</li>
-                    <li><i class="fas fa-check"></i> Material selection guidance</li>
-                    <li><i class="fas fa-check"></i> Prototyping and sampling</li>
-                    {% elif service.title == "Mass Production" %}
-                    <li><i class="fas fa-check"></i> High-volume manufacturing</li>
-                    <li><i class="fas fa-check"></i> Consistent quality control</li>
-                    <li><i class="fas fa-check"></i> Just-in-time delivery</li>
-                    {% elif service.title == "Design Consultation" %}
-                    <li><i class="fas fa-check"></i> Technical drawings</li>
-                    <li><i class="fas fa-check"></i> Material specifications</li>
-                    <li><i class="fas fa-check"></i> Integration advice</li>
-                    {% elif service.title == "Installation Support" %}
-                    <li><i class="fas fa-check"></i> Installation guides</li>
-                    <li><i class="fas fa-check"></i> On-site training</li>
-                    <li><i class="fas fa-check"></i> Troubleshooting assistance</li>
+                    {% if service['en'].title == "Custom Architectural Details" %}
+                    <li><i class="fas fa-check"></i> {{ _('Bespoke design solutions') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Material selection guidance') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Prototyping and sampling') }}</li>
+                    {% elif service['en'].title == "Mass Production" %}
+                    <li><i class="fas fa-check"></i> {{ _('High-volume manufacturing') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Consistent quality control') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Just-in-time delivery') }}</li>
+                    {% elif service['en'].title == "Design Consultation" %}
+                    <li><i class="fas fa-check"></i> {{ _('Technical drawings') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Material specifications') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Integration advice') }}</li>
+                    {% elif service['en'].title == "Installation Support" %}
+                    <li><i class="fas fa-check"></i> {{ _('Installation guides') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('On-site training') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Troubleshooting assistance') }}</li>
                     {% endif %}
                 </ul>
             </div>
@@ -60,29 +60,29 @@
 <section class="section process">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our Process</h2>
-            <p class="section-subtitle">How we work to bring your vision to life</p>
+            <h2 class="section-title">{{ _('Our Process') }}</h2>
+            <p class="section-subtitle">{{ _('How we work to bring your vision to life') }}</p>
         </div>
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-number">1</div>
-                <h3>Consultation</h3>
-                <p>We begin by understanding your project requirements, design intent, and technical specifications.</p>
+                <h3>{{ _('Consultation') }}</h3>
+                <p>{{ _('We begin by understanding your project requirements, design intent, and technical specifications.') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">2</div>
-                <h3>Design & Prototyping</h3>
-                <p>Our team creates detailed designs and produces prototypes for your approval.</p>
+                <h3>{{ _('Design & Prototyping') }}</h3>
+                <p>{{ _('Our team creates detailed designs and produces prototypes for your approval.') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">3</div>
-                <h3>Production</h3>
-                <p>Once approved, we manufacture your components with precision and care.</p>
+                <h3>{{ _('Production') }}</h3>
+                <p>{{ _('Once approved, we manufacture your components with precision and care.') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">4</div>
-                <h3>Delivery & Support</h3>
-                <p>We ensure safe delivery and provide ongoing support for installation.</p>
+                <h3>{{ _('Delivery & Support') }}</h3>
+                <p>{{ _('We ensure safe delivery and provide ongoing support for installation.') }}</p>
             </div>
         </div>
     </div>

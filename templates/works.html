@@ -18,22 +18,22 @@
         </div>
         
         <div class="portfolio-filter">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="residential">Residential</button>
-            <button class="filter-btn" data-filter="commercial">Commercial</button>
-            <button class="filter-btn" data-filter="institutional">Institutional</button>
-            <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+            <button class="filter-btn active" data-filter="all">{{ _('All Projects') }}</button>
+            <button class="filter-btn" data-filter="residential">{{ _('Residential') }}</button>
+            <button class="filter-btn" data-filter="commercial">{{ _('Commercial') }}</button>
+            <button class="filter-btn" data-filter="institutional">{{ _('Institutional') }}</button>
+            <button class="filter-btn" data-filter="hospitality">{{ _('Hospitality') }}</button>
         </div>
         
         <div class="portfolio-grid">
             {% for work in works %}
-            <div class="portfolio-item" data-category="{{ work.category if work.category else 'all' }}">
+            <div class="portfolio-item" data-category="{{ work.category.get('en') if work.category else 'all' }}">
                 <div class="portfolio-image">
-                    <img src="{{ work.Images_folder_url }}/1.jpg" alt="{{ work.title }}" loading="lazy">
+                    <img src="{{ work.Images_folder_url }}" alt="{{ work.title.get(current_language, work.title.get('en', 'Project')) }}" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>{{ work.title }}</h3>
-                        <p>{{ work.location if work.location else '' }}</p>
-                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">View Project</a>
+                        <h3>{{ work.title.get(current_language, work.title.get('en', 'Project')) }}</h3>
+                        <p>{{ work.location.get(current_language, work.location.get('en', '')) }}</p>
+                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">{{ _('View Project') }}</a>
                     </div>
                 </div>
             </div>
@@ -67,36 +67,12 @@
         <div class="testimonials-slider">
             <div class="testimonial">
                 <div class="testimonial-content">
-                    <p>"Wallmade's architectural details transformed our residential project from ordinary to extraordinary. Their attention to detail and craftsmanship is unmatched in the industry."</p>
+                    <p>{{ _("Wallmade's facade system was instrumental in achieving the distinctive look of our office building. Their team's expertise in custom metal fabrication was evident throughout the project.") }}</p>
                     <div class="testimonial-author">
-                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Sarah Johnson">
+                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Robert Smith">
                         <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>Principal Architect, Johnson Designs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p>"We've used Wallmade products on three major commercial developments now. Their consistency, quality, and technical support make them our go-to for architectural details."</p>
-                    <div class="testimonial-author">
-                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Michael Chen">
-                        <div>
-                            <h4>Michael Chen</h4>
-                            <p>Project Manager, Urban Construct</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p>"The custom facade elements Wallmade created for our museum project received accolades from both critics and visitors. Their team understood our vision perfectly."</p>
-                    <div class="testimonial-author">
-                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Elena Rodriguez">
-                        <div>
-                            <h4>Elena Rodriguez</h4>
-                            <p>Director, Modern Arts Foundation</p>
+                            <h4>Robert Smith</h4>
+                            <p>{{ _('Principal Architect') }}, Smith & Partners</p>
                         </div>
                     </div>
                 </div>
@@ -108,9 +84,9 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Want to Feature Your Project Here?</h2>
-            <p>Contact us to discuss how Wallmade products can enhance your next architectural project.</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">Start a Conversation</a>
+            <h2>{{ _('Want to Feature Your Project Here?') }}</h2>
+            <p>{{ _('Contact us to discuss how Wallmade products can enhance your next architectural project.') }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Start a Conversation') }}</a>
         </div>
     </div>
 </section>

@@ -1,6 +1,7 @@
 /* Services Page Specific Styles */
 .page-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    background-image: url('../images/back8.jpg');
     color: white;
     text-align: center;
     padding: 150px 0 100px;
@@ -157,7 +158,8 @@
 }
 
 .process-step h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font: 700 1.2rem/1.5 'Poppins', sans-serif;
     margin-bottom: 20px;
     color: var(--primary-color);
     transition: var(--transition);

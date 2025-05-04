@@ -26,6 +26,9 @@ msgstr "Продукция"
 msgid "Explore Products"
 msgstr "Исследуйте продукцию"
 
+msgid "Explore Services"
+msgstr "Исследуйте услуги"
+
 msgid "Our Works"
 msgstr "Наши работы"
 
@@ -232,3 +235,219 @@ msgstr "Что говорят наши клиенты"
 
 msgid "Feedback from architects and builders"
 msgstr "Отзывы архитекторов и строителей"
+
+msgid "Quality"
+msgstr "Качество"
+
+msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
+msgstr "Мы никогда не идем на компромисс в отношении материалов или мастерства. Каждая деталь важна для создания продуктов, выдерживающих испытание временем."
+
+msgid "Innovation"
+msgstr "Инновации"
+
+msgid "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
+msgstr "Мы постоянно исследуем новые технологии и материалы, чтобы предлагать передовые решения для современной архитектуры."
+
+msgid "Collaboration"
+msgstr "Сотрудничество"
+
+msgid "We work closely with architects and builders to understand their vision and bring it to life."
+msgstr "Мы тесно сотрудничаем с архитекторами и строителями, чтобы понять их видение и воплотить его в жизнь."
+
+msgid "Sustainability"
+msgstr "Устойчивое развитие"
+
+msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
+msgstr "Мы привержены экологически ответственным методам добычи материалов и производства."
+
+msgid "Our Process"
+msgstr "Наш процесс"
+
+msgid "How we work to bring your vision to life"
+msgstr "Как мы работаем, чтобы воплотить ваше видение в жизнь"
+
+msgid "Consultation"
+msgstr "Консультация"
+
+msgid "We begin by understanding your project requirements, design intent, and technical specifications."
+msgstr "Мы начинаем с изучения требований вашего проекта, дизайнерского замысла и технических характеристик."
+
+msgid "Design & Prototyping"
+msgstr "Дизайн и прототипирование"
+
+msgid "Our team creates detailed designs and produces prototypes for your approval."
+msgstr "Наша команда создает детальные проекты и изготавливает прототипы для вашего утверждения."
+
+msgid "Production"
+msgstr "Производство"
+
+msgid "Once approved, we manufacture your components with precision and care."
+msgstr "После утверждения мы производим ваши компоненты с точностью и вниманием к деталям."
+
+msgid "Delivery & Support"
+msgstr "Доставка и поддержка"
+
+msgid "We ensure safe delivery and provide ongoing support for installation."
+msgstr "Мы обеспечиваем безопасную доставку и предоставляем постоянную поддержку при монтаже."
+
+msgid "Custom Architectural Details"
+msgstr "Индивидуальные архитектурные элементы"
+
+msgid "Bespoke design solutions"
+msgstr "Индивидуальные дизайнерские решения"
+
+msgid "Material selection guidance"
+msgstr "Консультации по выбору материалов"
+
+msgid "Prototyping and sampling"
+msgstr "Создание прототипов и образцов"
+
+msgid "High-volume manufacturing"
+msgstr "Крупносерийное производство"
+
+msgid "Consistent quality control"
+msgstr "Постоянный контроль качества"
+
+msgid "Just-in-time delivery"
+msgstr "Своевременная поставка"
+
+msgid "Technical drawings"
+msgstr "Технические чертежи"
+
+msgid "Material specifications"
+msgstr "Спецификации материалов"
+
+msgid "Integration advice"
+msgstr "Консультации по интеграции"
+
+msgid "Installation guides"
+msgstr "Руководства по монтажу"
+
+msgid "On-site training"
+msgstr "Обучение на месте"
+
+msgid "Troubleshooting assistance"
+msgstr "Помощь в устранении неисправностей"
+
+msgid "Want to Feature Your Project Here?"
+msgstr "Хотите разместить ваш проект здесь?"
+
+msgid "Contact us to discuss how Wallmade products can enhance your next architectural project."
+msgstr "Свяжитесь с нами, чтобы обсудить, как продукты Wallmade могут улучшить ваш следующий архитектурный проект."
+
+msgid "Start a Conversation"
+msgstr "Начать разговор"
+
+msgid "Contact Us"
+msgstr "Свяжитесь с Нами"
+
+msgid "Get in touch with our team"
+msgstr "Свяжитесь с нашей командой"
+
+msgid "Let's Start a Conversation"
+msgstr "Давайте Начнём Диалог"
+
+msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
+msgstr "Если у вас есть вопросы о нашей продукции, вам нужен расчёт стоимости или вы хотите обсудить индивидуальный проект, наша команда готова помочь."
+
+msgid "Our Location"
+msgstr "Наше Местоположение"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Mon-Fri: 9:00 AM - 6:00 PM"
+msgstr "Пн-Пт: 9:00 - 18:00"
+
+msgid "Email"
+msgstr "Эл. Почта"
+
+msgid "Thank You for Your Message!"
+msgstr "Спасибо за Ваше Сообщение!"
+
+msgid "We've received your inquiry and will get back to you within 24 hours."
+msgstr "Мы получили ваш запрос и ответим в течение 24 часов."
+
+msgid "Send Us a Message"
+msgstr "Отправьте Нам Сообщение"
+
+msgid "Your Name"
+msgstr "Ваше Имя"
+
+msgid "Email Address"
+msgstr "Адрес Эл. Почты"
+
+msgid "Phone Number"
+msgstr "Номер Телефона"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "General Inquiry"
+msgstr "Общий Запрос"
+
+msgid "Product Information"
+msgstr "Информация о Продукции"
+
+msgid "Request a Quote"
+msgstr "Запрос Расчёта Стоимости"
+
+msgid "Custom Project"
+msgstr "Индивидуальный Проект"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "Your Message"
+msgstr "Ваше Сообщение"
+
+msgid "Send Message"
+msgstr "Отправить Сообщение"
+
+msgid "Ready to Start Your Project?"
+msgstr "Готовы Начать Ваш Проект?"
+
+msgid "Contact us today to discuss your architectural detailing needs."
+msgstr "Свяжитесь с нами сегодня, чтобы обсудить ваши потребности в архитектурных деталях."
+
+msgid "Project Overview"
+msgstr "Обзор Проекта"
+
+msgid "Wallmade Products Used"
+msgstr "Используемые Продукты Wallmade"
+
+msgid "View Project"
+msgstr "Посмотреть Проект"
+
+msgid "View Details"
+msgstr "Посмотреть Детали"
+
+msgid "Featured project using Wallmade architectural details"
+msgstr "Избранный проект, использующий архитектурные детали Wallmade"
+
+msgid "Location"
+msgstr "Местоположение"
+
+msgid "Project Type"
+msgstr "Тип Проекта"
+
+msgid "Year Completed"
+msgstr "Год Завершения"
+
+msgid "Architect"
+msgstr "Архитектор"
+
+msgid "Project Details"
+msgstr "Детали Проекта"
+
+msgid "Additional views and details"    
+msgstr "Дополнительные просмотры и детали"
+
+msgid "Contact us to discuss how we can contribute to your next architectural endeavor."
+msgstr "Свяжитесь с нами, чтобы обсудить, как мы можем помочь вашему следующему архитектурному проекту."
+
+msgid "View All Products"
+msgstr "Посмотреть все продукты"
+
+msgid "View All Works"
+msgstr "Посмотреть все работы"

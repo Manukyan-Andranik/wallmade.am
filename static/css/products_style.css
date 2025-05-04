@@ -1,6 +1,7 @@
 /* Products Page Specific Styles */
 .page-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    background-image: url('../images/back7.jpg');
     color: white;
     text-align: center;
     padding: 150px 0 100px;

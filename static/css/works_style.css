@@ -1,6 +1,7 @@
 /* Works Page Specific Styles */
 .page-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    background-image: url('../images/back2.jpg');
     color: white;
     text-align: center;
     padding: 150px 0 100px;
@@ -46,6 +47,20 @@
 .filter-btn:hover {
     background-color: var(--accent-color);
     color: white;
+}
+
+.btn-view {
+    padding: 12px 25px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-view:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 .portfolio-grid {
@@ -220,6 +235,7 @@
 }
 
 .testimonial-author h4 {
+    color: var(--text-color);
     margin-bottom: 5px;
     font-size: 1.3rem;
 }

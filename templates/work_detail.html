@@ -5,8 +5,8 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ work.title }}</h1>
-        <p>Featured project using Wallmade architectural details</p>
+        <h1>{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}</h1>
+        <p>{{ _('Featured project using Wallmade architectural details') }}</p>
     </div>
 </section>
 
@@ -14,86 +14,70 @@
     <div class="container">
         <div class="project-gallery">
             <div class="main-image">
-                <img src="{{ work.Images_folder_url }}/1.jpg" alt="{{ work.title }}" id="main-project-image">
-            </div>
-            <div class="thumbnail-container">
-                {% for i in range(1, 6) %}
-                <div class="thumbnail">
-                    <img src="{{ work.Images_folder_url }}/{{ i }}.jpg" alt="{{ work.title }} - Image {{ i }}" class="thumbnail-image" data-full="{{ work.Images_folder_url }}/{{ i }}.jpg">
-                </div>
-                {% endfor %}
+                <img src="{{ work.Images_folder_url }}" alt="{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}" id="main-project-image" class="zoom-on-hover">
             </div>
         </div>
         
         <div class="project-info">
             <div class="project-meta">
                 <div class="meta-item">
-                    <h4>Location</h4>
-                    <p>{{ work.location if work.location else 'Not specified' }}</p>
+                    <h4>{{ _('Location') }}</h4>
+                    <p>{{ work.location.get(current_language, work.location.get('en', '')) }}</p>
                 </div>
                 <div class="meta-item">
-                    <h4>Project Type</h4>
-                    <p>{{ work.project_type if work.project_type else 'Architectural' }}</p>
+                    <h4>{{ _('Project Type') }}</h4>
+                    <p>{{ work.project_type.get(current_language, work.project_type.get('en', '')) }}</p>
                 </div>
                 <div class="meta-item">
-                    <h4>Year Completed</h4>
-                    <p>{{ work.year if work.year else 'Recent' }}</p>
+                    <h4>{{ _('Year Completed') }}</h4>
+                    <p>{{ work.year }}</p>
                 </div>
                 <div class="meta-item">
-                    <h4>Architect</h4>
-                    <p>{{ work.architect if work.architect else 'Various' }}</p>
+                    <h4>{{ _('Architect') }}</h4>
+                    <p>{{ work.architect.get(current_language, work.architect.get('en', '')) }}</p>
                 </div>
             </div>
             
             <div class="project-description">
-                <h2>Project Overview</h2>
-                <p>{{ work.description }}</p>
+                <h2>{{ _('Project Overview') }}</h2>
+                <p>{{ work.description.get(current_language, work.description.get('en', '')) }}</p>
                 
-                {% if work.challenges %}
-                <h3>Challenges & Solutions</h3>
-                <p>{{ work.challenges }}</p>
-                {% endif %}
-                
-                {% if work.products_used %}
-                <h3>Wallmade Products Used</h3>
+                <h3>{{ _('Wallmade Products Used') }}</h3>
                 <ul class="products-used">
-                    {% for product in work.products_used %}
+                    {% for product in work.products_used.get(current_language, work.products_used.get('en', [])) %}
                     <li>{{ product }}</li>
                     {% endfor %}
                 </ul>
-                {% endif %}
             </div>
         </div>
     </div>
 </section>
-
-{% if work.testimonial %}
-<section class="section project-testimonial bg-light">
-    <div class="container">
-        <div class="testimonial-content">
-            <blockquote>
-                <p>{{ work.testimonial.text }}</p>
-                <footer>
-                    <cite>{{ work.testimonial.author }}, {{ work.testimonial.position }}</cite>
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-</section>
-{% endif %}
 
 <section class="section project-more-images">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Project Details</h2>
-            <p class="section-subtitle">Additional views and details</p>
+            <h2 class="section-title">{{ _('Project Details') }}</h2>
+            <p class="section-subtitle">{{ _('Additional views and details') }}</p>
         </div>
         <div class="image-grid">
             {% for i in range(6, 11) %}
             <div class="grid-item">
-                <img src="{{ work.Images_folder_url }}/{{ i }}.jpg" alt="{{ work.title }} - Detail {{ i }}" loading="lazy" class="zoom-on-hover">
+                <img src="{{ work.Images_folder_url }}" alt="{{ work.title.get('en') }} - {{ _('Detail') }} {{ i }}" loading="lazy" class="zoom-on-hover">
             </div>
             {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section project-testimonial bg-light">
+    <div class="container">
+        <div class="testimonial-content">
+            <blockquote>
+                <p>{{ work.testimonial.text.get(current_language, work.testimonial.text.get('en', '')) }}</p>
+                <footer>
+                    <cite>{{ work.testimonial.author }}, {{ _(work.testimonial.position.get(current_language, work.testimonial.position.get('en', ''))) }}</cite>
+                </footer>
+            </blockquote>
         </div>
     </div>
 </section>
@@ -101,8 +85,8 @@
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>Inspired by This Project?</h2>
-            <p>Contact us to discuss how we can contribute to your next architectural endeavor.</p>
+            <h2>{{ _('Inspired by This Project?') }}</h2>
+            <p>{{ _('Contact us to discuss how we can contribute to your next architectural endeavor.') }}</p>
             <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Contact Us') }}</a>
         </div>
     </div>

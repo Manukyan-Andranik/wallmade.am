@@ -1,4 +1,5 @@
 Flask-PyMongo==2.3.0
+flask_babel
 cloudinary==1.32.0
 dnspython==2.4.2
 pymongo==4.8.0

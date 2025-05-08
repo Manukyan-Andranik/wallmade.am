@@ -104,16 +104,6 @@ section {
     position: relative;
 }
 
-/* Announcement Bar */
-.announcement-bar {
-    background-color: var(--primary-color);
-    color: var(--text-on-dark);
-    padding: 12px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
 /* Header Styles */
 .main-header {
     position: fixed;

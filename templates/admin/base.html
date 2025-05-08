@@ -23,6 +23,7 @@
                     <li><a href="{{ url_for('admin_dashboard') }}" class="{% if request.endpoint == 'admin_dashboard' %}active{% endif %}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li><a href="{{ url_for('admin_products') }}" class="{% if request.endpoint == 'admin_products' %}active{% endif %}"><i class="fas fa-box-open"></i> Products</a></li>
                     <li><a href="{{ url_for('admin_works') }}" class="{% if request.endpoint == 'admin_works' %}active{% endif %}"><i class="fas fa-box-open"></i> Works</a></li>
+                    <li><a href="{{ url_for('admin_json_insert') }}" class="{% if request.endpoint == 'json-insert' %}active{% endif %}"><i class="fas fa-box-open"></i> Json-Insert</a></li>
                     <li><a href="{{ url_for('admin_logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>
             </nav>

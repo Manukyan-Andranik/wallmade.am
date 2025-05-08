@@ -5,12 +5,12 @@
 {% block content %}
 <section class="hero">
     <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">{{ _('Precision Crafted Architectural Details') }}</h1>
-            <p class="hero-subtitle">{{ _('We fix walls, We build Dreams') }}</p>
-            <div class="hero-buttons-container">
+        <div class="hero-content" data-aos="fade-up">
+            <p class="hero-title">{{ _('Precision Crafted Architectural Details') }}</p>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">{{ _('We fix walls, We build Dreams') }}</p>
+            <div class="hero-buttons-container" data-aos="fade-up" data-aos-delay="200">
                 <div class="hero-buttons">
-                    <a href="{{ url_for('products') }}" class="btn-secondary" aria-label="{{ _('Explore Products') }}">
+                    <a href="{{ url_for('products') }}" class="btn-secondary" aria-label="{{ _('Explore Products') }}" data-aos="zoom-in" data-aos-delay="300">
                         <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="9" cy="21" r="1"></circle>
                             <circle cx="20" cy="21" r="1"></circle>
@@ -18,13 +18,13 @@
                         </svg>
                         <span class="btn-text">{{ _('Explore Products') }}</span>
                     </a>
-                    <a href="{{ url_for('services') }}" class="btn-secondary" aria-label="{{ _('Explore Services') }}">
+                    <a href="{{ url_for('services') }}" class="btn-secondary" aria-label="{{ _('Explore Services') }}" data-aos="zoom-in" data-aos-delay="350">
                         <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                         <span class="btn-text">{{ _('Explore Services') }}</span>
                     </a>
-                    <a href="{{ url_for('contact') }}" class="btn-secondary" aria-label="{{ _('Contact Us') }}">
+                    <a href="{{ url_for('contact') }}" class="btn-secondary" aria-label="{{ _('Contact Us') }}" data-aos="zoom-in" data-aos-delay="400">
                         <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
@@ -36,22 +36,29 @@
         </div>
     </div>
     <div class="hero-overlay"></div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+        <span></span>
+    </div>
 </section>
 
 <section class="section about-preview">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Crafting Excellence in Architectural Details') }}</h2>
             <p class="section-subtitle">{{ _('Our commitment to quality and precision sets us apart in the industry') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         <div class="about-preview-content">
-            <div class="about-preview-text">
-                <p>Wallmade specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications.</p>
-                <a href="{{ url_for('about') }}" class="btn-text">Learn more about us <i class="fas fa-arrow-right"></i></a>
+            <div class="about-preview-text" data-aos="fade-right">
+                <p class="animate-text">{{ _('Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability.') }}</p>
+                <p class="animate-text" data-aos-delay="100">{{ _('Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications.') }}</p>
+                <p class="animate-text" data-aos-delay="200">{{ _('At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements.') }}</p>
+                <a href="{{ url_for('about') }}" class="btn-text" data-aos="fade-up" data-aos-delay="300">{{ _('Discover our story') }} <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="about-preview-image">
+            <div class="about-preview-image" data-aos="fade-left" data-aos-delay="200">
                 <div class="image-container">
                     <img src="{{ url_for('static', filename='images/about-preview.jpg') }}" alt="Wallmade craftsmanship" class="zoom-effect">
+                    <div class="image-overlay"></div>
                 </div>
             </div>
         </div>
@@ -60,17 +67,18 @@
 
 <section class="section products-preview bg-light">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Our Product Range') }}</h2>
             <p class="section-subtitle">{{ _('Explore our collection of architectural details') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         <div class="products-grid">
             {% for product in featured_products %}
-            <div class="product-card">
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="{{ loop.index * 50 }}">
                 <div class="product-image">
                     <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" loading="lazy">
                     <div class="product-overlay">
-                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">View Details</a>
+                        <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
                 </div>
                 <div class="product-info">
@@ -80,47 +88,71 @@
             </div>
             {% endfor %}
         </div>
-        <div class="section-footer">
-            <a href="{{ url_for('products') }}" class="btn-primary">{{ _('View All Products') }}</a>
+        <div class="footer-wrapper">
+            <div class="section-footer" data-aos="fade-up">
+                <a href="{{ url_for('products') }}" class="btn-modern">
+                    <i class="fas fa-boxes mr-2"></i> {{ _('View All Products') }}
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section works-preview">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Our Recent Works') }}</h2>
             <p class="section-subtitle">{{ _('See how our products enhance architectural projects') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         <div class="works-grid">
             {% for work in featured_works %}
-            <div class="work-card">
+            <div  class="work-card" data-aos="zoom-in" data-aos-delay="{{ loop.index * 50 }}">
                 <div class="work-image">
                     <img src="{{ work.Images_folder_url }}" alt="{{ work.title }}" loading="lazy">
                     <div class="work-overlay">
-                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">View Project</a>
+                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">{{ _('View Project') }}</a>
                     </div>
                 </div>
                 <div class="work-info">
-                    <h3>{{ work.title.get(current_language, work.title.get('en', '')) }}</h3>
+                    <h3><a href="{{ url_for('work_detail', work_id=work._id) }}">{{ work.title.get(current_language, work.title.get('en', '')) }}</a></h3>
                     <p>{{ work.description.get(current_language, work.title.get('en', ''))[:100] }}...</p>
                 </div>
             </div>
             {% endfor %}
         </div>
-        <div class="section-footer">
-            <a href="{{ url_for('works') }}" class="btn-primary">{{ _('View All Works') }}</a>
+        <div class="footer-wrapper">
+            <div class="section-footer" data-aos="fade-up">
+                <a href="{{ url_for('works') }}" class="btn-modern">
+                    <i class="fas fa-building mr-2"></i> {{ _('View All Works') }}
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section cta bg-dark">
     <div class="container">
-        <div class="cta-content">
+        <div class="cta-content" data-aos="zoom-in">
             <h2>{{ _('Ready to Elevate Your Project?') }}</h2>
             <p>{{ _('Contact us today to discuss your architectural detail needs.') }}</p>
             <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Get in Touch') }}</a>
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+</script>
+<script src="{{ url_for('static', filename='js/index_animations.js') }}"></script>
 {% endblock %}

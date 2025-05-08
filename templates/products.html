@@ -8,24 +8,16 @@
 <section class="page-hero">
     <div class="container">
         <h1>{{ _("Our Products") }}</h1>
-        <p>{{ _("High-quality architectural details for every project") }}</p>
+        <h2>{{ _("High-quality architectural details for every project") }}</h2>
     </div>
 </section>
 
-<section class="section products-section">
+<section id="cladding-tile" class="section products-section">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">{{ _("Product Categories") }}</h2>
             <p class="section-subtitle">{{ _("Explore our range of architectural details") }}</p>
         </div>
-        
-        <!-- <div class="products-filter">
-            <button class="filter-btn active" data-filter="all">{{ _("All Products") }}</button>
-            <button class="filter-btn" data-filter="facade">{{ _("Facade Elements") }}</button>
-            <button class="filter-btn" data-filter="interior">{{ _("Interior Details") }}</button>
-            <button class="filter-btn" data-filter="structural">{{ _("Structural Components") }}</button>
-            <button class="filter-btn" data-filter="decorative">{{ _("Decorative Pieces") }}</button>
-        </div> -->
         
         <div class="products-grid">
             {% for product in products %}
@@ -43,73 +35,6 @@
                 </div>
             </div>
             {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section materials bg-light">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">{{ _("Materials We Work With") }}</h2>
-            <p class="section-subtitle">{{ _("Quality materials for exceptional results") }}</p>
-        </div>
-        <div class="materials-grid">
-            <div class="material-card">
-                <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Metal') }}">
-                </div>
-                <div class="material-info">
-                    <h3>{{ _("Metal") }}</h3>
-                    <ul>
-                        <li>{{ _("Stainless Steel") }}</li>
-                        <li>{{ _("Brass") }}</li>
-                        <li>{{ _("Bronze") }}</li>
-                        <li>{{ _("Aluminum") }}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="material-card">
-                <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Wood') }}">
-                </div>
-                <div class="material-info">
-                    <h3>{{ _("Wood") }}</h3>
-                    <ul>
-                        <li>{{ _("Hardwoods") }}</li>
-                        <li>{{ _("Engineered Wood") }}</li>
-                        <li>{{ _("Teak") }}</li>
-                        <li>{{ _("Oak") }}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="material-card">
-                <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Stone') }}">
-                </div>
-                <div class="material-info">
-                    <h3>{{ _("Stone") }}</h3>
-                    <ul>
-                        <li>{{ _("Marble") }}</li>
-                        <li>{{ _("Granite") }}</li>
-                        <li>{{ _("Limestone") }}</li>
-                        <li>{{ _("Quartz") }}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="material-card">
-                <div class="material-image">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="{{ _('Composite') }}">
-                </div>
-                <div class="material-info">
-                    <h3>{{ _("Composite") }}</h3>
-                    <ul>
-                        <li>{{ _("GFRC") }}</li>
-                        <li>{{ _("GFRP") }}</li>
-                        <li>{{ _("Carbon Fiber") }}</li>
-                        <li>{{ _("High-Performance Polymers") }}</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </section>

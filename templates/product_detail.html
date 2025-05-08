@@ -2,11 +2,124 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/product_detail_style.css') }}">
 {% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const shareButton = document.getElementById('share-product');
+    const shareModal = document.createElement('div');
+    shareModal.className = 'share-modal';
+    
+    // Create share modal content
+    shareModal.innerHTML = `
+        <div class="share-modal-content">
+            <div class="share-modal-header">
+                <h3>{{ _("Share This Product") }}</h3>
+                <button class="close-share-modal">&times;</button>
+            </div>
+            <div class="share-options">
+                <div class="share-option" data-share="facebook">
+                    <i class="fab fa-facebook facebook"></i>
+                    <span>Facebook</span>
+                </div>
+                <div class="share-option" data-share="twitter">
+                    <i class="fab fa-twitter twitter"></i>
+                    <span>Twitter</span>
+                </div>
+                <div class="share-option" data-share="linkedin">
+                    <i class="fab fa-linkedin linkedin"></i>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="share-option" data-share="whatsapp">
+                    <i class="fab fa-whatsapp whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+                <div class="share-option" data-share="email">
+                    <i class="fas fa-envelope email"></i>
+                    <span>Email</span>
+                </div>
+            </div>
+            <div class="share-link-container">
+                <input type="text" class="share-link" value="${window.location.href}" readonly>
+                <button class="copy-link-btn">{{ _("Copy") }}</button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(shareModal);
+    
+    // Open modal when share button is clicked
+    shareButton.addEventListener('click', function() {
+        shareModal.style.display = 'flex';
+    });
+    
+    // Close modal when X is clicked
+    shareModal.querySelector('.close-share-modal').addEventListener('click', function() {
+        shareModal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside content
+    shareModal.addEventListener('click', function(e) {
+        if (e.target === shareModal) {
+            shareModal.style.display = 'none';
+        }
+    });
+    
+    // Handle share options
+    const shareOptions = shareModal.querySelectorAll('.share-option');
+    shareOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const shareType = this.getAttribute('data-share');
+            const productTitle = "{{ product.title.get(current_language, product.title.get('en', 'Product')) }}";
+            const shareUrl = window.location.href;
+            let shareWindowUrl = '';
+            
+            switch(shareType) {
+                case 'facebook':
+                    shareWindowUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+                    break;
+                case 'twitter':
+                    shareWindowUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(productTitle)}&url=${encodeURIComponent(shareUrl)}`;
+                    break;
+                case 'linkedin':
+                    shareWindowUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+                    break;
+                case 'whatsapp':
+                    shareWindowUrl = `https://wa.me/?text=${encodeURIComponent(`${productTitle} - ${shareUrl}`)}`;
+                    break;
+                case 'email':
+                    shareWindowUrl = `mailto:?subject=${encodeURIComponent(productTitle)}&body=${encodeURIComponent(`${productTitle}\n\n${shareUrl}`)}`;
+                    break;
+            }
+            
+            window.open(shareWindowUrl, '_blank', 'width=600,height=400');
+        });
+    });
+    
+    // Copy link functionality
+    const copyLinkBtn = shareModal.querySelector('.copy-link-btn');
+    const shareLinkInput = shareModal.querySelector('.share-link');
+    
+    copyLinkBtn.addEventListener('click', function() {
+        shareLinkInput.select();
+        document.execCommand('copy');
+        
+        // Change button text temporarily
+        const originalText = copyLinkBtn.textContent;
+        copyLinkBtn.textContent = "{{ _('Copied!') }}";
+        
+        setTimeout(() => {
+            copyLinkBtn.textContent = originalText;
+        }, 2000);
+    });
+});
+</script>
+{% endblock %}
+
 {% block content %}
 <section class="page-hero">
     <div class="container">
         <h1>{{ product.title.get(current_language, product.title.get('en', 'Product')) }}</h1>
-        <p>{{ _("Architectural detail product") }}</p>
     </div>
 </section>
 
@@ -14,14 +127,7 @@
     <div class="container">
         <div class="product-gallery">
             <div class="main-image">
-                <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" id="main-product-image">
-            </div>
-            <div class="thumbnail-container">
-                {% for i in range(1, 6) %}
-                <div class="thumbnail">
-                    <img src="{{ product.Images_folder_url }}/{{ i }}.jpg" alt="{{ product.title.get('en') }}" class="thumbnail-image" data-full="{{ product.Images_folder_url }}">
-                </div>
-                {% endfor %}
+                <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" id="main-product-image" class="zoom-effect">
             </div>
         </div>
         
@@ -45,7 +151,6 @@
                 </ul>
                 {% endif %}
                 
-
                 {% if product.specifications %}
                 <h3>{{ _("Key Specifications") }}</h3>
                 <ul class="specifications-list">
@@ -57,8 +162,14 @@
             </div>
             
             <div class="product-actions">
-                <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">{{ _("Inquire About This Product") }}</a>
-                <button class="btn-secondary" id="share-product">{{ _("Share Product") }}</button>
+                <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <span>{{ _("Inquire About This Product") }}</span>
+                </a>
+                <button class="btn-secondary" id="share-product">
+                    <i class="fas fa-share-alt"></i>
+                    <span>{{ _("Share Product") }}</span>
+                </button>
             </div>
         </div>
     </div>
@@ -96,7 +207,10 @@
         <div class="cta-content">
             <h2>{{ _("Have Questions About This Product?") }}</h2>
             <p>{{ _("Our product specialists are ready to provide more information and technical details.") }}</p>
-            <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">{{ _("Contact Our Team") }}</a>
+            <a href="{{ url_for('contact') }}?product={{ product.title.get(current_language, product.title.get('en', 'Product')) | urlencode }}" class="btn-primary">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>{{ _("Contact Our Team") }}</span>
+            </a>
         </div>
     </div>
 </section>

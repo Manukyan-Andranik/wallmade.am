@@ -221,8 +221,8 @@ msgstr "See our architectural details in completed projects"
 msgid "Project Portfolio"
 msgstr "Project Portfolio"
 
-msgid "Explore our completed projects featuring Wallmade products"
-msgstr "Explore our completed projects featuring Wallmade products"
+msgid "Explore our completed projects"
+msgstr "Explore our completed projects"
 
 msgid "Our Clients"
 msgstr "Our Clients"
@@ -344,8 +344,11 @@ msgstr "Contact Us"
 msgid "Get in touch with our team"
 msgstr "Get in touch with our team"
 
-msgid "Let's Start a Conversation"
+msgid "Lets Start a Conversation"
 msgstr "Let's Start a Conversation"
+
+msgid "Were here to answer your questions and discuss your next project"
+msgstr "Were here to answer your questions and discuss your next project"
 
 msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
 msgstr "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
@@ -367,9 +370,6 @@ msgstr "Thank You for Your Message!"
 
 msgid "We've received your inquiry and will get back to you within 24 hours."
 msgstr "We've received your inquiry and will get back to you within 24 hours."
-
-msgid "Send Us a Message"
-msgstr "Send Us a Message"
 
 msgid "Your Name"
 msgstr "Your Name"
@@ -451,3 +451,285 @@ msgstr "View All Products"
 
 msgid "View All Works"
 msgstr "View All Works"
+
+msgid "Inquire About This Product"
+msgstr "Inquire About This Product"
+
+msgid "Share Product"
+msgstr "Share Product"
+
+msgid "Share This Product"
+msgstr "Share This Product"
+
+
+#: about_wallmade
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles."
+msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles."
+
+#: trust_and_demand
+msgid "In a short time, we have become a trusted and in-demand name in the construction market by offering solutions that meet the needs of modern architecture and provide:"
+msgstr "In a short time, we have become a trusted and in-demand name in the construction market by offering solutions that meet the needs of modern architecture and provide:"
+
+#: aesthetics
+msgid "Aesthetic Appearance"
+msgstr "Aesthetic Appearance"
+
+#: durability
+msgid "Technical durability"
+msgstr "Technical durability"
+
+#: protection
+msgid "Long-term Protection for Buildings"
+msgstr "Long-term Protection for Buildings"
+
+#: redefining_exterior
+msgid "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions."
+msgstr "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions."
+
+
+
+msgid "Advantages"
+msgstr "Advantages"
+
+msgid "WALLMADE is your trusted choice for exterior cladding. Our tiles are:"
+msgstr "WALLMADE is your trusted choice for exterior cladding. Our tiles are:"
+
+msgid "Thermo-insulating"
+msgstr "Thermo-insulating"
+
+msgid "They preserve indoor temperature and improve energy efficiency."
+msgstr "They preserve indoor temperature and improve energy efficiency."
+
+msgid "Sound-insulating"
+msgstr "Sound-insulating"
+
+msgid "They reduce external noise, ensuring comfort."
+msgstr "They reduce external noise, ensuring comfort."
+
+msgid "Moisture-resistant"
+msgstr "Moisture-resistant"
+
+msgid "They protect from humidity."
+msgstr "They protect from humidity."
+
+msgid "Fire-resistant"
+msgstr "Fire-resistant"
+
+msgid "Made from non-flammable, safe materials."
+msgstr "Made from non-flammable, safe materials."
+
+msgid "Weather-resistant"
+msgstr "Weather-resistant"
+
+msgid "Unaffected by sun, wind, snow, or rain."
+msgstr "Unaffected by sun, wind, snow, or rain."
+
+msgid "Wide color selection"
+msgstr "Wide color selection"
+
+msgid "Matches any architectural style – from classic to modern."
+msgstr "Matches any architectural style – from classic to modern."
+
+msgid "About Production"
+msgstr "About Production"
+
+msgid "WALLMADE tile sizes and prices may vary depending on the project."
+msgstr "WALLMADE tile sizes and prices may vary depending on the project."
+
+msgid "Length: from 2 meters"
+msgstr "Length: from 2 meters"
+
+msgid "Width: 30 cm, 40 cm, 50 cm"
+msgstr "Width: 30 cm, 40 cm, 50 cm"
+
+msgid "Thickness: 3 cm, 4 cm, 5 cm"
+msgstr "Thickness: 3 cm, 4 cm, 5 cm"
+
+msgid "Price: starting at only 6,500 AMD per m²."
+msgstr "Price: starting at only 6,500 AMD per m²."
+
+msgid "Warranty"
+msgstr "Warranty"
+
+msgid "Each of our products comes with an official warranty of up to 15 years, preserving color and strength."
+msgstr "Each of our products comes with an official warranty of up to 15 years, preserving color and strength."
+
+msgid "Quality you can trust for years to come."
+msgstr "Quality you can trust for years to come."
+
+
+
+msgid "OUR SERVICES"
+msgstr "OUR SERVICES"
+
+msgid "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
+msgstr "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
+
+msgid "Custom design development"
+msgstr "Custom design development"
+
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgstr "We create designs based on the architectural features of the space, the function of the building and your vision."
+
+msgid "Custom shapes and colors"
+msgstr "Custom shapes and colors"
+
+msgid "Drawings and 3D presentation before implementation"
+msgstr "Drawings and 3D presentation before implementation"
+
+msgid "Consultation on color combinations and style selection"
+msgstr "Consultation on color combinations and style selection"
+
+msgid "Professional Installation"
+msgstr "Professional Installation"
+
+msgid "Our experienced team performs tile installation while maintaining all technical standards:"
+msgstr "Our experienced team performs tile installation while maintaining all technical standards:"
+
+msgid "With precise measurements"
+msgstr "With precise measurements"
+
+msgid "Using appropriate materials"
+msgstr "Using appropriate materials"
+
+msgid "With fast and controlled process"
+msgstr "With fast and controlled process"
+
+
+msgid "Comprehensive solutions for architectural cladding needs"
+msgstr "Comprehensive solutions for architectural cladding needs"
+
+msgid "Complete solutions from consultation to installation"
+msgstr "Complete solutions from consultation to installation"
+
+msgid "Custom Design Development"
+msgstr "Custom Design Development"
+
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgstr "We create designs based on the architectural features of the space, the function of the building and your vision."
+
+msgid "Custom shapes and colors"
+msgstr "Custom shapes and colors"
+
+msgid "Drawings and 3D presentation before implementation"
+msgstr "Drawings and 3D presentation before implementation"
+
+msgid "Consultation on color combinations and style selection"
+msgstr "Consultation on color combinations and style selection"
+
+msgid "Our experienced team performs tile installation while maintaining all technical standards."
+msgstr "Our experienced team performs tile installation while maintaining all technical standards."
+
+msgid "With precise measurements"
+msgstr "With precise measurements"
+
+msgid "Using appropriate materials"
+msgstr "Using appropriate materials"
+
+msgid "Fast and controlled process"
+msgstr "Fast and controlled process"
+
+msgid "Why Choose Our Services"
+msgstr "Why Choose Our Services"
+
+msgid "Quality Assurance"
+msgstr "Quality Assurance"
+
+msgid "15-year warranty on all our products"
+msgstr "15-year warranty on all our products"
+
+msgid "Efficient processes ensure on-time completion"
+msgstr "Efficient processes ensure on-time completion"
+
+msgid "Expert Team"
+msgstr "Expert Team"
+
+msgid "Sustainable Materials"
+msgstr "Sustainable Materials"
+
+msgid "Environmentally friendly production"
+msgstr "Environmentally friendly production"
+
+msgid "Contact us for a free consultation and quote"
+msgstr "Contact us for a free consultation and quote"
+
+msgid "Our Working Process"
+msgstr "Our Working Process"
+
+msgid "How we bring your vision to reality"
+msgstr "How we bring your vision to reality"
+
+msgid "Understanding your requirements and project specifications"
+msgstr "Understanding your requirements and project specifications"
+
+msgid "Manufacturing high-quality cladding materials"
+msgstr "Manufacturing high-quality cladding materials"
+
+msgid "Creating customized solutions for your architectural needs"
+msgstr "Creating customized solutions for your architectural needs"
+
+msgid "Installation"
+msgstr "Installation"
+
+msgid "Professional implementation with technical precision"
+msgstr "Professional implementation with technical precision"
+
+msgid "Learn more about us"
+msgstr "Learn more about us"
+
+
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings."
+msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings."
+
+msgid "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications."
+msgstr "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications."
+
+msgid "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building."
+msgstr "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building."
+
+msgid "Yerevan, Arshakunyats Avenue, 25/1"
+msgstr "Yerevan, Arshakunyats Avenue, 25/1"
+
+msgid "Your message has been sent successfully! We will get back to you soon."
+msgstr "Your message has been sent successfully! We will get back to you soon."
+
+
+
+msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+msgstr "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+
+msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
+msgstr "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
+
+msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+msgstr "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+
+msgid "Discover our story"
+msgstr "Discover our story"
+
+msgid "Years"
+msgstr "Years"
+
+msgid "Feedback"
+msgstr "Feedback"
+
+msgid "Contact us with any questions."
+msgstr "Contact us with any questions."
+
+
+msgid "Cladding Tile"
+msgstr "Cladding Tile"
+
+msgid "Language"
+msgstr "Language"
+
+
+msgid "Find Us"
+msgstr "Find Us"
+
+
+msgid "Visit our location in Yerevan"
+msgstr "Visit our location in Yerevan"
+
+msgid "Get in touch with our team of experts"
+msgstr "Get in touch with our team of experts"

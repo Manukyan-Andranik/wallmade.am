@@ -1,0 +1,104 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <h1 class="mt-4">Insert JSON Data</h1>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    {% if last_result %}
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-check-circle mr-1"></i>
+            Insertion Result
+        </div>
+        <div class="card-body">
+            <p>Inserted {{ last_result.count }} document(s) into <strong>{{ last_result.collection }}</strong> collection</p>
+            {% if last_result.count == 1 %}
+                <p>Inserted ID: {{ last_result.inserted_ids[0] }}</p>
+            {% else %}
+                <p>Inserted IDs:</p>
+                <ul>
+                    {% for id in last_result.inserted_ids %}
+                        <li>{{ id }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-database mr-1"></i>
+            JSON Data Insertion
+        </div>
+        <div class="card-body">
+            <form method="POST" action="{{ url_for('admin_json_insert') }}">
+                <div class="form-group">
+                    <label for="collection">Select Collection:</label>
+                    <select class="form-control" id="collection" name="collection" required>
+                        <option value="">-- Select Collection --</option>
+                        <option value="products">Products</option>
+                        <option value="works">Works</option>
+                        <option value="admins">Admins</option>
+                        <option value="employees">Employees</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="json_data">JSON Data:</label>
+                    <textarea class="form-control" id="json_data" name="json_data" rows="10" required placeholder='Enter valid JSON here, e.g.:
+{
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@example.com"
+}
+
+Or for multiple documents:
+[
+    {
+        "name": "John Doe",
+        "age": 30
+    },
+    {
+        "name": "Jane Smith",
+        "age": 25
+    }
+]'></textarea>
+                    <small class="form-text text-muted">Enter either a single JSON object or an array of objects.</small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Insert Data</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Simple JSON validation on form submission
+document.querySelector('form').addEventListener('submit', function(e) {
+    const jsonTextarea = document.getElementById('json_data');
+    try {
+        JSON.parse(jsonTextarea.value);
+    } catch (err) {
+        e.preventDefault();
+        alert('Invalid JSON: ' + err.message);
+        jsonTextarea.focus();
+    }
+});
+</script>
+{% endblock %}

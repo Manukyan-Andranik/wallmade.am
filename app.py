@@ -1,10 +1,15 @@
+import os
+import json
+# Mail imports
+from flask_mail import Mail, Message
+
 # Flask APP imports
 import socket
 import datetime
 from functools import wraps
 from werkzeug.security import  check_password_hash
 from flask_babel import Babel, gettext as _, lazy_gettext as _l
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 
 # MongoDB imports
 from pymongo import MongoClient
@@ -20,9 +25,23 @@ from cloudinary.utils import cloudinary_url
 # My Modules imports
 from config import Config
 
+
 app = Flask(__name__)
 app.config.from_object(Config)
 app.secret_key = app.config['SECRET_KEY']
+
+
+# Mail configuration
+MAIL_SERVER, MAIL_PORT, MAIL_USE_TLS, MAIL_USERNAME, MAIL_PASSWORD, MAIL_DEFAULT_SENDER, DEFAULT_INSTRUCTOR_PHOTO = Config.load_env()
+app.config['MAIL_SERVER'] = MAIL_SERVER
+app.config['MAIL_PORT'] = MAIL_PORT
+app.config['MAIL_USE_TLS'] = MAIL_USE_TLS
+app.config['MAIL_USERNAME'] = MAIL_USERNAME
+app.config['MAIL_PASSWORD'] = MAIL_PASSWORD
+app.config['MAIL_DEFAULT_SENDER'] = MAIL_DEFAULT_SENDER
+
+mail = Mail(app)
+
 
 # Initialize Babel for translations
 babel = Babel(app)
@@ -124,8 +143,8 @@ def set_language(language):
 @app.route('/')
 def home():
     products, works, _, _ = get_collections()
-    featured_products = list(products.find().limit(4))
-    featured_works = list(works.find().limit(4))
+    featured_products = list(products.find().limit(3))
+    featured_works = list(works.find().limit(3))
     
     return render_template('index.html',
                          featured_products=featured_products,
@@ -166,11 +185,39 @@ def contact():
         name = request.form.get('name')
         email = request.form.get('email')
         message = request.form.get('message')
+        subject = request.form.get('subject')
+        phone = request.form.get('phone')
+        print(name, email, message, subject, phone)
+        if not all([name, email, subject, phone]):
+            flash(_('Please fill all required fields'), 'error')
+            return redirect(url_for('contact'))
         
-        print(f"New contact from {name} ({email}): {message}")
-        flash('Your message has been sent successfully!', 'success')
-        return redirect(url_for('contact'))
-    return render_template('contact.html', languages=LANGUAGES, current_language=get_locale())
+        try:
+            # Send email to admin
+            msg = Message(
+                subject=subject,
+                recipients=[os.getenv('ADMIN_EMAIL')],
+                body=f"""
+                Name: {name}
+                Email: {email}
+                Phone: {phone}
+                Subject: {subject}
+                Message: {message}
+                Sent from Wallmade Contact Form
+                """
+            )
+            mail.send(msg)
+            flash(_('Your message has been sent successfully! We will get back to you soon.'), 'success')
+            return redirect(url_for('contact'))
+            
+        except Exception as e:
+            app.logger.error(f"Failed to send email: {str(e)}")
+            flash(_('Failed to send your message. Please try again later.'), 'error')
+            return redirect(url_for('contact'))
+    
+    return render_template('contact.html', 
+                         languages=LANGUAGES, 
+                         current_language=get_locale())
 
 @app.route('/products')
 def products():
@@ -626,5 +673,77 @@ def admin_delete_work(work_id):
     except Exception as e:
         flash(f'Error deleting work: {str(e)}', 'error')
         return redirect(url_for('admin_works'))
+
+# ... (keep all your existing imports and configuration) ...
+
+@app.route('/admin/json-insert', methods=['GET', 'POST'])
+@admin_required
+def admin_json_insert():
+    """Admin route for inserting JSON data into any collection"""
+    if request.method == 'POST':
+        try:
+            # Get all collections
+            products, works, admins, employees = get_collections()
+            
+            # Get form data
+            collection_name = request.form.get('collection')
+            json_data = request.form.get('json_data')
+            
+            # Validate inputs
+            if not collection_name or not json_data:
+                flash('Please select a collection and provide JSON data', 'error')
+                return redirect(url_for('admin_json_insert'))
+            
+            try:
+                data = json.loads(json_data)
+            except json.JSONDecodeError as e:
+                flash(f'Invalid JSON: {str(e)}', 'error')
+                return redirect(url_for('admin_json_insert'))
+            
+            # Determine which collection to use
+            collection_map = {
+                'products': products,
+                'works': works,
+                'admins': admins,
+                'employees': employees
+            }
+            
+            if collection_name not in collection_map:
+                flash('Invalid collection selected', 'error')
+                return redirect(url_for('admin_json_insert'))
+            
+            collection = collection_map[collection_name]
+            
+            # Insert the data
+            if isinstance(data, list):
+                result = collection.insert_many(data)
+                inserted_ids = [str(id) for id in result.inserted_ids]
+                flash(f'Successfully inserted {len(inserted_ids)} documents', 'success')
+            else:
+                result = collection.insert_one(data)
+                inserted_ids = [str(result.inserted_id)]
+                flash('Document inserted successfully', 'success')
+            
+            # Store the result in session to display on the page
+            session['last_insert_result'] = {
+                'collection': collection_name,
+                'inserted_ids': inserted_ids,
+                'count': len(inserted_ids)
+            }
+            
+            return redirect(url_for('admin_json_insert'))
+            
+        except Exception as e:
+            flash(f'Error inserting data: {str(e)}', 'error')
+            return redirect(url_for('admin_json_insert'))
+    
+    # GET request - show the form
+    last_result = session.pop('last_insert_result', None)
+    return render_template('admin/json_insert.html',
+                         last_result=last_result,
+                         languages=LANGUAGES,
+                         current_language=get_locale())
+    
+    
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)

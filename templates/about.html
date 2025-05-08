@@ -5,58 +5,166 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ _('About Wallmade') }}</h1>
-        <p>{{ _('Our story, values, and commitment to architectural excellence') }}</p>
+        <h1 class="hero-title" data-aos="fade-up">{{ _('About Wallmade') }}</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">{{ _('Our story, values, and commitment to architectural excellence') }}</p>
+    </div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="300">
+        <span></span>
     </div>
 </section>
 
 <section class="section our-story">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">{{ _('Our Story') }}</h2>
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title" id="our-story">{{ _('Our Story') }}</h2>
+            <div class="section-divider" data-aos="fade-right" data-aos-delay="200"></div>
         </div>
         <div class="story-content">
-            <div class="story-image">
-                <img src="{{ url_for('static', filename='images/logo-karg.png') }}" alt="Wallmade founders" class="parallax-effect">
+            <div class="story-image" data-aos="fade-right">
+                <div class="image-wrapper">
+                    <img src="{{ url_for('static', filename='images/logo-karg.png') }}" alt="Wallmade founders" class="parallax-effect">
+                    <div class="image-overlay"></div>
+                </div>
             </div>
-            <div class="story-text">
-                <p>Founded in 2010 by architect John Wall and master craftsman Maria Made, Wallmade began as a small workshop dedicated to creating custom architectural details for high-end residential projects. What started as a passion project quickly grew into a respected name in the architectural community.</p>
-                <p>Today, we operate from a 20,000 square foot facility with state-of-the-art equipment, but we've never lost sight of our roots in craftsmanship and attention to detail. Each piece that leaves our workshop carries the same level of care and precision as those first custom pieces we created over a decade ago.</p>
-                <p>Our team now includes architects, designers, engineers, and skilled craftsmen working together to push the boundaries of what's possible in architectural detailing.</p>
+            <div class="story-text" data-aos="fade-left" data-aos-delay="200">
+                <p class="animate-text">
+                  {{ _('Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles.') }}
+                </p>
+              
+                <p class="animate-text" data-aos-delay="300">
+                  {{ _('In a short time, we have become a trusted and in-demand name in the construction market by offering solutions that meet the needs of modern architecture and provide:') }}
+                </p>
+              
+                <ul class="features-list">
+                  <li data-aos="fade-up" data-aos-delay="400">{{ _('Aesthetic Appearance') }}</li>
+                  <li data-aos="fade-up" data-aos-delay="450">{{ _('Technical Durability') }}</li>
+                  <li data-aos="fade-up" data-aos-delay="500">{{ _('Long-term Protection for Buildings') }}</li>
+                </ul>
+              
+                <p class="animate-text" data-aos-delay="550">
+                  {{ _('WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions.') }}
+                </p>
             </div>
         </div>
+
+        <section id="advantages" class="info-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>{{ _('Advantages') }}</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="section-description">{{ _('WALLMADE is your trusted choice for exterior cladding. Our tiles are:') }}</p>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-temperature-low"></i></div>
+                    <h3>{{ _('Thermo-insulating') }}</h3>
+                    <p>{{ _('They preserve indoor temperature and improve energy efficiency.') }}</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-icon"><i class="fas fa-volume-down"></i></div>
+                    <h3>{{ _('Sound-insulating') }}</h3>
+                    <p>{{ _('They reduce external noise, ensuring comfort.') }}</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-tint"></i></div>
+                    <h3>{{ _('Moisture-resistant') }}</h3>
+                    <p>{{ _('They protect from humidity.') }}</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon"><i class="fas fa-fire"></i></div>
+                    <h3>{{ _('Fire-resistant') }}</h3>
+                    <p>{{ _('Made from non-flammable, safe materials.') }}</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <h3>{{ _('Weather-resistant') }}</h3>
+                    <p>{{ _('Unaffected by sun, wind, snow, or rain.') }}</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                    <h3>{{ _('Wide color selection') }}</h3>
+                    <p>{{ _('Matches any architectural style – from classic to modern.') }}</p>
+                </div>
+            </div>
+        </section>
+          
+        <div class="section-divider" data-aos="fade-in"></div>
+          
+        <section id="production" class="info-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>{{ _('About Production') }}</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="section-description">{{ _('WALLMADE tile sizes and prices may vary depending on the project.') }}</p>
+            <div class="specs-grid">
+                <div class="spec-item" data-aos="fade-right">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span>{{ _('Length: from 2 meters') }}</span>
+                </div>
+                <div class="spec-item" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-arrows-alt-h"></i>
+                    <span>{{ _('Width: 30 cm, 40 cm, 50 cm') }}</span>
+                </div>
+                <div class="spec-item" data-aos="fade-right" data-aos-delay="200">
+                    <i class="fas fa-arrows-alt-v"></i>
+                    <span>{{ _('Thickness: 3 cm, 4 cm, 5 cm') }}</span>
+                </div>
+            </div>
+            <div class="price-tag" data-aos="zoom-in">
+                <strong>{{ _('Price: starting at only 6,500 AMD per m².') }}</strong>
+            </div>
+        </section>
+          
+        <div class="section-divider" data-aos="fade-in"></div>
+          
+        <section id="warranty" class="info-section" data-aos="fade-up">
+            <div class="section-header">
+                <h2>{{ _('Warranty') }}</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="warranty-card" data-aos="flip-up">
+                <div class="warranty-badge">
+                    <span class="warranty-years">15</span>
+                    <span class="warranty-unit">{{ _('Years') }}</span>
+                </div>
+                <div class="warranty-text">
+                    <p>{{ _('Each of our products comes with an official warranty of up to 15 years, preserving color and strength.') }}</p>
+                    <p class="highlight">{{ _('Quality you can trust for years to come.') }}</p>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
 
-<section class="section our-values bg-light">
+<section id="values" class="section our-values bg-light">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Our Values') }}</h2>
             <p class="section-subtitle">{{ _('The principles that guide everything we do') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         <div class="values-grid">
-            <div class="value-card">
+            <div class="value-card" data-aos="zoom-in">
                 <div class="value-icon">
                     <i class="fas fa-medal"></i>
                 </div>
                 <h3>{{ _('Quality') }}</h3>
                 <p>{{ _('We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time.') }}</p>
             </div>
-            <div class="value-card">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="100">
                 <div class="value-icon">
                     <i class="fas fa-lightbulb"></i>
                 </div>
                 <h3>{{ _('Innovation') }}</h3>
                 <p>{{ _('We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture.') }}</p>
             </div>
-            <div class="value-card">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="200">
                 <div class="value-icon">
                     <i class="fas fa-hands-helping"></i>
                 </div>
                 <h3>{{ _('Collaboration') }}</h3>
                 <p>{{ _('We work closely with architects and builders to understand their vision and bring it to life.') }}</p>
             </div>
-            <div class="value-card">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="300">
                 <div class="value-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
@@ -66,42 +174,17 @@
         </div>
     </div>
 </section>
+{% endblock %}
 
-
-
-<section class="section our-team">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">{{ _('Meet Our Leadership') }}</h2>
-            <p class="section-subtitle">{{ _('The experienced professionals guiding Wallmade') }}</p>
-        </div>
-        
-        <div class="team-grid">
-            {% for member in employees %}
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="{{ url_for('static', filename='images/employees/' + member.image) }}" alt="{{ member.name }}">
-                </div>
-                <div class="member-info">
-                    <h3>{{ member.name }}</h3>
-                    <p class="position">{{ member.position }}</p>
-                    <p>{{ member.bio }}</p>
-                </div>
-            </div>
-            {% endfor %}
-            
-         
-        </div>
-    </div>
-</section>
-
-<section class="section cta bg-dark">
-    <div class="container">
-        <div class="cta-content">
-            <h2>{{ _('Want to Learn More About Us?') }}</h2>
-            <p>{{ _('Our team is always happy to discuss our approach and how we can contribute to your project.') }}</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Contact Us') }}</a>
-        </div>
-    </div>
-</section>
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+</script>
+<script src="{{ url_for('static', filename='js/about_animations.js') }}"></script>
 {% endblock %}

@@ -5,36 +5,37 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ _('Our Works') }}</h1>
-        <p>{{ _('See our architectural details in completed projects') }}</p>
+        <h1 class="hero-title" data-aos="fade-up">{{ _('Our Works') }}</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">{{ _('See our architectural details in completed projects') }}</p>
+    </div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="300">
+        <span></span>
     </div>
 </section>
 
 <section class="section portfolio">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Project Portfolio') }}</h2>
-            <p class="section-subtitle">{{ _('Explore our completed projects featuring Wallmade products') }}</p>
-        </div>
-        
-        <div class="portfolio-filter">
-            <button class="filter-btn active" data-filter="all">{{ _('All Projects') }}</button>
-            <button class="filter-btn" data-filter="residential">{{ _('Residential') }}</button>
-            <button class="filter-btn" data-filter="commercial">{{ _('Commercial') }}</button>
-            <button class="filter-btn" data-filter="institutional">{{ _('Institutional') }}</button>
-            <button class="filter-btn" data-filter="hospitality">{{ _('Hospitality') }}</button>
+            <p class="section-subtitle">{{ _('Explore our completed projects') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         
         <div class="portfolio-grid">
             {% for work in works %}
-            <div class="portfolio-item" data-category="{{ work.category.get('en') if work.category else 'all' }}">
+            <div class="portfolio-item" data-category="{{ work.category.get('en') if work.category else 'all' }}" data-aos="zoom-in">
                 <div class="portfolio-image">
                     <img src="{{ work.Images_folder_url }}" alt="{{ work.title.get(current_language, work.title.get('en', 'Project')) }}" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h3>{{ work.title.get(current_language, work.title.get('en', 'Project')) }}</h3>
-                        <p>{{ work.location.get(current_language, work.location.get('en', '')) }}</p>
-                        <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">{{ _('View Project') }}</a>
+                        <div class="overlay-content">
+                            <h3>{{ work.title.get(current_language, work.title.get('en', 'Project')) }}</h3>
+                            <p>{{ work.location.get(current_language, work.location.get('en', '')) }}</p>
+                            <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">{{ _('View Project') }}</a>
+                        </div>
                     </div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>{{ work.title.get(current_language, work.title.get('en', 'Project')) }}</h4>
                 </div>
             </div>
             {% endfor %}
@@ -44,33 +45,38 @@
 
 <section class="section clients bg-light">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Our Clients') }}</h2>
             <p class="section-subtitle">{{ _('We\'ve had the privilege to work with') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
-        <div class="clients-grid">
-            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 1"></div>
-            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 2"></div>
-            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 3"></div>
-            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 4"></div>
-            <div class="client-logo"><img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Client 5"></div>
+        <div class="clients-grid" data-aos="fade-up">
+            {% for i in range(5) %}
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="{{ 100 * i }}">
+                <img src="{{ url_for('static', filename='images/client_default.jpg') }}" alt="Client {{ i+1 }}">
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
 
 <section class="section testimonials">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('What Our Clients Say') }}</h2>
             <p class="section-subtitle">{{ _('Feedback from architects and builders') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
-        <div class="testimonials-slider">
+        <div class="testimonials-slider" data-aos="fade-up">
             <div class="testimonial">
                 <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
                     <p>{{ _("Wallmade's facade system was instrumental in achieving the distinctive look of our office building. Their team's expertise in custom metal fabrication was evident throughout the project.") }}</p>
                     <div class="testimonial-author">
-                        <img src="https://t3.ftcdn.net/jpg/11/16/71/74/360_F_1116717462_tyb1UgbU0MpHzbCc0cOf0Hm8g3lJspSz.jpg" alt="Robert Smith">
-                        <div>
+                        <img src="{{ url_for('static', filename='images/client_default.jpg') }}" alt="Robert Smith">
+                        <div class="author-info">
                             <h4>Robert Smith</h4>
                             <p>{{ _('Principal Architect') }}, Smith & Partners</p>
                         </div>
@@ -83,11 +89,42 @@
 
 <section class="section cta bg-dark">
     <div class="container">
-        <div class="cta-content">
+        <div class="cta-content" data-aos="zoom-in">
             <h2>{{ _('Want to Feature Your Project Here?') }}</h2>
             <p>{{ _('Contact us to discuss how Wallmade products can enhance your next architectural project.') }}</p>
             <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Start a Conversation') }}</a>
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+    
+    // Portfolio filtering
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            this.classList.add('active');
+            
+            const filter = this.dataset.filter;
+            const items = document.querySelectorAll('.portfolio-item');
+            
+            items.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 {% endblock %}

@@ -3,19 +3,18 @@ msgstr ""
 "Project-Id-Version: Wallmade Website\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hy\n"
 
 msgid "Premium Architectural Details for Modern Construction"
-msgstr "Պրեմիում ճարտարապետական մանրամասներ ժամանակակից շինարարության համար"
+msgstr "Պրեմիում Ճարտարապետական Դետալներ Ժամանակակից Կառուցման համար"
 
 msgid "Architectural Details"
-msgstr "Ճարտարապետական մանրամասներ"
+msgstr "Ճարտարապետական Դետալներ"
 
 msgid "Home"
 msgstr "Գլխավոր"
 
 msgid "About"
-msgstr "Մեր մասին"
+msgstr "Մեր Մասին"
 
 msgid "Services"
 msgstr "Ծառայություններ"
@@ -24,76 +23,76 @@ msgid "Products"
 msgstr "Ապրանքներ"
 
 msgid "Explore Products"
-msgstr "Մեր ապրանքները"
+msgstr "Մեր Ապրանքները"
 
 msgid "Explore Services"
-msgstr "Մեր ծառայությունները"
+msgstr "Մեր Ծառայությունները"
 
 msgid "Our Works"
-msgstr "Մեր աշխատանքները"
+msgstr "Մեր Աշխատանքները"
 
 msgid "Contact"
 msgstr "Կապ"
 
 msgid "Creating exceptional architectural details for modern construction since 2010."
-msgstr "2010 թվականից ստեղծում ենք բացառիկ ճարտարապետական մանրամասներ ժամանակակից շինարարության համար"
+msgstr "2010 թվականից ստեղծում ենք բացառիկ ճարտարապետական Դետալներ ժամանակակից կառուցման համար:"
 
 msgid "Quick Links"
-msgstr "Արագ հղումներ"
+msgstr "Արագ Հղումներ"
 
 msgid "Contact Us"
-msgstr "Կապ մեզ հետ"
+msgstr "Կապ Մեզ Հետ"
 
 msgid "Newsletter"
-msgstr "Նամակագրություն"
+msgstr "Տեղեկագիր"
 
 msgid "Subscribe to our newsletter for the latest updates."
-msgstr "Բաժանորդագրվեք մեր նամակագրությանը՝ նորությունների համար"
+msgstr "Բաժանորդագրվեք մեր տեղեկագրին՝ նորությունների համար:"
 
 msgid "Your email address"
-msgstr "Ձեր էլ. փոստի հասցեն"
+msgstr "Ձեր Էլ. Փոստի Հասցեն"
 
 msgid "All rights reserved."
 msgstr "Բոլոր իրավունքները պաշտպանված են:"
 
 msgid "Privacy Policy"
-msgstr "Գաղտնիության քաղաքականություն"
+msgstr "Գաղտնիության Քաղաքականություն"
 
 msgid "Terms of Service"
-msgstr "Ծառայության պայմաններ"
+msgstr "Ծառայության Պայմաններ"
 
 msgid "Product Description"
-msgstr "Ապրանքի նկարագրություն"
+msgstr "Ապրանքի Նկարագրություն"
 
 msgid "Key Features"
-msgstr "Հիմնական հատկանիշներ"
+msgstr "Հիմնական Հատկանիշներ"
 
 msgid "Key Specifications"
-msgstr "Հիմնական բնութագրեր"
+msgstr "Հիմնական Բնութագրեր"
 
 msgid "Architectural detail product"
-msgstr "Ճարտարապետական մանրամասների ապրանք"
+msgstr "Ճարտարապետական Դետալների ապրանք"
 
 msgid "Have Questions About This Product?"
-msgstr "Հարցեր ունե՞ք այս ապրանքի վերաբերյալ"
+msgstr "Հարցեր ունե՞ք այս ապրանքի վերաբերյալ:"
 
 msgid "Our product specialists are ready to provide more information and technical details."
-msgstr "Մեր մասնագետները պատրաստ են տրամադրել լրացուցիչ տեղեկություններ և տեխնիկական մանրամասներ:"
+msgstr "Մեր ապրանքի մասնագետները պատրաստ են տրամադրել լրացուցիչ տեղեկատվություն և տեխնիկական Դետալներ:"
 
 msgid "Contact Our Team"
-msgstr "Կապնվել մեր թիմի հետ"
+msgstr "Կապնվեք Մեր Թիմի Հետ"
 
 msgid "Our Products"
-msgstr "Մեր ապրանքները"
+msgstr "Մեր Ապրանքները"
 
 msgid "High-quality architectural details for every project"
-msgstr "Բարձրորակ ճարտարապետական մանրամասներ յուրաքանչյուր նախագծի համար"
+msgstr "Բարձրորակ ճարտարապետական Դետալներ յուրաքանչյուր նախագծի համար"
 
 msgid "Product Categories"
-msgstr "Ապրանքների կատեգորիաներ"
+msgstr "Ապրանքների Կատեգորիաներ"
 
 msgid "Explore our range of architectural details"
-msgstr "եր ճարտարապետական մանրամասների տեսականին"
+msgstr "Մեր ճարտարապետական Դետալների տեսականին"
 
 msgid "Learn more"
 msgstr "Իմանալ ավելին"
@@ -113,8 +112,8 @@ msgstr "Քար"
 msgid "Composite"
 msgstr "Կոմպոզիտ"
 
-msgid "Quality materials for exceptional results"
-msgstr "Որակյալ նյութեր բացառիկ արդյունքների համար"
+msgid "Quality materials for exceptional results"    
+msgstr "Որակյալ նյութեր՝ բացառիկ արդյունքների համար"
 
 msgid "Can't Find What You're Looking For?"
 msgstr "Չե՞ք գտնում այն, ինչ փնտրում եք:"
@@ -123,25 +122,25 @@ msgid "We specialize in custom solutions. Contact us to discuss your specific re
 msgstr "Մենք մասնագիտացած ենք անհատական լուծումներում: Կապնվեք մեզ հետ՝ քննարկելու ձեր պահանջները:"
 
 msgid "Request Custom Quote"
-msgstr "Կապվեք մեզ հետ"
+msgstr "Պատվիրել Անհատական Առաջարկ"
 
 msgid "About Wallmade"
-msgstr "Wallmade-ի մասին"
+msgstr "Wallmade-ի Մասին"
 
 msgid "Our story, values, and commitment to architectural excellence"
-msgstr "Մեր պատմությունը, արժեքները և նվիրվածությունը ճարտարապետական գերազանցությանը"
+msgstr "Մեր պատմությունը, արժեքները և հանձնառությունը ճարտարապետական գերազանցությանը"
 
 msgid "Our Story"
-msgstr "Մեր պատմությունը"
+msgstr "Մեր Պատմությունը"
 
 msgid "Our Values"
-msgstr "Մեր արժեքները"
+msgstr "Մեր Արժեքները"
 
 msgid "The principles that guide everything we do"
-msgstr "Սկզբունքները, որոնք ուղղորդում են մեր բոլոր գործողությունները"
+msgstr "Սկզբունքները, որոնք ուղղորդում են մեր ամեն մի քայլը"
 
 msgid "Meet Our Leadership"
-msgstr "Հանդիպեք մեր ղեկավարությանը"
+msgstr "Հանդիպեք Մեր Ղեկավարությանը"
 
 msgid "The experienced professionals guiding Wallmade"
 msgstr "Փորձառու մասնագետները, որոնք ղեկավարում են Wallmade-ը"
@@ -153,94 +152,94 @@ msgid "Our team is always happy to discuss our approach and how we can contribut
 msgstr "Մեր թիմը միշտ ուրախ է քննարկել մեր մոտեցումը և այն, թե ինչպես կարող ենք նպաստել ձեր նախագծին:"
 
 msgid "Contact Us"
-msgstr "Կապնվել մեզ հետ"
+msgstr "Կապնվեք Մեզ Հետ"
 
 msgid "Services"
 msgstr "Ծառայություններ"
 
 msgid "Comprehensive solutions for architectural detailing needs"
-msgstr "Համապարփակ լուծումներ ճարտարապետական մանրամասների համար"
+msgstr "Համապարփակ լուծումներ ճարտարապետական Դետալների համար"
 
 msgid "Tailored Services for Every Project"
-msgstr "Անհատականացված ծառայություններ յուրաքանչյուր նախագծի համար"
+msgstr "Անհատականացված Ծառայություններ Յուրաքանչյուր Նախագծի Համար"
 
 msgid "From concept to installation, we're with you every step of the way"
 msgstr "Գաղափարից մինչև տեղադրում՝ մենք ձեր կողքին ենք ամեն քայլափոխի"
 
 msgid "Our Process"
-msgstr "Մեր գործընթացը"
+msgstr "Մեր Գործընթացը"
 
-msgid "How we work to bring your vision to life"
-msgstr "Ինչպես ենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
+msgid "How we work to bring your vision to life"    
+msgstr "Ինչպես ենք աշխատում՝ ձեր տեսլականը կյանքի կոչելու համար"
 
 msgid "Precision Crafted Architectural Details"
-msgstr "Ճշգրիտ պատրաստված ճարտարապետական դետալներ"
+msgstr "Ճշգրիտ Մշակված Ճարտարապետական Դետալներ"
 
 msgid "We fix walls, We build Dreams"
 msgstr "Մենք ուղղում ենք պատերը, կառուցում երազանքներ"
 
 msgid "Crafting Excellence in Architectural Details"
-msgstr "Գերազանցության հասնել ճարտարապետական մանրամասներում"
+msgstr "Գերազանցության Հասնել Ճարտարապետական Դետալներում"
 
 msgid "Our commitment to quality and precision sets us apart in the industry"
-msgstr "Որակի և ճշգրտության հանդեպ մեր նվիրվածությունը մեզ առանձնացնում է այս ոլորտում"
+msgstr "Որակի և ճշգրտության հանդեպ մեր հանձնառությունը մեզ առանձնացնում է այս ոլորտում"
 
 msgid "Our Product Range"
-msgstr "Մեր ապրանքատեսականին"
+msgstr "Մեր Ապրանքների Տեսականին"
 
 msgid "Explore our collection of architectural details"
-msgstr "եր ճարտարապետական մանրամասների հավաքածուն"
+msgstr "Մեր ճարտարապետական Դետալների հավաքածուն"
 
 msgid "Our Recent Works"
-msgstr "Մեր վերջին աշխատանքները"
+msgstr "Մեր Վերջին Աշխատանքները"
 
 msgid "See how our products enhance architectural projects"
 msgstr "Տեսեք, թե ինչպես են մեր ապրանքները բարելավում ճարտարապետական նախագծերը"
 
 msgid "Ready to Elevate Your Project?"
-msgstr "Պատրաստ եք բարձրացնել ձեր նախագիծը?"
+msgstr "Պատրա՞ստ եք բարձրացնել ձեր նախագիծը:"
 
 msgid "Contact us today to discuss your architectural detail needs."
-msgstr "Կապնվեք մեզ այսօր՝ քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+msgstr "Կապնվեք մեզ հետ այսօր՝ քննարկելու ձեր ճարտարապետական Դետալների կարիքները:"
 
 msgid "Get in Touch"
-msgstr "Կապ հաստատել"
+msgstr "Կապ Հաստատել"
 
 msgid "Ready to Discuss Your Project?"
 msgstr "Պատրա՞ստ եք քննարկել ձեր նախագիծը:"
 
-msgid "Our team is ready to help you with your architectural detailing needs."
-msgstr "Մեր թիմը պատրաստ է օգնել ձեզ ձեր ճարտարապետական մանրամասների կարիքների հարցում:"
+msgid "Our team is ready to help you with your architectural detailing needs."    
+msgstr "Մեր թիմը պատրաստ է օգնել ձեզ ձեր ճարտարապետական Դետալների կարիքների հարցում:"
 
 msgid "Get Started"
 msgstr "Սկսել"
 
-msgid "See our architectural details in completed projects"
-msgstr "Տեսեք մեր աշխատանքները ավարտված նախագծերում"
+msgid "See our architectural details in completed projects"    
+msgstr "Տեսեք մեր ճարտարապետական Դետալներն ավարտված նախագծերում"
 
 msgid "Project Portfolio"
-msgstr "Նախագծերի պորտֆոլիո"
+msgstr "Նախագծերի Պորտֆոլիո"
 
-msgid "Explore our completed projects featuring Wallmade products"
-msgstr "եր ավարտված նախագծերը Wallmade ապրանքներով"
+msgid "Explore our completed projects"
+msgstr "Մեր կատարած նախագծերը"
 
 msgid "Our Clients"
-msgstr "Մեր հաճախորդները"
+msgstr "Մեր Հաճախորդները"
 
 msgid "We've had the privilege to work with"
-msgstr "Մենք պատիվ ենք ունեցել աշխատել հետևյալների հետ"
+msgstr "Մենք պատիվ ենք ունեցել աշխատելու`"
 
 msgid "What Our Clients Say"
-msgstr "Ինչ են ասում մեր հաճախորդները"
+msgstr "Ինչ Են Ասում Մեր Հաճախորդները"
 
 msgid "Feedback from architects and builders"
-msgstr "Կարծիքներ ճարտարապետների և շինարարների կողմից"
+msgstr "Ճարտարապետների և շինարարների արձագանքներ"
 
 msgid "Quality"
 msgstr "Որակ"
 
 msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
-msgstr "Մենք երբեք չենք խախտում նյութերի կամ արհեստագործության սկզբունքները: Յուրաքանչյուր մանրուք կարևոր է ժամանակի դիմացող արտադրանք ստեղծելու համար:"
+msgstr "Մենք երբեք չենք զիջում նյութերի կամ արհեստավարժության հարցում: Յուրաքանչյուր մանրամասն կարևոր է ժամանակի դիմացող ապրանքներ ստեղծելու համար:"
 
 msgid "Innovation"
 msgstr "Նորարարություն"
@@ -258,58 +257,58 @@ msgid "Sustainability"
 msgstr "Կայունություն"
 
 msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
-msgstr "Մենք պարտավորված ենք բնապահպանական պատասխանատու գործելակերպին՝ մեր նյութերի հայթայթման և արտադրության մեջ:"
+msgstr "Մենք պարտավորված ենք շրջակա միջավայրի նկատմամբ պատասխանատու պրակտիկայի՝ նյութերի ձեռքբերման և արտադրության գործընթացում:"
 
 msgid "Our Process"
-msgstr "Մեր գործընթացը"
+msgstr "Մեր Գործընթացը"
 
 msgid "How we work to bring your vision to life"
-msgstr "Ինչպես ենք մենք աշխատում ձեր տեսլականը կյանքի կոչելու համար"
+msgstr "Ինչպես ենք աշխատում՝ ձեր տեսլականը կյանքի կոչելու համար"
 
 msgid "Consultation"
 msgstr "Խորհրդատվություն"
 
 msgid "We begin by understanding your project requirements, design intent, and technical specifications."
-msgstr "Մենք սկսում ենք ձեր նախագծի պահանջները, դիզայնի մտահղացումը և տեխնիկական բնութագրերը հասկանալով:"
+msgstr "Մենք սկսում ենք՝ հասկանալով ձեր նախագծի պահանջները, դիզայնի մտադրությունները և տեխնիկական բնութագրերը:"
 
 msgid "Design & Prototyping"
-msgstr "Դիզայն և նախատիպերի ստեղծում"
+msgstr "Նախագծում և Նախատիպավորում"
 
 msgid "Our team creates detailed designs and produces prototypes for your approval."
-msgstr "Մեր թիմը մշակում է մանրամասն դիզայն և ստեղծում նախատիպեր ձեր հաստատման համար:"
+msgstr "Մեր թիմը ստեղծում է մանրամասն նախագծեր և արտադրում նախատիպեր ձեր հաստատման համար:"
 
 msgid "Production"
 msgstr "Արտադրություն"
 
 msgid "Once approved, we manufacture your components with precision and care."
-msgstr "Հաստատվելուց հետո մենք արտադրում ենք ձեր բաղադրիչները ճշգրտությամբ և ուշադրությամբ:"
+msgstr "Հաստատվելուց հետո մենք արտադրում ենք ձեր բաղադրիչները ճշգրտությամբ և հոգատարությամբ:"
 
 msgid "Delivery & Support"
-msgstr "Առաքում և աջակցություն"
+msgstr "Առաքում և Աջակցություն"
 
 msgid "We ensure safe delivery and provide ongoing support for installation."
 msgstr "Մենք ապահովում ենք անվտանգ առաքում և տրամադրում շարունակական աջակցություն տեղադրման համար:"
 
 msgid "Custom Architectural Details"
-msgstr "Անհատական Ճարտարապետական Մանրամասներ"
+msgstr "Անհատական Ճարտարապետական Դետալներ"
 
 msgid "Bespoke design solutions"
 msgstr "Անհատականացված դիզայնի լուծումներ"
 
 msgid "Material selection guidance"
-msgstr "Նյութերի ընտրության ղեկավարում"
+msgstr "Նյութերի ընտրության ուղեցույց"
 
 msgid "Prototyping and sampling"
 msgstr "Նախատիպավորում և նմուշավորում"
 
 msgid "High-volume manufacturing"
-msgstr "Զանգվածային արտադրություն"
+msgstr "Խոշորածավալ արտադրություն"
 
 msgid "Consistent quality control"
-msgstr "Համակարգված որակի հսկողություն"
+msgstr "Հետևողական որակի հսկողություն"
 
 msgid "Just-in-time delivery"
-msgstr "Ճիշտ ժամանակին առաքում"
+msgstr "Just-in-time առաքում"
 
 msgid "Technical drawings"
 msgstr "Տեխնիկական գծագրեր"
@@ -318,40 +317,43 @@ msgid "Material specifications"
 msgstr "Նյութերի բնութագրեր"
 
 msgid "Integration advice"
-msgstr "Ինտեգրման խորհրդատվություն"
+msgstr "Ինտեգրման խորհուրդներ"
 
 msgid "Installation guides"
 msgstr "Տեղադրման ուղեցույցներ"
 
 msgid "On-site training"
-msgstr "Վերապատրաստում տեղում"
+msgstr "Վայրում ուսուցում"
 
 msgid "Troubleshooting assistance"
 msgstr "Խնդիրների լուծման աջակցություն"
 
 msgid "Want to Feature Your Project Here?"
-msgstr "Ցանկանու՞մ եք Ձեր նախագիծն այստեղ ներկայացնել։"
+msgstr "Ցանկանու՞մ եք, որ ձեր նախագիծն այստեղ ներկայացվի:"
 
 msgid "Contact us to discuss how Wallmade products can enhance your next architectural project."
-msgstr "Կապվեք մեզ հետ՝ քննարկելու, թե ինչպես կարող են Wallmade արտադրանքները բարելավել Ձեր հաջորդ ճարտարապետական նախագիծը։"
+msgstr "Կապնվեք մեզ հետ՝ քննարկելու, թե ինչպես կարող են Wallmade ապրանքները բարելավել ձեր հաջորդ ճարտարապետական նախագիծը:"
 
 msgid "Start a Conversation"
-msgstr "Սկսել հարցումը"
+msgstr "Սկսել Զրույց"
 
 msgid "Contact Us"
-msgstr "Կապ Մեզ Հետ"
+msgstr "Կապնվեք Մեզ Հետ"
 
 msgid "Get in touch with our team"
 msgstr "Կապ հաստատեք մեր թիմի հետ"
 
-msgid "Let's Start a Conversation"
-msgstr "Եկեք զրուցենք"
+msgid "Lets Start a Conversation"
+msgstr "Եկեք Սկսենք Զրույցը"
+
+msgid "Were here to answer your questions and discuss your next project"
+msgstr "Մենք այստեղ ենք՝ պատասխանելու ձեր հարցերին և քննարկելու ձեր հաջորդ նախագծերը"
 
 msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
-msgstr "Եթե հարցեր ունեք մեր արտադրանքի վերաբերյալ, անհրաժեշտ է գնահատում կամ ցանկանում եք քննարկել անհատական նախագիծ, մեր թիմը պատրաստ է օգնել ձեզ:"
+msgstr "Անկախ նրանից, թե հարցեր ունեք մեր ապրանքների վերաբերյալ, անհրաժեշտ է գնահատական կամ ցանկանում եք քննարկել անհատական նախագիծ, մեր թիմը պատրաստ է օգնել ձեզ:"
 
 msgid "Our Location"
-msgstr "Մեր Հասցեն"
+msgstr "Մեր Գտնվելու Վայրը"
 
 msgid "Phone"
 msgstr "Հեռախոս"
@@ -366,10 +368,7 @@ msgid "Thank You for Your Message!"
 msgstr "Շնորհակալություն Ձեր Հաղորդագրության Համար!"
 
 msgid "We've received your inquiry and will get back to you within 24 hours."
-msgstr "Մենք ստացել ենք Ձեր հարցումը և կպատասխանենք 24 ժամվա ընթացքում:"
-
-msgid "Send Us a Message"
-msgstr "Ուղարկեք Մեզ Նամակ"
+msgstr "Մենք ստացել ենք ձեր հարցումը և կպատասխանենք 24 ժամվա ընթացքում:"
 
 msgid "Your Name"
 msgstr "Ձեր Անունը"
@@ -387,10 +386,10 @@ msgid "General Inquiry"
 msgstr "Ընդհանուր Հարցում"
 
 msgid "Product Information"
-msgstr "Արտադրանքի Մասին Տեղեկություն"
+msgstr "Ապրանքի Տեղեկատվություն"
 
 msgid "Request a Quote"
-msgstr "Հարցում Գնահատման Համար"
+msgstr "Հարցում Գնահատականի"
 
 msgid "Custom Project"
 msgstr "Անհատական Նախագիծ"
@@ -405,49 +404,372 @@ msgid "Send Message"
 msgstr "Ուղարկել Հաղորդագրություն"
 
 msgid "Ready to Start Your Project?"
-msgstr "Պատրա՞ստ եք Սկսել Ձեր Նախագիծը:"
+msgstr "Պատրա՞ստ եք սկսել ձեր նախագիծը:"
 
 msgid "Contact us today to discuss your architectural detailing needs."
-msgstr "Կապվեք մեզ հետ այսօր՝ քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+msgstr "Կապնվեք մեզ հետ այսօր՝ քննարկելու ձեր ճարտարապետական Դետալների կարիքները:"
 
 msgid "Project Overview"
-msgstr "Նախագիծի բովանդակություն"
+msgstr "Նախագծի Ամփոփում"
 
 msgid "Wallmade Products Used"
-msgstr "Օգտագործված Նյութեր Wallmade"
-
-msgid "View Project"
-msgstr "Դիտել նախագիծը"
+msgstr "Օգտագործված Wallmade Ապրանքներ"
 
 msgid "View Details"
-msgstr "Դիտել Մանրամասները"
+msgstr "Կարդալ Ավելին"
+
+msgid "View Project"
+msgstr "Դիտել Նախագիծը"
 
 msgid "Featured project using Wallmade architectural details"
-msgstr "Նախագիծ, որը օգտագործվում է Wallmade ճարտարապետական մանրամասները"
+msgstr "Նախագիծ, որն օգտագործում է Wallmade ճարտարապետական Դետալներ"
 
 msgid "Location"
-msgstr "Տեղեկատվություն"
+msgstr "Տեղադրություն"
 
 msgid "Project Type"
-msgstr "Նախագիծի տեսակ"
+msgstr "Նախագծի Տեսակը"
 
 msgid "Year Completed"
-msgstr "Ավարտված տարի"
+msgstr "Ավարտման Տարին"
 
-msgid "Architect"
-msgstr "Արտադրող"
+msgid "Architect"    
+msgstr "Ճարտարապետ"
 
 msgid "Project Details"
-msgstr "Նախագիծի Մանրամասներ"
+msgstr "Նախագծի Դետալներ"
 
 msgid "Additional views and details"
-msgstr "Ավելի տեսանելու և մանրամասներ"
+msgstr "Լրացուցիչ տեսքեր և Դետալներ"
 
 msgid "Contact us to discuss how we can contribute to your next architectural endeavor."
-msgstr "Կապվեք մեզ հետ, որպեսզի քննարկելու ձեր ճարտարապետական մանրամասների կարիքները:"
+msgstr "Կապնվեք մեզ հետ՝ քննարկելու, թե ինչպես կարող ենք նպաստել ձեր հաջորդ ճարտարապետական նախագծին:"
 
 msgid "View All Products"
-msgstr "Տեսնել բոլոր արտադրանքները"
+msgstr "Դիտել Բոլոր Ապրանքները"
 
 msgid "View All Works"
-msgstr "Տեսնել բոլոր աշխատանքները"
+msgstr "Դիտել Բոլոր Աշխատանքները"
+
+msgid "Inquire About This Product"
+msgstr "Հարցրեք այս ապրանքի մասին"
+
+msgid "Share Product"
+msgstr "Կիսվեք Ապրանքով"
+
+msgid "Share This Product"
+msgstr "Կիսվեք Այս Ապրանքով"
+
+
+
+
+#: about_wallmade
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles."
+msgstr "Հիմնադրվելով 2022 թվականին՝ WALLMADE-ը մասնագիտացել է որակյալ և դիմացկուն արտաքին երեսպատման սալիկների արտադրության և տեղադրման ոլորտում։"
+
+#: trust_and_demand
+msgid "In a short time, we have become a trusted and in-demand name in the construction market by offering solutions that meet the needs of modern architecture and provide:"
+msgstr "Կարճ ժամանակում մենք դարձել ենք վստահելի և պահանջված անուն շինարարական շուկայում՝ առաջարկելով ժամանակակից ճարտարապետության պահանջներին համարժեք լուծումներ, որոնք միաժամանակ ապահովում են՝"
+
+#: aesthetics
+msgid "Aesthetic Appearance"
+msgstr "Էսթետիկ Տեսք"
+
+#: durability
+msgid "Technical Durability"
+msgstr "Տեխնիկական Դիմացկունություն"
+
+#: protection
+msgid "Long-term Protection for Buildings"
+msgstr "Երկարատև Պաշտպանություն Շինությունների Համար։"
+
+#: redefining_exterior
+msgid "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions."
+msgstr "WALLMADE-ը վերաիմաստավորում է էքստերիեր կառուցելու արվեստը՝ առաջարկելով բարձր որակ և նորարարական լուծումներ։"
+
+
+
+msgid "Advantages"
+msgstr "Առավելություններ"
+
+msgid "WALLMADE is your trusted choice for exterior cladding. Our tiles are:"
+msgstr "WALLMADE-ը Ձեր արտաքին երեսպատման վստահելի ընտրությունն է։ Մեր սալիկները՝"
+
+msgid "Thermo-insulating"
+msgstr " Ջերմամեկուսիչ են"
+
+msgid "They preserve indoor temperature and improve energy efficiency."
+msgstr "Պահպանում են շինության ներքին ջերմաստիճանը և նպաստում էներգաարդյունավետությանը։"
+
+msgid "Sound-insulating"
+msgstr " Ձայնամեկուսիչ են"
+
+msgid "They reduce external noise, ensuring comfort."
+msgstr "Նվազեցնում են արտաքին աղմուկը՝ ապահովելով հարմարավետություն։"
+
+msgid "Moisture-resistant"
+msgstr " Խոնավադիմացկուն են"
+
+msgid "They protect from humidity."
+msgstr "Պաշտպանում են խոնավությունից։"
+
+msgid "Fire-resistant"
+msgstr " Հրակայուն են"
+
+msgid "Made from non-flammable, safe materials."
+msgstr "Պատրաստված են չայրվող, անվտանգ նյութերից։"
+
+msgid "Weather-resistant"
+msgstr " Եղանակադիմացկուն են"
+
+msgid "Unaffected by sun, wind, snow, or rain."
+msgstr "Չեն փոխում իրենց տեսքը արևի, քամու, ձյան և անձրևի ազդեցությունից։"
+
+msgid "Wide color selection"
+msgstr " Ունեն գունային լայն ընտրանի"
+
+msgid "Matches any architectural style – from classic to modern."
+msgstr "Համապատասխանում են ցանկացած ճարտարապետական ոճի՝ դասականից մինչև ժամանակակից։"
+
+msgid "About Production"
+msgstr "Արտադրանքի Մասին"
+
+msgid "WALLMADE tile sizes and prices may vary depending on the project."
+msgstr "WALLMADE-ի սալիկների չափերն ու գները կարող են տարբեր լինել՝ կախված նախագծից։"
+
+msgid "Length: from 2 meters"
+msgstr " Երկարություն՝ սկսած 2 մետրից"
+
+msgid "Width: 30 cm, 40 cm, 50 cm"
+msgstr " Լայնություն՝ 30 սմ, 40 սմ, 50 սմ"
+
+msgid "Thickness: 3 cm, 4 cm, 5 cm"
+msgstr " Հաստություն՝ 3 սմ, 4 սմ, 5 սմ"
+
+msgid "Price: starting at only 6,500 AMD per m²."
+msgstr "Գին՝ սկսած ընդամենը 1 մ² / 6,500 դրամից։"
+
+msgid "Warranty"
+msgstr "Երաշխիք"
+
+msgid "Each of our products comes with an official warranty of up to 15 years, preserving color and strength."
+msgstr "Մեր յուրաքանչյուր արտադրանք ապահովված է մինչև 15 տարվա պաշտոնական երաշխիքով՝ պահպանելով գույնը և ամրությունը։"
+
+msgid "Quality you can trust for years to come."
+msgstr "Որակ, որին կարող եք վստահել երկար տարիներ։"
+
+msgid "OUR SERVICES"
+msgstr "ՄԵՐ ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԸ"
+
+msgid "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
+msgstr "WALLMADE-ը տրամադրում է ամբողջական լուծումներ արտաքին երեսպատման ոլորտում՝ սկսած խորհրդատվությունից մինչև վերջնական տեղադրում։ Մենք աշխատում ենք ճշգրիտ, համակարգված և մանրակրկիտ՝ ապահովելով բարձր որակ յուրաքանչյուր փուլում։"
+
+msgid "Custom design development"
+msgstr "Անհատական դիզայնի մշակում"
+
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgstr "Մենք ստեղծում ենք դիզայններ՝ հիմք ընդունելով տարածքի ճարտարապետական առանձնահատկությունները, շենքի գործառույթը և ձեր տեսլականը։"
+
+msgid "Custom shapes and colors"
+msgstr "Հարմարեցված ձևեր և գույներ"
+
+msgid "Drawings and 3D presentation before implementation"
+msgstr "Գծագրեր և 3D ներկայացում՝ նախքան իրականացումը"
+
+msgid "Consultation on color combinations and style selection"
+msgstr "Խորհրդատվություն գունային համադրության և ոճի ընտրության հարցում"
+
+msgid "Professional Installation"
+msgstr "Մասնագիտական տեղադրում"
+
+msgid "Our experienced team performs tile installation while maintaining all technical standards:"
+msgstr "Մեր փորձառու թիմը կատարում է սալիկների տեղադրում՝ պահպանելով տեխնիկական բոլոր ստանդարտները՝"
+
+msgid "With precise measurements"
+msgstr "Ճշգրիտ չափումներով"
+
+msgid "Using appropriate materials"
+msgstr "Համապատասխան նյութերի կիրառմամբ"
+
+msgid "With fast and controlled process"
+msgstr "Արագ և վերահսկելի ընթացքով"
+
+msgid "OUR SERVICES"
+msgstr "ՄԵՐ ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԸ"
+
+msgid "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
+msgstr "WALLMADE-ը տրամադրում է ամբողջական լուծումներ արտաքին երեսպատման ոլորտում՝ սկսած խորհրդատվությունից մինչև վերջնական տեղադրում։ Մենք աշխատում ենք ճշգրիտ, համակարգված և մանրակրկիտ՝ ապահովելով բարձր որակ յուրաքանչյուր փուլում։"
+
+msgid "Custom design development"
+msgstr "Անհատական դիզայնի մշակում"
+
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgstr "Մենք ստեղծում ենք դիզայններ՝ հիմք ընդունելով տարածքի ճարտարապետական առանձնահատկությունները, շենքի գործառույթը և ձեր տեսլականը։"
+
+msgid "Custom shapes and colors"
+msgstr "Հարմարեցված ձևեր և գույներ"
+
+msgid "Drawings and 3D presentation before implementation"
+msgstr "Գծագրեր և 3D ներկայացում՝ նախքան իրականացումը"
+
+msgid "Consultation on color combinations and style selection"
+msgstr "Խորհրդատվություն գունային համադրության և ոճի ընտրության հարցում"
+
+msgid "Professional installation"
+msgstr "Մասնագիտական տեղադրում"
+
+msgid "Our experienced team performs tile installation while maintaining all technical standards:"
+msgstr "Մեր փորձառու թիմը կատարում է սալիկների տեղադրում՝ պահպանելով տեխնիկական բոլոր ստանդարտները՝"
+
+msgid "With precise measurements"
+msgstr "Ճշգրիտ չափումներով"
+
+msgid "Using appropriate materials"
+msgstr "Համապատասխան նյութերի կիրառմամբ"
+
+msgid "With fast and controlled process"
+msgstr "Արագ և վերահսկելի ընթացքով"
+
+msgid "Comprehensive solutions for architectural cladding needs"
+msgstr "Արտաքին երեսպատման համապարփակ լուծումներ"
+
+msgid "Complete solutions from consultation to installation"
+msgstr "Ամբողջական լուծումներ՝ խորհրդատվությունից մինչև տեղադրում"
+
+msgid "Custom Design Development"
+msgstr "Անհատական դիզայնի մշակում"
+
+msgid "Custom shapes and colors"
+msgstr "Հարմարեցված ձևեր և գույներ"
+
+msgid "Drawings and 3D presentation before implementation"
+msgstr "Գծագրեր և 3D ներկայացում իրականացումից առաջ"
+
+msgid "Consultation on color combinations and style selection"
+msgstr "Խորհրդատվություն գունային համադրությունների և ոճի ընտրության վերաբերյալ"
+
+msgid "Our experienced team performs tile installation while maintaining all technical standards."
+msgstr "Մեր փորձառու թիմը կատարում է սալիկների տեղադրում՝ պահպանելով բոլոր տեխնիկական ստանդարտները։"
+
+msgid "With precise measurements"
+msgstr "Ճշգրիտ չափումներով"
+
+msgid "Using appropriate materials"
+msgstr "Օգտագործելով համապատասխան նյութեր"
+
+msgid "Fast and controlled process"
+msgstr "Արագ և վերահսկվող գործընթաց"
+
+msgid "Why Choose Our Services"
+msgstr "Ինչու՞ ընտրել մեր ծառայությունները"
+
+msgid "Quality Assurance"
+msgstr "Որակի երաշխիք"
+
+msgid "15-year warranty on all our products"
+msgstr "15-ամյա երաշխիք մեր բոլոր արտադրանքի համար"
+
+msgid "Timely Delivery"
+msgstr "Ժամանակին առաքում"
+
+msgid "Efficient processes ensure on-time completion"
+msgstr "Արդյունավետ գործընթացները ապահովում են ժամանակին ավարտը"
+
+msgid "Expert Team"
+msgstr "Փորձառու թիմ"
+
+msgid "Experienced professionals in cladding solutions"
+msgstr "Փորձառու մասնագետներ երեսպատման լուծումներում"
+
+msgid "Sustainable Materials"
+msgstr "Կայուն նյութեր"
+
+msgid "Environmentally friendly production"
+msgstr "Էկոլոգիապես մաքուր արտադրություն"
+
+msgid "Contact us for a free consultation and quote"
+msgstr "Կապվեք մեզ հետ անվճար խորհրդատվության և գնահատման համար"
+
+msgid "Our Working Process"
+msgstr "Մեր աշխատանքային գործընթացը"
+
+msgid "How we bring your vision to reality"
+msgstr "Ինչպես ենք մենք ձեր տեսլականը դարձնում իրականություն"
+
+msgid "Understanding your requirements and project specifications"
+msgstr "Ձեր պահանջների և նախագծի բնութագրերի հասկացում"
+
+msgid "Design"
+msgstr "Դիզայն"
+
+msgid "Manufacturing high-quality cladding materials"
+msgstr "Բարձրորակ երեսպատման նյութերի արտադրություն"
+
+msgid "Creating customized solutions for your architectural needs"
+msgstr "Ձեր ճարտարապետական կարիքների համար անհատականացված լուծումների ստեղծում"
+
+msgid "Installation"
+msgstr "Տեղադրում"
+
+msgid "Professional implementation with technical precision"
+msgstr "Մասնագիտական իրականացում տեխնիկական ճշգրտությամբ"
+
+msgid "Learn more about us"
+msgstr "Իմացեք ավելին մեր մասին"
+
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings."
+msgstr "2022 թվականին հիմնադրված WALLMADE-ը մասնագիտացած է բարձրորակ և դիմացկուն արտաքին երեսպատման սալիկների արտադրության և տեղադրման ոլորտում։ Կարճ ժամանակում մենք դարձել ենք շինարարական շուկայի վստահելի անուն՝ առաջարկելով ժամանակակից ճարտարապետության պահանջներին համապատասխան լուծումներ, որոնք ապահովում են էսթետիկ տեսք, տեխնիկական դիմացկունություն և շենքերի երկարակյաց պաշտպանություն։"
+
+msgid "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications."
+msgstr "WALLMADE-ը նաև մասնագիտացած է բարձրորակ ճարտարապետական մանրամասների նախագծման և արտադրության մեջ, որոնք սովորական շենքերը վերածում են յուրօրինակի։ Մեր փորձառու արհեստավորների և դիզայներների թիմը սերտ համագործակցում է ճարտարապետների և շինարարների հետ՝ ստեղծելով անհատական լուծումներ, որոնք համապատասխանում են ճշգրիտ պահանջներին։"
+
+msgid "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building."
+msgstr "Ունե՞ք հարցեր կամ ցանկանում ե՞ք սկսել նախագիծ։ Մեր մասնագետները պատրաստ են օգնել ընտրության, դիզայնի և իրականացման յուրաքանչյուր փուլում։ Կապ հաստատեք մեզ հետ՝ ընտրելու լավագույն լուծումը ձեր շինության արտաքին ձևավորման համար։"
+
+msgid "Yerevan, Arshakunyats Avenue, 25/1"
+msgstr "Երևան, Արշակունյաց Պողոտա, 25/1"
+
+msgid "Your message has been sent successfully! We will get back to you soon."
+msgstr "Ձեր հաղորդագրությունը հաջողությամբ ուղարկվել է! Մեր թիմը շուտով կկապնվի Ձեր հետ:"
+
+msgid "Failed to send your message. Please try again later."
+msgstr "Ձեր հաղորդագրությունը ուղարկել է չհաջողվեց: Խնդրում ենք փորձեք մի փոքր ուշ:"
+
+msgid "Please fill all required fields"
+msgstr "Խնդրում ենք լրացնել բոլոր պահանջվող դաշտերը"
+
+msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+msgstr "Հիմնադրվելով 2022 թվականին՝ WALLMADE-ը մասնագիտացած է բարձրորակ արտաքին երեսպատման լուծումների արտադրության և տեղադրման ոլորտում: Մի քանի տարվա ընթացքում մենք դարձել ենք նորարարական ճարտարապետական մակերեսների առաջատար՝ միավորելով գեղագիտական կատարելությունն ու անզուգական ամրությունը:"
+
+msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
+msgstr "Մեր փորձաքննությունը ներառում է հատուկ ճարտարապետական մանրամասներ, որոնք շենքերը վերածում են ուշագրավ օբյեկտների: Սերտ համագործակցելով ճարտարապետների և շինարարների հետ՝ մենք ստեղծում ենք հատուկ լուծումներ, որոնք ընդլայնում են դիզայնի սահմանները՝ համապատասխանելով խիստ տեխնիկական պահանջներին:"
+
+msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+msgstr "WALLMADE-ում մենք վերասահմանում ենք արտաքին շինարարությունը՝ օգտագործելով առաջատար նյութեր, ճշգրիտ ինժեներական լուծումներ և գեղարվեստական տեսլական՝ ստեղծելով մակերեսներ, որոնք դիմանում են ժամանակի փորձությանը՝ միաժամանակ ուժեղ տեսողական ազդեցություն թողնելով:"
+
+msgid "Discover our story"
+msgstr "Ծանոթացեք մեր պատմությանը"
+
+msgid "Years"
+msgstr "Տարի"
+
+msgid "Feedback"
+msgstr "Հետադարձ կապ"
+
+msgid "Contact us with any questions."
+msgstr "Կապվեք մեզ հետ կամայական հարցի դեպքում"
+
+msgid "Cladding Tile"
+msgstr "Երեսպատման Սալիկներ"
+
+msgid "Language"
+msgstr "Լեզու"
+
+msgid   "Find Us"
+msgstr "Գտնեք մեզ"
+
+msgid   "Visit our location in Yerevan"
+msgstr "Այցելեք մեր գրասենյակը Երևանում"
+
+msgid   "Get in touch with our team of experts"
+msgstr "Կապվեք մեր մասնագետների թիմի հետ"

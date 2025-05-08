@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ current_language }}">
+<html lang="{{ current_language }}" dir="{% if current_language in ['ar', 'he'] %}rtl{% else %}ltr{% endif %}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} | Wallmade</title>
-    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+    <meta name="description" content="Wallmade - Premium architectural details and exterior cladding solutions">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
@@ -13,76 +14,177 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base_style.css') }}">
     {% block extra_css %}{% endblock %}
 </head>
+
 <body>
-    <!-- Top Announcement Bar -->
+    <!-- Announcement Bar -->
     <div class="announcement-bar">
-        <p>{{ _('We fix walls, We build Dreams') }}</p>
+        <div class="container">
+            <p>{{ _('We fix walls, We build Dreams') }}</p>
+        </div>
     </div>
 
-  <!-- Header -->
-<header class="main-header">
-    <div class="container header-flex">
-        <a href="{{ url_for('home') }}" class="logo">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wallmade Logo">
-        </a>
-        <div class="header-content">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">{{ _('Home') }}</a></li>
-                    <li><a href="{{ url_for('about') }}" class="{% if request.endpoint == 'about' %}active{% endif %}">{{ _('About') }}</a></li>
-                    <li><a href="{{ url_for('services') }}" class="{% if request.endpoint == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
-                    <li><a href="{{ url_for('products') }}" class="{% if request.endpoint == 'products' %}active{% endif %}">{{ _('Products') }}</a></li>
-                    <li><a href="{{ url_for('works') }}" class="{% if request.endpoint == 'works' %}active{% endif %}">{{ _('Our Works') }}</a></li>
-                    <li><a href="{{ url_for('contact') }}" class="btn-contact">{{ _('Contact') }}</a></li>
-                    <li class="language-switcher-desktop">
-                        {% for code, name in languages.items() %}
-                            <a href="{{ url_for('set_language', language=code) }}" class="{% if code == current_language %}active{% endif %}">
-                                {{name}}
-                            </a>
-                        {% endfor %}
-                    </li>
-                </ul>
-            </nav>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="{{ url_for('home') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wallmade Logo">
+            </a>
 
-            <button class="mobile-menu-toggle">
-                <span class="hamburger">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </span>
+            <div class="header-content">
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">
+                                {{ _('Home') }}
+                            </a>
+                        </li>
+            
+                        <li class="has-submenu">
+                            <a href="{{ url_for('about') }}" class="{% if request.endpoint == 'about' %}active{% endif %}">
+                                {{ _('About') }}
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="{{ url_for('about') }}#our-story">{{ _('Our Story') }}</a></li>
+                                <li><a href="{{ url_for('about') }}#advantages">{{ _('Advantages') }}</a></li>
+                                <li><a href="{{ url_for('about') }}#production">{{ _('About Production') }}</a></li>
+                                <li><a href="{{ url_for('about') }}#warranty">{{ _('Warranty') }}</a></li>
+                                <li><a href="{{ url_for('about') }}#values">{{ _('Our Values') }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="{{ url_for('services') }}" class="{% if request.endpoint == 'services' %}active{% endif %}">
+                                {{ _('Services') }}
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="{{ url_for('services') }}#process">{{ _('Our Working Process') }}</a></li>
+                                <li><a href="{{ url_for('services') }}#benefits">{{ _('Why Choose Our Services') }}</a></li>
+                                <li><a href="{{ url_for('services') }}#contact">{{ _('Ready to Start Your Project?') }}</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="has-submenu">
+                            <a href="{{ url_for('products') }}" class="{% if request.endpoint == 'products' %}active{% endif %}">
+                                {{ _('Products') }}
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="{{ url_for('products') }}#cladding-tile">{{ _('Cladding Tile') }}</a></li>
+                            </ul>
+                        </li>
+            
+                        <li>
+                            <a href="{{ url_for('works') }}" class="{% if request.endpoint == 'works' %}active{% endif %}">
+                                {{ _('Our Works') }}
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="{{ url_for('contact') }}" class="btn-contact">
+                                <i class="fas fa-envelope icon-left"></i>
+                                <span>{{ _('Contact') }}</span>
+                            </a>
+                        </li>
+            
+                        <li class="has-submenu">
+                            <a href="javascript:void(0);">
+                                <i class="fas fa-globe"></i> {{ _('Language') }}
+                            </a>
+                            <ul class="submenu">
+                                {% for code, name in languages.items() %}
+                                <li>
+                                    <a href="{{ url_for('set_language', language=code) }}"
+                                       class="{% if code == current_language %}active{% endif %}">
+                                        <img src="{{ url_for('static', filename='images/flags/' + code + '.png') }}"
+                                             alt="{{ code }} flag" class="flag-icon">
+                                        {{ name }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="{{ url_for('home') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wallmade Logo" width="120">
+            </a>
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
             </button>
         </div>
-    </div>
-</header>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu">
-    <div class="mobile-menu-header">
-        <a href="{{ url_for('home') }}" class="logo">
-            <span>WALLMADE</span>
-        </a>
-        <button class="mobile-menu-close">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="{{ url_for('home') }}">{{ _('Home') }}</a></li>
-            <li><a href="{{ url_for('about') }}">{{ _('About') }}</a></li>
-            <li><a href="{{ url_for('services') }}">{{ _('Services') }}</a></li>
-            <li><a href="{{ url_for('products') }}">{{ _('Products') }}</a></li>
-            <li><a href="{{ url_for('works') }}">{{ _('Our Works') }}</a></li>
-            <li><a href="{{ url_for('contact') }}">{{ _('Contact') }}</a></li>
-        </ul>
-        <div class="language-switcher-mobile">
-            {% for code, name in languages.items() %}
-                <a href="{{ url_for('set_language', language=code) }}" class="{% if code == current_language %}active{% endif %}">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">{{
+                        _('Home') }}</a></li>
+                
+                <li>
+                    <div class="submenu-toggle {% if request.endpoint == 'about' %}active{% endif %}">
+                        <a href="{{ url_for('about') }}">{{ _('About') }}</a>
+                        <span class="submenu-indicator"></span>
+                    </div>
+                    <ul class="submenu {% if request.endpoint == 'about' %}active{% endif %}">
+                        <li><a href="{{ url_for('about') }}#our-story">{{ _('Our Story') }}</a></li>
+                        <li><a href="{{ url_for('about') }}#advantages">{{ _('Advantages') }}</a></li>
+                        <li><a href="{{ url_for('about') }}#production">{{ _('About Production') }}</a></li>
+                        <li><a href="{{ url_for('about') }}#warranty">{{ _('Warranty') }}</a></li>
+                        <li><a href="{{ url_for('about') }}#values">{{ _('Our Values') }}</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="submenu-toggle {% if request.endpoint == 'services' %}active{% endif %}">
+                        <a href="{{ url_for('services') }}">{{ _('Services') }}</a>
+                        <span class="submenu-indicator"></span>
+                    </div>
+                    <ul class="submenu {% if request.endpoint == 'services' %}active{% endif %}">
+                        <li><a href="{{ url_for('services') }}#process">{{ _('Our Working Process') }}</a></li>
+                        <li><a href="{{ url_for('services') }}#benefits">{{ _('Why Choose Our Services') }}</a></li>
+                        <li><a href="{{ url_for('services') }}#contact">{{ _('Ready to Start Your Project?') }}</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="submenu-toggle {% if request.endpoint == 'products' %}active{% endif %}">
+                        <a href="{{ url_for('products') }}">{{ _('Products') }}</a>
+                        <span class="submenu-indicator"></span>
+                    </div>
+                    <ul class="submenu {% if request.endpoint == 'products' %}active{% endif %}">
+                        <li><a href="{{ url_for('products') }}#cladding-tile">{{ _('Cladding Tile') }}</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="{{ url_for('works') }}" class="{% if request.endpoint == 'works' %}active{% endif %}">{{
+                        _('Our Works') }}</a></li>
+                <li><a href="{{ url_for('contact') }}" class="{% if request.endpoint == 'contact' %}active{% endif %}">{{ _('Contact') }}</a></li>
+            </ul>
+            
+            <div class="language-switcher-mobile">
+                {% for code, name in languages.items() %}
+                <a href="{{ url_for('set_language', language=code) }}"
+                    class="{% if code == current_language %}active{% endif %}">
+                    <img src="{{ url_for('static', filename='images/flags/' + code + '.png') }}" alt="{{ code }} flag"
+                        class="flag-icon">
                     {{ name }}
                 </a>
-            {% endfor %}
-        </div>
-    </nav>
-</div>
+                {% endfor %}
+            </div>
+        </nav>
+    </div>
 
     <!-- Main Content -->
     <main>
@@ -95,12 +197,14 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Wallmade</h3>
-                    <p>{{ _('Creating exceptional architectural details for modern construction since 2010.') }}</p>
+                    <p>{{ _('We fix walls, We build Dreams') }}</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/wallmade/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/wallmade.am/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/wall-made-construct/"><i class="fab fa-linkedin"></i></a>
-
+                        <a href="https://www.facebook.com/wallmade/" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wallmade.am/" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wall-made-construct/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -116,25 +220,27 @@
                 <div class="footer-col">
                     <h3>{{ _('Contact Us') }}</h3>
                     <ul class="contact-info-footer">
-                        <li><i class="fas fa-map-marker-alt"></i> Yerevan, Arshakunyats Avenue, 25/1</li>
+                        <li><i class="fas fa-map-marker-alt"></i> {{ _("Yerevan, Arshakunyats Avenue, 25/1") }}</li>
                         <li><i class="fas fa-phone"></i> +374 95 095955</li>
                         <li><i class="fas fa-envelope"></i> wallmade_kh@wallmade.am</li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>{{ _('Newsletter') }}</h3>
-                    <p>{{ _('Subscribe to our newsletter for the latest updates.') }}</p>
+                    <h3>{{ _('Feedback') }}</h3>
+                    <p>{{ _('Contact us with any questions.') }}</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="{{ _('Your email address') }}">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        <a href="{{ url_for('contact') }}" class="btn-contact">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>{{ _('Contact') }}</span>
+                        </a>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Wallmade. {{ _('All rights reserved.') }}</p>
+                <p>&copy; 2022 Wallmade. {{ _('All rights reserved.') }}</p>
                 <div class="footer-links">
-                    <a href="#">{{ _('Privacy Policy') }}</a>
-                    <a href="#">{{ _('Terms of Service') }}</a>
+                    <a>{{ _('Privacy Policy') }}</a>
+                    <a>{{ _('Terms of Service') }}</a>
                 </div>
             </div>
         </div>

@@ -6,94 +6,122 @@
 <section class="page-hero">
     <div class="container">
         <h1>{{ _('Services') }}</h1>
-        <p>{{ _('Comprehensive solutions for architectural detailing needs') }}</p>
+        <h2>{{ _('Comprehensive solutions for architectural cladding needs') }}</h2>
     </div>
 </section>
 
 <section class="section services-intro">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">{{ _('Tailored Services for Every Project') }}</h2>
-            <p class="section-subtitle">{{ _('From concept to installation, we\'re with you every step of the way') }}</p>
+            <h2 class="section-subtitle">{{ _('Complete solutions from consultation to installation') }}</h2>
         </div>
         <div class="intro-content">
-            <p>{{ _('At Wallmade, we understand that every architectural project has unique requirements. That\'s why we offer a range of services designed to meet the diverse needs of architects, builders, and developers. Whether you need a single custom piece or production runs for large developments, we have the expertise and capacity to deliver.') }}</p>
+            <p>{{ _('WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage.') }}</p>
         </div>
     </div>
 </section>
 
 <section class="section services-list bg-light">
     <div class="container">
-        {% for service in services %}
         <div class="service-card">
             <div class="service-icon">
-                <i class="fas fa-{{ service.icon }}"></i>
+                <i class="fas fa-pencil-ruler"></i>
             </div>
             <div class="service-content">
-                <h3>{{ service[current_language].title }}</h3>
-                <p>{{ service[current_language].description }}</p>
+                <h3>{{ _('Custom Design Development') }}</h3>
+                <p>{{ _('We create designs based on the architectural features of the space, the function of the building and your vision.') }}</p>
                 <ul class="service-features">
-                    {% if service['en'].title == "Custom Architectural Details" %}
-                    <li><i class="fas fa-check"></i> {{ _('Bespoke design solutions') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Material selection guidance') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Prototyping and sampling') }}</li>
-                    {% elif service['en'].title == "Mass Production" %}
-                    <li><i class="fas fa-check"></i> {{ _('High-volume manufacturing') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Consistent quality control') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Just-in-time delivery') }}</li>
-                    {% elif service['en'].title == "Design Consultation" %}
-                    <li><i class="fas fa-check"></i> {{ _('Technical drawings') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Material specifications') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Integration advice') }}</li>
-                    {% elif service['en'].title == "Installation Support" %}
-                    <li><i class="fas fa-check"></i> {{ _('Installation guides') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('On-site training') }}</li>
-                    <li><i class="fas fa-check"></i> {{ _('Troubleshooting assistance') }}</li>
-                    {% endif %}
+                    <li><i class="fas fa-check"></i> {{ _('Custom shapes and colors') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Drawings and 3D presentation before implementation') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Consultation on color combinations and style selection') }}</li>
                 </ul>
             </div>
         </div>
-        {% endfor %}
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hammer"></i>
+            </div>
+            <div class="service-content">
+                <h3>{{ _('Professional Installation') }}</h3>
+                <p>{{ _('Our experienced team performs tile installation while maintaining all technical standards.') }}</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> {{ _('With precise measurements') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Using appropriate materials') }}</li>
+                    <li><i class="fas fa-check"></i> {{ _('Fast and controlled process') }}</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="section process">
+<section id="process" class="section process">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">{{ _('Our Process') }}</h2>
-            <p class="section-subtitle">{{ _('How we work to bring your vision to life') }}</p>
+            <h2 class="section-title">{{ _('Our Working Process') }}</h2>
+            <p class="section-subtitle">{{ _('How we bring your vision to reality') }}</p>
         </div>
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-number">1</div>
                 <h3>{{ _('Consultation') }}</h3>
-                <p>{{ _('We begin by understanding your project requirements, design intent, and technical specifications.') }}</p>
+                <p>{{ _('Understanding your requirements and project specifications') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">2</div>
-                <h3>{{ _('Design & Prototyping') }}</h3>
-                <p>{{ _('Our team creates detailed designs and produces prototypes for your approval.') }}</p>
+                <h3>{{ _('Design') }}</h3>
+                <p>{{ _('Creating customized solutions for your architectural needs') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">3</div>
                 <h3>{{ _('Production') }}</h3>
-                <p>{{ _('Once approved, we manufacture your components with precision and care.') }}</p>
+                <p>{{ _('Manufacturing high-quality cladding materials') }}</p>
             </div>
             <div class="process-step">
                 <div class="step-number">4</div>
-                <h3>{{ _('Delivery & Support') }}</h3>
-                <p>{{ _('We ensure safe delivery and provide ongoing support for installation.') }}</p>
+                <h3>{{ _('Installation') }}</h3>
+                <p>{{ _('Professional implementation with technical precision') }}</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section cta bg-dark">
+<section id="benefits" class="section benefits">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">{{ _('Why Choose Our Services') }}</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="fas fa-award"></i>
+                <h4>{{ _('Quality Assurance') }}</h4>
+                <p>{{ _('15-year warranty on all our products') }}</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-clock"></i>
+                <h4>{{ _('Timely Delivery') }}</h4>
+                <p>{{ _('Efficient processes ensure on-time completion') }}</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-users"></i>
+                <h4>{{ _('Expert Team') }}</h4>
+                <p>{{ _('Experienced professionals in cladding solutions') }}</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-leaf"></i>
+                <h4>{{ _('Sustainable Materials') }}</h4>
+                <p>{{ _('Environmentally friendly production') }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section cta bg-dark">
     <div class="container">
         <div class="cta-content">
-            <h2>{{ _('Ready to Discuss Your Project?') }}</h2>
-            <p>{{ _('Our team is ready to help you with your architectural detailing needs.') }}</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Get Started') }}</a>
+            <h2>{{ _('Ready to Start Your Project?') }}</h2>
+            <p>{{ _('Contact us for a free consultation and quote') }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Get in Touch') }}</a>
         </div>
     </div>
 </section>

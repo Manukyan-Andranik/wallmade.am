@@ -336,3 +336,13 @@
         -webkit-overflow-scrolling: touch;
     }
 }
+
+
+/* Add this to your CSS file or <style> tag */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+body.images-loaded {
+    opacity: 1;
+}

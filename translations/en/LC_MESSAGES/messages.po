@@ -34,8 +34,8 @@ msgstr "Our Works"
 msgid "Contact"
 msgstr "Contact"
 
-msgid "Creating exceptional architectural details for modern construction since 2010."
-msgstr "Creating exceptional architectural details for modern construction since 2010."
+msgid "Creating exceptional architectural details for modern construction since 2010"
+msgstr "Creating exceptional architectural details for modern construction since 2010"
 
 msgid "Quick Links"
 msgstr "Quick Links"
@@ -46,14 +46,14 @@ msgstr "Contact Us"
 msgid "Newsletter"
 msgstr "Newsletter"
 
-msgid "Subscribe to our newsletter for the latest updates."
-msgstr "Subscribe to our newsletter for the latest updates."
+msgid "Subscribe to our newsletter for the latest updates"
+msgstr "Subscribe to our newsletter for the latest updates"
 
 msgid "Your email address"
 msgstr "Your email address"
 
-msgid "All rights reserved."
-msgstr "All rights reserved."
+msgid "All rights reserved"
+msgstr "All rights reserved"
 
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
@@ -76,8 +76,8 @@ msgstr "Architectural detail product"
 msgid "Have Questions About This Product?"
 msgstr "Have Questions About This Product?"
 
-msgid "Our product specialists are ready to provide more information and technical details."
-msgstr "Our product specialists are ready to provide more information and technical details."
+msgid "Our product specialists are ready to provide more information and technical details"
+msgstr "Our product specialists are ready to provide more information and technical details"
 
 msgid "Contact Our Team"
 msgstr "Contact Our Team"
@@ -88,11 +88,8 @@ msgstr "Our Products"
 msgid "High-quality architectural details for every project"
 msgstr "High-quality architectural details for every project"
 
-msgid "Product Categories"
-msgstr "Product Categories"
-
-msgid "Explore our range of architectural details"
-msgstr "Explore our range of architectural details"
+msgid "Our exterior cladding tiles"
+msgstr "Our exterior cladding tiles"
 
 msgid "Learn more"
 msgstr "Learn more"
@@ -118,8 +115,8 @@ msgstr "Quality materials for exceptional results"
 msgid "Can't Find What You're Looking For?"
 msgstr "Can't Find What You're Looking For?"
 
-msgid "We specialize in custom solutions. Contact us to discuss your specific requirements."
-msgstr "We specialize in custom solutions. Contact us to discuss your specific requirements."
+msgid "We specialize in custom solutions. Contact us to discuss your specific requirements"
+msgstr "We specialize in custom solutions. Contact us to discuss your specific requirements"
 
 msgid "Request Custom Quote"
 msgstr "Request Custom Quote"
@@ -148,8 +145,8 @@ msgstr "The experienced professionals guiding Wallmade"
 msgid "Want to Learn More About Us?"
 msgstr "Want to Learn More About Us?"
 
-msgid "Our team is always happy to discuss our approach and how we can contribute to your project."
-msgstr "Our team is always happy to discuss our approach and how we can contribute to your project."
+msgid "Our team is always happy to discuss our approach and how we can contribute to your project"
+msgstr "Our team is always happy to discuss our approach and how we can contribute to your project"
 
 msgid "Contact Us"
 msgstr "Contact Us"
@@ -200,8 +197,8 @@ msgstr "See how our products enhance architectural projects"
 msgid "Ready to Elevate Your Project?"
 msgstr "Ready to Elevate Your Project?"
 
-msgid "Contact us today to discuss your architectural detail needs."
-msgstr "Contact us today to discuss your architectural detail needs."
+msgid "Contact us to discuss your project"
+msgstr "Contact us to discuss your project"
 
 msgid "Get in Touch"
 msgstr "Get in Touch"
@@ -209,8 +206,8 @@ msgstr "Get in Touch"
 msgid "Ready to Discuss Your Project?"
 msgstr "Ready to Discuss Your Project?"
 
-msgid "Our team is ready to help you with your architectural detailing needs."    
-msgstr "Our team is ready to help you with your architectural detailing needs."
+msgid "Our team is ready to help you with your architectural detailing needs"    
+msgstr "Our team is ready to help you with your architectural detailing needs"
 
 msgid "Get Started"
 msgstr "Get Started"
@@ -230,35 +227,32 @@ msgstr "Our Clients"
 msgid "We've had the privilege to work with"
 msgstr "We've had the privilege to work with"
 
-msgid "What Our Clients Say"
-msgstr "What Our Clients Say"
-
 msgid "Feedback from architects and builders"
 msgstr "Feedback from architects and builders"
 
 msgid "Quality"
 msgstr "Quality"
 
-msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
-msgstr "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time."
+msgid "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time"
+msgstr "We never compromise on materials or craftsmanship. Every detail matters in creating products that stand the test of time"
 
 msgid "Innovation"
 msgstr "Innovation"
 
-msgid "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
-msgstr "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture."
+msgid "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture"
+msgstr "We continuously explore new techniques and materials to offer cutting-edge solutions for modern architecture"
 
 msgid "Collaboration"
 msgstr "Collaboration"
 
-msgid "We work closely with architects and builders to understand their vision and bring it to life."
-msgstr "We work closely with architects and builders to understand their vision and bring it to life."
+msgid "We work closely with architects and builders to understand their vision and bring it to life"
+msgstr "We work closely with architects and builders to understand their vision and bring it to life"
 
 msgid "Sustainability"
 msgstr "Sustainability"
 
-msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
-msgstr "We're committed to environmentally responsible practices in our materials sourcing and manufacturing."
+msgid "We're committed to environmentally responsible practices in our materials sourcing and manufacturing"
+msgstr "We're committed to environmentally responsible practices in our materials sourcing and manufacturing"
 
 msgid "Our Process"
 msgstr "Our Process"
@@ -269,26 +263,26 @@ msgstr "How we work to bring your vision to life"
 msgid "Consultation"
 msgstr "Consultation"
 
-msgid "We begin by understanding your project requirements, design intent, and technical specifications."
-msgstr "We begin by understanding your project requirements, design intent, and technical specifications."
+msgid "We begin by understanding your project requirements, design intent, and technical specifications"
+msgstr "We begin by understanding your project requirements, design intent, and technical specifications"
 
 msgid "Design & Prototyping"
 msgstr "Design & Prototyping"
 
-msgid "Our team creates detailed designs and produces prototypes for your approval."
-msgstr "Our team creates detailed designs and produces prototypes for your approval."
+msgid "Our team creates detailed designs and produces prototypes for your approval"
+msgstr "Our team creates detailed designs and produces prototypes for your approval"
 
 msgid "Production"
 msgstr "Production"
 
-msgid "Once approved, we manufacture your components with precision and care."
-msgstr "Once approved, we manufacture your components with precision and care."
+msgid "Once approved, we manufacture your components with precision and care"
+msgstr "Once approved, we manufacture your components with precision and care"
 
 msgid "Delivery & Support"
 msgstr "Delivery & Support"
 
-msgid "We ensure safe delivery and provide ongoing support for installation."
-msgstr "We ensure safe delivery and provide ongoing support for installation."
+msgid "We ensure safe delivery and provide ongoing support for installation"
+msgstr "We ensure safe delivery and provide ongoing support for installation"
 
 msgid "Custom Architectural Details"
 msgstr "Custom Architectural Details"
@@ -332,8 +326,8 @@ msgstr "Troubleshooting assistance"
 msgid "Want to Feature Your Project Here?"
 msgstr "Want to Feature Your Project Here?"
 
-msgid "Contact us to discuss how Wallmade products can enhance your next architectural project."
-msgstr "Contact us to discuss how Wallmade products can enhance your next architectural project."
+msgid "Contact us to discuss how Wallmade products can enhance your next architectural project"
+msgstr "Contact us to discuss how Wallmade products can enhance your next architectural project"
 
 msgid "Start a Conversation"
 msgstr "Start a Conversation"
@@ -350,8 +344,8 @@ msgstr "Let's Start a Conversation"
 msgid "Were here to answer your questions and discuss your next project"
 msgstr "Were here to answer your questions and discuss your next project"
 
-msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
-msgstr "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you."
+msgid "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you"
+msgstr "Whether you have questions about our products, need a quote, or want to discuss a custom project, our team is ready to assist you"
 
 msgid "Our Location"
 msgstr "Our Location"
@@ -368,8 +362,8 @@ msgstr "Email"
 msgid "Thank You for Your Message!"
 msgstr "Thank You for Your Message!"
 
-msgid "We've received your inquiry and will get back to you within 24 hours."
-msgstr "We've received your inquiry and will get back to you within 24 hours."
+msgid "We've received your inquiry and will get back to you within 24 hours"
+msgstr "We've received your inquiry and will get back to you within 24 hours"
 
 msgid "Your Name"
 msgstr "Your Name"
@@ -407,8 +401,8 @@ msgstr "Send Message"
 msgid "Ready to Start Your Project?"
 msgstr "Ready to Start Your Project?"
 
-msgid "Contact us today to discuss your architectural detailing needs."
-msgstr "Contact us today to discuss your architectural detailing needs."
+msgid "Contact us to discuss your project"
+msgstr "Contact us to discuss your project"
 
 msgid "Project Overview"
 msgstr "Project Overview"
@@ -443,8 +437,8 @@ msgstr "Project Details"
 msgid "Additional views and details"
 msgstr "Additional views and details"
 
-msgid "Contact us to discuss how we can contribute to your next architectural endeavor."
-msgstr "Contact us to discuss how we can contribute to your next architectural endeavor."
+msgid "Contact us to discuss how we can contribute to your next architectural endeavor"
+msgstr "Contact us to discuss how we can contribute to your next architectural endeavor"
 
 msgid "View All Products"
 msgstr "View All Products"
@@ -463,8 +457,8 @@ msgstr "Share This Product"
 
 
 #: about_wallmade
-msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles."
-msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles."
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles"
+msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality and durable exterior cladding tiles"
 
 #: trust_and_demand
 msgid "In a short time, we have become a trusted and in-demand name in the construction market by offering solutions that meet the needs of modern architecture and provide:"
@@ -483,8 +477,8 @@ msgid "Long-term Protection for Buildings"
 msgstr "Long-term Protection for Buildings"
 
 #: redefining_exterior
-msgid "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions."
-msgstr "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions."
+msgid "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions"
+msgstr "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions"
 
 
 
@@ -497,44 +491,44 @@ msgstr "WALLMADE is your trusted choice for exterior cladding. Our tiles are:"
 msgid "Thermo-insulating"
 msgstr "Thermo-insulating"
 
-msgid "They preserve indoor temperature and improve energy efficiency."
-msgstr "They preserve indoor temperature and improve energy efficiency."
+msgid "They preserve indoor temperature and improve energy efficiency"
+msgstr "They preserve indoor temperature and improve energy efficiency"
 
 msgid "Sound-insulating"
 msgstr "Sound-insulating"
 
-msgid "They reduce external noise, ensuring comfort."
-msgstr "They reduce external noise, ensuring comfort."
+msgid "They reduce external noise, ensuring comfort"
+msgstr "They reduce external noise, ensuring comfort"
 
 msgid "Moisture-resistant"
 msgstr "Moisture-resistant"
 
-msgid "They protect from humidity."
-msgstr "They protect from humidity."
+msgid "They protect from humidity"
+msgstr "They protect from humidity"
 
 msgid "Fire-resistant"
 msgstr "Fire-resistant"
 
-msgid "Made from non-flammable, safe materials."
-msgstr "Made from non-flammable, safe materials."
+msgid "Made from non-flammable, safe materials"
+msgstr "Made from non-flammable, safe materials"
 
 msgid "Weather-resistant"
 msgstr "Weather-resistant"
 
-msgid "Unaffected by sun, wind, snow, or rain."
-msgstr "Unaffected by sun, wind, snow, or rain."
+msgid "Unaffected by sun, wind, snow, or rain"
+msgstr "Unaffected by sun, wind, snow, or rain"
 
 msgid "Wide color selection"
 msgstr "Wide color selection"
 
-msgid "Matches any architectural style – from classic to modern."
-msgstr "Matches any architectural style – from classic to modern."
+msgid "Matches any architectural style – from classic to modern"
+msgstr "Matches any architectural style – from classic to modern"
 
 msgid "About Production"
 msgstr "About Production"
 
-msgid "WALLMADE tile sizes and prices may vary depending on the project."
-msgstr "WALLMADE tile sizes and prices may vary depending on the project."
+msgid "WALLMADE tile sizes and prices may vary depending on the project"
+msgstr "WALLMADE tile sizes and prices may vary depending on the project"
 
 msgid "Length: from 2 meters"
 msgstr "Length: from 2 meters"
@@ -545,31 +539,31 @@ msgstr "Width: 30 cm, 40 cm, 50 cm"
 msgid "Thickness: 3 cm, 4 cm, 5 cm"
 msgstr "Thickness: 3 cm, 4 cm, 5 cm"
 
-msgid "Price: starting at only 6,500 AMD per m²."
-msgstr "Price: starting at only 6,500 AMD per m²."
+msgid "Price: starting at only 6,500 AMD per m²"
+msgstr "Price: starting at only 6,500 AMD per m²"
 
 msgid "Warranty"
 msgstr "Warranty"
 
-msgid "Each of our products comes with an official warranty of up to 15 years, preserving color and strength."
-msgstr "Each of our products comes with an official warranty of up to 15 years, preserving color and strength."
+msgid "Each of our products comes with an official warranty of up to 15 years, preserving color and strength"
+msgstr "Each of our products comes with an official warranty of up to 15 years, preserving color and strength"
 
-msgid "Quality you can trust for years to come."
-msgstr "Quality you can trust for years to come."
+msgid "Quality you can trust for years to come"
+msgstr "Quality you can trust for years to come"
 
 
 
 msgid "OUR SERVICES"
 msgstr "OUR SERVICES"
 
-msgid "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
-msgstr "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage."
+msgid "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage"
+msgstr "WALLMADE provides comprehensive solutions in the field of exterior cladding, from consultation to final installation. We work with precision, systematically and meticulously, ensuring high quality at every stage"
 
 msgid "Custom design development"
 msgstr "Custom design development"
 
-msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
-msgstr "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision"
+msgstr "We create designs based on the architectural features of the space, the function of the building and your vision"
 
 msgid "Custom shapes and colors"
 msgstr "Custom shapes and colors"
@@ -605,8 +599,8 @@ msgstr "Complete solutions from consultation to installation"
 msgid "Custom Design Development"
 msgstr "Custom Design Development"
 
-msgid "We create designs based on the architectural features of the space, the function of the building and your vision."
-msgstr "We create designs based on the architectural features of the space, the function of the building and your vision."
+msgid "We create designs based on the architectural features of the space, the function of the building and your vision"
+msgstr "We create designs based on the architectural features of the space, the function of the building and your vision"
 
 msgid "Custom shapes and colors"
 msgstr "Custom shapes and colors"
@@ -617,8 +611,8 @@ msgstr "Drawings and 3D presentation before implementation"
 msgid "Consultation on color combinations and style selection"
 msgstr "Consultation on color combinations and style selection"
 
-msgid "Our experienced team performs tile installation while maintaining all technical standards."
-msgstr "Our experienced team performs tile installation while maintaining all technical standards."
+msgid "Our experienced team performs tile installation while maintaining all technical standards"
+msgstr "Our experienced team performs tile installation while maintaining all technical standards"
 
 msgid "With precise measurements"
 msgstr "With precise measurements"
@@ -678,31 +672,31 @@ msgid "Learn more about us"
 msgstr "Learn more about us"
 
 
-msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings."
-msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings."
+msgid "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings"
+msgstr "Founded in 2022, WALLMADE specializes in the production and installation of high-quality, durable exterior cladding tiles. In a short time, we have become a trusted name in the construction market, offering solutions that meet modern architectural demands while ensuring aesthetic appeal, technical durability and long-lasting protection for buildings"
 
-msgid "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications."
-msgstr "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications."
+msgid "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications"
+msgstr "Wallmade also specializes in the design and production of high-quality architectural details that transform buildings from ordinary to extraordinary. Our team of skilled craftsmen and designers work closely with architects and builders to create custom solutions that meet exact specifications"
 
-msgid "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building."
-msgstr "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building."
+msgid "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building"
+msgstr "Do you have any questions or would you like to start a project? Our specialists are ready to help at every stage of selection, design and implementation. Contact us to choose the best solution for the exterior design of your building"
 
 msgid "Yerevan, Arshakunyats Avenue, 25/1"
 msgstr "Yerevan, Arshakunyats Avenue, 25/1"
 
-msgid "Your message has been sent successfully! We will get back to you soon."
-msgstr "Your message has been sent successfully! We will get back to you soon."
+msgid "Your message has been sent successfully! We will get back to you soon"
+msgstr "Your message has been sent successfully! We will get back to you soon"
 
 
 
-msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
-msgstr "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability"
+msgstr "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability"
 
-msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
-msgstr "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
+msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications"
+msgstr "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications"
 
-msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
-msgstr "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements"
+msgstr "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements"
 
 msgid "Discover our story"
 msgstr "Discover our story"
@@ -713,8 +707,8 @@ msgstr "Years"
 msgid "Feedback"
 msgstr "Feedback"
 
-msgid "Contact us with any questions."
-msgstr "Contact us with any questions."
+msgid "Contact us with any questions"
+msgstr "Contact us with any questions"
 
 
 msgid "Cladding Tile"

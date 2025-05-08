@@ -175,7 +175,7 @@ section {
 
 .main-nav a:hover {
     color: var(--primary-color);
-    background-color: var(--primary-light);
+    background-color: var(--accent-color);
 }
 
 .main-nav a.active {

@@ -234,3 +234,38 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll("img");
+    let loadedImages = 0;
+
+    if (images.length === 0) {
+        onAllImagesLoaded();
+        return;
+    }
+
+    images.forEach(img => {
+        if (img.complete) {
+            loadedImages++;
+            if (loadedImages === images.length) onAllImagesLoaded();
+        } else {
+            img.addEventListener('load', () => {
+                loadedImages++;
+                if (loadedImages === images.length) onAllImagesLoaded();
+            });
+            img.addEventListener('error', () => {
+                loadedImages++;
+                if (loadedImages === images.length) onAllImagesLoaded();
+            });
+        }
+    });
+
+    function onAllImagesLoaded() {
+        // Do whatever you want here
+        console.log("✅ All images loaded!");
+        document.body.classList.add("images-loaded");
+
+        // Example: fade in content
+        document.querySelector("body").style.opacity = "1";
+    }
+});

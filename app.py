@@ -39,19 +39,10 @@ app.config['MAIL_USE_TLS'] = MAIL_USE_TLS
 app.config['MAIL_USERNAME'] = MAIL_USERNAME
 app.config['MAIL_PASSWORD'] = MAIL_PASSWORD
 app.config['MAIL_DEFAULT_SENDER'] = MAIL_DEFAULT_SENDER
-
 mail = Mail(app)
-
 
 # Initialize Babel for translations
 babel = Babel(app)
-
-# Cloudinary configuration
-cloudinary.config(
-    cloud_name=app.config['CLOUDINARY_CLOUD_NAME'],
-    api_key=app.config['CLOUDINARY_API_KEY'],
-    api_secret=app.config['CLOUDINARY_API_SECRET']
-)
 LANGUAGES = app.config['LANGUAGES']
 
 # Get Database using MongoDB client URI
@@ -145,7 +136,8 @@ def home():
     products, works, _, _ = get_collections()
     featured_products = list(products.find().limit(3))
     featured_works = list(works.find().limit(3))
-    
+    for i,work in enumerate(featured_works):
+        featured_works[i]["Images_folder_url"] = Config.fetch_work_images_by_folder(work['Images_folder_url'])[0]
     return render_template('index.html',
                          featured_products=featured_products,
                          featured_works=featured_works,
@@ -237,6 +229,8 @@ def product_detail(product_id):
 def works():
     _, works, _, _ = get_collections()
     all_works = list(works.find())
+    for i,work in enumerate(all_works):
+        all_works[i]["Images_folder_url"] = Config.fetch_work_images_by_folder(work['Images_folder_url'])
     return render_template('works.html', works=all_works, languages=LANGUAGES, current_language=get_locale())
 
 @app.route('/work/<work_id>')
@@ -246,6 +240,8 @@ def work_detail(work_id):
     work = works.find_one({"_id": ObjectId(work_id)})
     if not work:
         return redirect(url_for('works'))
+    images = Config.fetch_work_images_by_folder(work['Images_folder_url'])
+    work['Images_folder_url'] = images
     return render_template('work_detail.html', work=work, languages=LANGUAGES, current_language=get_locale())
 
 # Admin Routes
@@ -429,7 +425,6 @@ def admin_add_product(product_id):
         flash('Product not found', 'error')
     return redirect(url_for('admin_products'))
 
-
 @app.route('/admin/works')
 @admin_required
 def admin_works():
@@ -587,39 +582,13 @@ def admin_edit_work(work_id):
                 'ru': request.form.get('project_type_ru', '')
             }
             
-            architect = {
-                'en': request.form.get('architect_en', ''),
-                'hy': request.form.get('architect_hy', ''),
-                'ru': request.form.get('architect_ru', '')
-            }
-            
             # Handle products used as arrays
             products_used = {
                 'en': [f.strip() for f in request.form.get('products_used_en', '').split('\n') if f.strip()],
                 'hy': [f.strip() for f in request.form.get('products_used_hy', '').split('\n') if f.strip()],
                 'ru': [f.strip() for f in request.form.get('products_used_ru', '').split('\n') if f.strip()]
             }
-            
-            # Handle testimonial
-            testimonial_text = {
-                'en': request.form.get('testimonial_text_en', ''),
-                'hy': request.form.get('testimonial_text_hy', ''),
-                'ru': request.form.get('testimonial_text_ru', '')
-            }
-            
-            testimonial_position = {
-                'en': request.form.get('testimonial_position_en', ''),
-                'hy': request.form.get('testimonial_position_hy', ''),
-                'ru': request.form.get('testimonial_position_ru', '')
-            }
-            
-            testimonial = None
-            if request.form.get('testimonial_author'):
-                testimonial = {
-                    'text': testimonial_text,
-                    'author': request.form.get('testimonial_author', ''),
-                    'position': testimonial_position
-                }
+
             
             updates = {
                 'title': title,
@@ -627,9 +596,7 @@ def admin_edit_work(work_id):
                 'location': location,
                 'project_type': project_type,
                 'year': request.form.get('year', ''),
-                'architect': architect,
                 'products_used': products_used,
-                'testimonial': testimonial,
                 'updated_at': datetime.datetime.utcnow()
             }
             
@@ -673,8 +640,6 @@ def admin_delete_work(work_id):
     except Exception as e:
         flash(f'Error deleting work: {str(e)}', 'error')
         return redirect(url_for('admin_works'))
-
-# ... (keep all your existing imports and configuration) ...
 
 @app.route('/admin/json-insert', methods=['GET', 'POST'])
 @admin_required
@@ -743,7 +708,6 @@ def admin_json_insert():
                          last_result=last_result,
                          languages=LANGUAGES,
                          current_language=get_locale())
-    
     
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)

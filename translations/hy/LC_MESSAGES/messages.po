@@ -416,7 +416,7 @@ msgid "View Project"
 msgstr "Դիտել Նախագիծը"
 
 msgid "Featured project using Wallmade architectural details"
-msgstr "Նախագիծ, որն օգտագործում է Wallmade ճարտարապետական Դետալներ"
+msgstr "Նախագիծ, որն օգտագործում է Wallmade ճարտարապետական Դետալները"
 
 msgid "Location"
 msgstr "Տեղադրություն"
@@ -767,3 +767,9 @@ msgstr "Այցելեք մեր գրասենյակը Երևանում"
 
 msgid   "Get in touch with our team of experts"
 msgstr "Կապվեք մեր մասնագետների թիմի հետ"
+
+msgid "WALLMADE is your trusted choice for exterior cladding. Our tiles are:"
+msgstr "WALLMADE-ը ձեր վստահելի ընտրությունն է արտաքին երեսպատման համար: Մեր սալիկները՝"
+
+msgid "Inspired by This Project?"
+msgstr "Ոգեշնչվա՞ծ եք այս նախագծով"

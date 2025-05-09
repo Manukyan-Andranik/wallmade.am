@@ -15,6 +15,7 @@
     <table class="data-table">
         <thead>
             <tr>
+                <th>Number</th>
                 <th>Title (EN)</th>
                 <th>Location</th>
                 <th>Type</th>
@@ -25,6 +26,7 @@
         <tbody>
             {% for work in works %}
             <tr>
+                <td>{{ work.Images_folder_url }}</td>
                 <td>{{ work.title.en }}</td>
                 <td>{{ work.location.en }}</td>
                 <td>{{ work.project_type.en }}</td>

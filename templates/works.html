@@ -25,7 +25,7 @@
             {% for work in works %}
             <div class="portfolio-item" data-category="{{ work.category.get('en') if work.category else 'all' }}" data-aos="zoom-in">
                 <div class="portfolio-image">
-                    <img src="{{ work.Images_folder_url }}" alt="{{ work.title.get(current_language, work.title.get('en', 'Project')) }}" loading="lazy">
+                    <img src="{{ work.Images_folder_url[0] }}" alt="{{ work.title.get(current_language, work.title.get('en', 'Project')) }}" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="overlay-content">
                             <h3>{{ work.title.get(current_language, work.title.get('en', 'Project')) }}</h3>

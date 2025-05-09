@@ -1,7 +1,58 @@
 {% extends "base.html" %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/work_detail_style.css') }}">
 {% endblock %}
+
+{% block extra_js %}
+<script>
+    const imageUrls = {{ work.Images_folder_url|tojson }};
+    let currentIndex = 0;
+
+    const mainImage = document.getElementById('main-project-image');
+    const prevBtn = document.getElementById('prev-image');
+    const nextBtn = document.getElementById('next-image');
+    const dots = document.querySelectorAll('.image-pagination .dot');
+
+    function updateImage(index) {
+        mainImage.style.opacity = 0;
+        setTimeout(() => {
+            mainImage.src = imageUrls[index];
+            currentIndex = index;
+            updateDots();
+            mainImage.style.opacity = 1;
+        }, 200);
+    }
+
+    function updateDots() {
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
+        updateImage(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % imageUrls.length;
+        updateImage(currentIndex);
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-index'));
+            updateImage(index);
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prevBtn.click();
+        if (e.key === 'ArrowRight') nextBtn.click();
+    });
+</script>
+{% endblock %}
+
 {% block content %}
 <section class="page-hero">
     <div class="container">
@@ -14,10 +65,19 @@
     <div class="container">
         <div class="project-gallery">
             <div class="main-image">
-                <img src="{{ work.Images_folder_url }}" alt="{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}" id="main-project-image" class="zoom-on-hover">
+                <button id="prev-image" class="image-nav-btn" aria-label="Previous image">‹</button>
+                <img src="{{ work.Images_folder_url[0] }}"
+                     alt="{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}"
+                     id="main-project-image" class="zoom-on-hover" loading="eager">
+                <button id="next-image" class="image-nav-btn" aria-label="Next image">›</button>
             </div>
         </div>
-        
+        <div class="image-pagination" id="image-pagination">
+            {% for image in work.Images_folder_url %}
+                <span class="dot{% if loop.index0 == 0 %} active{% endif %}" data-index="{{ loop.index0 }}" title="Image {{ loop.index }}"></span>
+            {% endfor %}
+        </div>
+
         <div class="project-info">
             <div class="project-meta">
                 <div class="meta-item">
@@ -32,20 +92,16 @@
                     <h4>{{ _('Year Completed') }}</h4>
                     <p>{{ work.year }}</p>
                 </div>
-                <div class="meta-item">
-                    <h4>{{ _('Architect') }}</h4>
-                    <p>{{ work.architect.get(current_language, work.architect.get('en', '')) }}</p>
-                </div>
             </div>
-            
+
             <div class="project-description">
                 <h2>{{ _('Project Overview') }}</h2>
                 <p>{{ work.description.get(current_language, work.description.get('en', '')) }}</p>
-                
+
                 <h3>{{ _('Wallmade Products Used') }}</h3>
                 <ul class="products-used">
                     {% for product in work.products_used.get(current_language, work.products_used.get('en', [])) %}
-                    <li>{{ product }}</li>
+                        <li>{{ product }}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -60,24 +116,12 @@
             <p class="section-subtitle">{{ _('Additional views and details') }}</p>
         </div>
         <div class="image-grid">
-            {% for i in range(6, 11) %}
-            <div class="grid-item">
-                <img src="{{ work.Images_folder_url }}" alt="{{ work.title.get('en') }} - {{ _('Detail') }} {{ i }}" loading="lazy" class="zoom-on-hover">
-            </div>
+            {% for image in work.Images_folder_url %}
+                <div class="grid-item">
+                    <img src="{{ image }}" alt="{{ work.title.get('en') }} - {{ _('Detail') }} {{ loop.index0 }}"
+                         loading="lazy" class="zoom-on-hover">
+                </div>
             {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section project-testimonial bg-light">
-    <div class="container">
-        <div class="testimonial-content">
-            <blockquote>
-                <p>{{ work.testimonial.text.get(current_language, work.testimonial.text.get('en', '')) }}</p>
-                <footer>
-                    <cite>{{ work.testimonial.author }}, {{ _(work.testimonial.position.get(current_language, work.testimonial.position.get('en', ''))) }}</cite>
-                </footer>
-            </blockquote>
         </div>
     </div>
 </section>

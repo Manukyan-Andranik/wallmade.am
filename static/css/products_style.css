@@ -346,3 +346,49 @@ body {
 body.images-loaded {
     opacity: 1;
 }
+
+
+/* Add these media queries to your existing CSS */
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 100px 0 60px;
+        background-attachment: scroll; /* Disable parallax on mobile */
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .product-card {
+        margin-bottom: 15px;
+    }
+    
+    .product-image {
+        height: 220px;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .product-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ensure viewport is properly set */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}

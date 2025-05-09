@@ -765,3 +765,6 @@ msgstr "Посетите наш местоположение в Ереване"
 
 msgid "Get in touch with our team of experts"
 msgstr "Свяжитесь с нашей командой экспертов"
+
+msgid "Inspired by This Project?"
+msgstr "Вас вдохновил этот проект?"

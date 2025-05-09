@@ -58,21 +58,6 @@
             <input type="text" id="year" name="year" value="{{ work.year if work else '' }}" required>
         </div>
         
-        <div class="form-row">
-            <div class="form-group">
-                <label for="architect_en">Architect (English)</label>
-                <input type="text" id="architect_en" name="architect_en" value="{{ work.architect.en if work else '' }}">
-            </div>
-            <div class="form-group">
-                <label for="architect_hy">Architect (Armenian)</label>
-                <input type="text" id="architect_hy" name="architect_hy" value="{{ work.architect.hy if work else '' }}">
-            </div>
-            <div class="form-group">
-                <label for="architect_ru">Architect (Russian)</label>
-                <input type="text" id="architect_ru" name="architect_ru" value="{{ work.architect.ru if work else '' }}">
-            </div>
-        </div>
-        
         <div class="form-group">
             <label for="image">Work Image URL</label>
             <input type="text" id="image" name="image" value="{{ work.Images_folder_url if work else '' }}" required>
@@ -111,35 +96,6 @@
             <div class="form-group">
                 <label for="products_used_ru">Products Used (Russian, one per line)</label>
                 <textarea id="products_used_ru" name="products_used_ru" rows="3">{% if work and work.products_used.ru %}{{ '\n'.join(work.products_used.ru) }}{% endif %}</textarea>
-            </div>
-        </div>
-        
-        <div class="testimonial-group">
-            <label>Testimonial (Optional)</label>
-            <div class="form-group">
-                <input type="text" name="testimonial_author" placeholder="Author Name" value="{{ work.testimonial.author if work and work.testimonial else '' }}">
-            </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <input type="text" name="testimonial_position_en" placeholder="Author Position (English)" value="{{ work.testimonial.position.en if work and work.testimonial else '' }}">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="testimonial_position_hy" placeholder="Author Position (Armenian)" value="{{ work.testimonial.position.hy if work and work.testimonial else '' }}">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="testimonial_position_ru" placeholder="Author Position (Russian)" value="{{ work.testimonial.position.ru if work and work.testimonial else '' }}">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <textarea name="testimonial_text_en" placeholder="Testimonial Text (English)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.en }}{% endif %}</textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="testimonial_text_hy" placeholder="Testimonial Text (Armenian)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.hy }}{% endif %}</textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="testimonial_text_ru" placeholder="Testimonial Text (Russian)" rows="3">{% if work and work.testimonial %}{{ work.testimonial.text.ru }}{% endif %}</textarea>
-                </div>
             </div>
         </div>
         

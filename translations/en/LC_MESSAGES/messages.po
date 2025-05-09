@@ -480,8 +480,6 @@ msgstr "Long-term Protection for Buildings"
 msgid "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions"
 msgstr "WALLMADE redefines the art of building exteriors by offering high quality and innovative solutions"
 
-
-
 msgid "Advantages"
 msgstr "Advantages"
 
@@ -727,3 +725,6 @@ msgstr "Visit our location in Yerevan"
 
 msgid "Get in touch with our team of experts"
 msgstr "Get in touch with our team of experts"
+
+msgid "Inspired by This Project?"
+msgstr "Inspired by This Project?"

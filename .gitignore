@@ -8,3 +8,4 @@ venv_wallmade/
 .DS_Store
 templates/index_videos.html
 templates/base_videos.html
+logs/

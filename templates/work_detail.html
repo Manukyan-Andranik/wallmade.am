@@ -108,39 +108,9 @@
 {% block extra_js %}
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100
-    });
-
-    // Initialize lazy loading
     document.addEventListener("DOMContentLoaded", function() {
-        // Load main image immediately (since it's above the fold)
         const mainImage = document.getElementById('main-project-image');
-        if (mainImage.dataset.src) {
-            mainImage.src = mainImage.dataset.src;
-        }
-
-        // Lazy load for other images
-        if ('loading' in HTMLImageElement.prototype) {
-            const lazyImages = document.querySelectorAll('img.lazyload');
-            lazyImages.forEach(img => {
-                if (img.dataset.src && img !== mainImage) {
-                    img.src = img.dataset.src;
-                }
-            });
-        } else {
-            // Load lazysizes polyfill if needed
-            const script = document.createElement('script');
-            script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
-            script.async = true;
-            document.body.appendChild(script);
-        }
-
-        // Image gallery functionality
-        const imageUrls = "{{ work.Images_folder_url|tojson }}";
+        const imageUrls = JSON.parse('{{ work.Images_folder_url | tojson | safe }}');
         let currentIndex = 0;
         const prevBtn = document.getElementById('prev-image');
         const nextBtn = document.getElementById('next-image');
@@ -149,8 +119,8 @@
         function updateImage(index) {
             mainImage.style.opacity = 0;
             setTimeout(() => {
-                mainImage.dataset.src = imageUrls[index];
                 mainImage.src = imageUrls[index];
+                mainImage.dataset.src = imageUrls[index];
                 currentIndex = index;
                 updateDots();
                 mainImage.style.opacity = 1;
@@ -159,7 +129,9 @@
 
         function updateDots() {
             dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentIndex].classList.add('active');
+            if (dots[currentIndex]) {
+                dots[currentIndex].classList.add('active');
+            }
         }
 
         prevBtn.addEventListener('click', () => {
@@ -183,24 +155,7 @@
             if (e.key === 'ArrowLeft') prevBtn.click();
             if (e.key === 'ArrowRight') nextBtn.click();
         });
-
-        // Intersection Observer for secondary images
-        const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    if (img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.removeAttribute('data-src');
-                    }
-                    observer.unobserve(img);
-                }
-            });
-        });
-
-        document.querySelectorAll('.image-grid img[data-src]').forEach(img => {
-            lazyLoadObserver.observe(img);
-        });
     });
 </script>
+
 {% endblock %}

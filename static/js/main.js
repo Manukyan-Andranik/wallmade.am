@@ -233,9 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // If using AJAX, prevent default and handle submission
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll("img");
     let loadedImages = 0;
 
@@ -268,4 +266,5 @@ document.addEventListener("DOMContentLoaded", function () {
         // Example: fade in content
         document.querySelector("body").style.opacity = "1";
     }
+
 });

@@ -3,6 +3,7 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/products_style.css') }}">
 {% endblock %}
+
 {% block content %}
 <section class="page-hero">
     <div class="container">
@@ -21,7 +22,14 @@
             {% for product in products %}
             <div class="product-card" data-category="{{ product.category.get(current_language, 'all') if product.category else 'all' }}">
                 <div class="product-image">
-                    <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" loading="lazy">
+                    <img 
+                        src="{{ url_for('static', filename='img/placeholder.png') }}" 
+                        data-src="{{ product.Images_folder_url }}" 
+                        alt="{{ product.title.get('en') }}" 
+                        loading="lazy" 
+                        decoding="async" 
+                        class="lazyload"
+                        width="400" height="300">
                     <div class="product-overlay">
                         <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
@@ -46,4 +54,20 @@
         </div>
     </div>
 </section>
+
+<script>
+    // Fallback for browsers without native lazyload
+    document.addEventListener("DOMContentLoaded", function() {
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img.lazyload');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        } else {
+            const script = document.createElement('script');
+            script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+            document.body.appendChild(script);
+        }
+    });
+</script>
 {% endblock %}

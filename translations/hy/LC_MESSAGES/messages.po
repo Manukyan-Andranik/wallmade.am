@@ -773,3 +773,46 @@ msgstr "WALLMADE-ը ձեր վստահելի ընտրությունն է արտա
 
 msgid "Inspired by This Project?"
 msgstr "Ոգեշնչվա՞ծ եք այս նախագծով"
+
+msgid "Videos"
+msgstr "Տեսանյութեր"
+
+msgid "Production & Installation Videos"
+msgstr "Արտադրության և տեղադրման տեսանյութեր"
+
+msgid "See our exterior climbing details come to life through our manufacturing and installation processes"
+msgstr "Դիտեք, թե ինչպես են մեր արտաքին երեսպատման սալիկները կենդանանում արտադրության և տեղադրման գործընթացների միջոցով"
+
+msgid "Behind the Scenes of Quality"
+msgstr "Որակի կուլիսներից այն կողմ"
+
+msgid "Each 1-minute video showcases a different aspect of our production workflow or installation techniques, giving you insight into our meticulous craftsmanship."
+msgstr "Յուրաքանչյուր մեկ րոպեանոց տեսանյութ ներկայացնում է մեր արտադրական կամ տեղադրման տեխնիկայի տարբեր կողմերը՝ ցուցադրելով մեր մանրամասն վարպետությունը։"
+
+msgid "All Videos"
+msgstr "Բոլոր տեսանյութերը"
+
+msgid "Production"
+msgstr "Արտադրություն"
+
+msgid "Installation"
+msgstr "Տեղադրում"
+
+msgid "Want to See More?"
+msgstr "Ցանկանու՞մ եք տեսնել ավելին։"
+
+msgid "Contact us for detailed technical videos or specific process demonstrations."
+msgstr "Կապ հաստատեք մեզ հետ՝ մանրամասն տեխնիկական տեսանյութեր կամ հատուկ գործընթացների ցուցադրություններ ստանալու համար"
+
+msgid "Request Videos"
+msgstr "Հարցնել տեսանյութեր"
+
+
+msgid "Featured Videos"
+msgstr "Ընդգծված տեսանյութեր"
+
+msgid "See our craftsmanship in action"
+msgstr "Դիտեք մեր վարպետությունը գործողության մեջ"
+
+msgid "View All Videos"
+msgstr "Դիտել բոլոր տեսանյութերը"

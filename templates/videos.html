@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/videos_style.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="videos-hero">
+    <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">{{ _('Production & Installation Videos') }}</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                {{ _('See our exterior climbing details come to life through our manufacturing and installation processes') }}
+            </p>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+<section class="video-intro">
+    <div class="container">
+        <div class="intro-content" data-aos="fade-up">
+            <h2>{{ _('Behind the Scenes of Quality') }}</h2>
+            <p>{{ _('Each 1-minute video showcases a different aspect of our production workflow or installation techniques, giving you insight into our meticulous craftsmanship.') }}</p>
+            <div class="video-filter">
+                <button class="filter-btn active" data-filter="all">{{ _('All Videos') }}</button>
+                <button class="filter-btn" data-filter="production">{{ _('Production') }}</button>
+                <button class="filter-btn" data-filter="installation">{{ _('Installation') }}</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-gallery">
+    <div class="container">
+        <div class="video-grid">
+            {% for video in videos %}
+            <div class="video-card" data-category="{{ video.category }}" data-aos="fade-up" data-aos-delay="{{ loop.index * 50 }}">
+                <div class="video-container">
+                    <video class="video-thumbnail" poster="{{ url_for('static', filename='images/back2.jpg') }}" muted autoplay loop>
+                        <source src="{{ url_for('static', filename='videos/' ~ video.filename) }}" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="Play video">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="48px" height="48px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-duration">{{ video.duration }}</div>
+                </div>
+                <div class="video-info">
+                    <h3>{{ video.title[current_language] }}</h3>
+                    <p>{{ video.description[current_language] }}</p>
+                    <div class="video-meta">
+                        <span class="video-category">{{ video.category[current_language] }}</span>
+                        <span class="video-date">{{ video.date[current_language] }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="video-modal">
+    <div class="modal-content">
+        <button class="close-modal" aria-label="Close video">&times;</button>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-details">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+        </div>
+    </div>
+</div>
+
+<section class="video-cta">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>{{ _('Want to See More?') }}</h2>
+            <p>{{ _('Contact us for detailed technical videos or specific process demonstrations.') }}</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Request Videos') }}</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='js/videos.js') }}"></script>
+{% endblock %}

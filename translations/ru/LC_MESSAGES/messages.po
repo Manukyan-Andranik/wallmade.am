@@ -768,3 +768,46 @@ msgstr "Свяжитесь с нашей командой экспертов"
 
 msgid "Inspired by This Project?"
 msgstr "Вас вдохновил этот проект?"
+
+msgid "Videos"
+msgstr "Видео"
+
+msgid "Production & Installation Videos"
+msgstr "Видео о производстве и установке"
+
+msgid "See our exterior climbing details come to life through our manufacturing and installation processes"
+msgstr "Посмотрите, как наши внешние элементы для подъема оживают в процессе производства и установки"
+
+msgid "Behind the Scenes of Quality"
+msgstr "Закулисье качества"
+
+msgid "Each 1-minute video showcases a different aspect of our production workflow or installation techniques, giving you insight into our meticulous craftsmanship."
+msgstr "Каждое минутное видео демонстрирует различные аспекты нашего производственного процесса или методов установки, раскрывая нашу тщательную работу."
+
+msgid "All Videos"
+msgstr "Все видео"
+
+msgid "Production"
+msgstr "Производство"
+
+msgid "Installation"
+msgstr "Установка"
+
+msgid "Want to See More?"
+msgstr "Хотите увидеть больше?"
+
+msgid "Contact us for detailed technical videos or specific process demonstrations."
+msgstr "Свяжитесь с нами, чтобы получить подробные технические видео или демонстрации конкретных процессов"
+
+msgid "Request Videos"
+msgstr "Запросить видео"
+
+
+msgid "Featured Videos"
+msgstr "Рекомендуемые видео"
+
+msgid "See our craftsmanship in action"
+msgstr "Смотрите, как проявляется наше мастерство"
+
+msgid "View All Videos"
+msgstr "Смотреть все видео"

@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
 {% endblock %}
 
-
 {% block content %}
 <section class="hero">
     <div class="container">
@@ -59,7 +58,7 @@
             </div>
             <div class="about-preview-image" data-aos="fade-left" data-aos-delay="200">
                 <div class="image-container">
-                    <img src="{{ url_for('static', filename='images/index.jpg') }}" alt="Wallmade craftsmanship" class="zoom-effect" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/index.jpg') }}" alt="Wallmade craftsmanship" class="zoom-effect">
                     <div class="image-overlay"></div>
                 </div>
             </div>
@@ -78,7 +77,7 @@
             {% for product in featured_products %}
             <div class="product-card" data-aos="zoom-in" data-aos-delay="{{ loop.index * 50 }}">
                 <div class="product-image">
-                    <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" loading="lazy" width="400" height="300">
+                    <img src="{{ product.Images_folder_url }}" alt="{{ product.title.get('en') }}" loading="lazy">
                     <div class="product-overlay">
                         <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
@@ -110,9 +109,9 @@
         </div>
         <div class="works-grid">
             {% for work in featured_works %}
-            <div class="work-card" data-aos="zoom-in" data-aos-delay="{{ loop.index * 50 }}">
+            <div  class="work-card" data-aos="zoom-in" data-aos-delay="{{ loop.index * 50 }}">
                 <div class="work-image">
-                    <img src="{{ work.Images_folder_url }}" alt="{{ work.title }}" loading="lazy" width="400" height="300">
+                    <img src="{{ work.Images_folder_url }}" alt="{{ work.title }}" loading="lazy">
                     <div class="work-overlay">
                         <a href="{{ url_for('work_detail', work_id=work._id) }}" class="btn-view">{{ _('View Project') }}</a>
                     </div>
@@ -135,6 +134,56 @@
     </div>
 </section>
 
+<section class="video-showcase">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">{{ _('Featured Videos') }}</h2>
+            <p class="section-subtitle">{{ _('Experience our craftsmanship in motion') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
+        </div>
+
+        <div class="video-carousel-container">
+            <button class="nav-arrow left" aria-label="{{ _('Previous video') }}">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="video-track">
+                {% for video in videos %}
+                <div class="video-item 
+                    {% if loop.first %}main
+                    {% elif loop.index0 == 1 %}secondary
+                    {% elif loop.index0 == loop.length - 1 %}secondary
+                    {% else %}hidden{% endif %}"
+                    data-index="{{ loop.index0 }}">
+                    <div class="video-player">
+                        <video 
+                            src="{{ url_for('static', filename='videos/' ~ video) }}" 
+                            {% if loop.first %}autoplay muted{% endif %}
+                            playsinline 
+                            loop
+                            poster="{{ url_for('static', filename='images/video_poster.jpg') }}"
+                        ></video>
+                    </div>
+                    <div class="video-caption">
+                        <h3>{{ video.replace('.mp4', '').replace('_', ' ')|title }}</h3>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <button class="nav-arrow right" aria-label="{{ _('Next video') }}">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="carousel-nav">
+            {% for video in videos %}
+            <div class="nav-dot {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}"></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section class="section cta bg-dark">
     <div class="container">
         <div class="cta-content" data-aos="zoom-in">
@@ -148,54 +197,5 @@
 
 {% block extra_js %}
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="{{ url_for('static', filename='js/index.js') }}"></script>
-<script>
-// Video Play/Pause functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const playButtons = document.querySelectorAll('.play-button');
-    
-    playButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const videoContainer = this.closest('.video-container');
-            const video = videoContainer.querySelector('video');
-            
-            if (video.paused) {
-                video.play();
-                this.innerHTML = '<i class="fas fa-pause"></i>';
-                videoContainer.classList.add('playing');
-            } else {
-                video.pause();
-                this.innerHTML = '<i class="fas fa-play"></i>';
-                videoContainer.classList.remove('playing');
-            }
-        });
-    });
-    
-    // Initialize lazy loading for images
-    const lazyLoadImages = [].slice.call(document.querySelectorAll("img.lazy"));
-    if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove("lazy");
-                    lazyImageObserver.unobserve(lazyImage);
-                }
-            });
-        });
-
-        lazyLoadImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
-    }
-    
-    // Initialize AOS
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-    });
-});
-</script>
+<script src="static/js/index_animations.js"></script>
 {% endblock %}

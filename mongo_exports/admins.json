@@ -1,0 +1,10 @@
+[
+  {
+    "_id": {
+      "$oid": "681346d1a26683e86d2b29c5"
+    },
+    "username": "admin",
+    "password": "scrypt:32768:8:1$k4nYZHLQpqJValoJ$6b8ade1f84509c74ad55501e14afbef44463867f4beeab634cc463d4b92ab757c5e17539383e570550196a359ca0944beb98946a7bd8edbb542a1b5a24132141",
+    "is_admin": "True"
+  }
+]

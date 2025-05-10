@@ -1,0 +1,29 @@
+[
+  {
+    "_id": {
+      "$oid": "68135f84b01991a11516e759"
+    },
+    "name": "John Wall",
+    "position": "Co-Founder & CEO",
+    "bio": "With over 25 years in architecture, John ensures our products meet the highest design standards.",
+    "image": "seo.png"
+  },
+  {
+    "_id": {
+      "$oid": "68135f84b01991a11516e75a"
+    },
+    "name": "Maria Made",
+    "position": "Co-Founder & Production Director",
+    "bio": "Maria's craftsmanship expertise guarantees the quality of every piece we produce.",
+    "image": "seo.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "68135f84b01991a11516e75b"
+    },
+    "name": "David Stone",
+    "position": "Head of Design",
+    "bio": "David leads our design team in creating innovative architectural solutions.",
+    "image": "seo.png"
+  }
+]

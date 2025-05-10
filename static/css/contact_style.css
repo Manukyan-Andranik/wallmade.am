@@ -181,30 +181,6 @@
     text-decoration: underline;
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 2rem;
-    justify-content: center;
-}
-
-.social-links a {
-    width: 45px;
-    height: 45px;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-3px);
-}
 
 .contact-form {
     padding: 2.5rem;
@@ -350,11 +326,6 @@
     position: relative;
     z-index: 2;
 }
-
-
-
-
-
 
 .cta-section .hero-title {
     margin-bottom: 1.5rem;

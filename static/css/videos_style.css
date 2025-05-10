@@ -1,0 +1,425 @@
+/* Video Page Specific Styles with Custom Color Palette */
+:root {
+    /* Color System */
+    --green-color: #4caf50;          /* Fresh green */
+    --primary-color: #7d2a35;         /* Deep muted crimson */
+    --primary-light: rgba(125, 42, 53, 0.1);
+    --secondary-color: #5e2c3e;       /* Romantic burgundy */
+    --accent-color: #dcaa6d;          /* Warm gold accent */
+    --accent-light: rgba(220, 170, 109, 0.1);
+    --dark-color: #0a4f4f;            /* Rich teal */
+    --light-color: #f8f5f0;           /* Warm ivory */
+    --menu-color: #207676;            /* Muted teal */
+    
+    /* Text Colors */
+    --text-color: #333333;
+    --text-light: #777777;
+    --text-on-dark: #ffffff;
+    --text-on-accent: #ffffff;
+    
+    /* Neutrals */
+    --white: #ffffff;
+    --black: #111111;
+    --gray: #e0e0e0;
+    --light-gray: #f5f5f5;
+    --dark-gray: #555555;
+    
+    /* Effects */
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --box-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+}
+
+/* Video Hero Section */
+.videos-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    background-image: url('../images/back8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 180px 0 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+.videos-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Video Intro Section */
+.video-intro {
+    padding: 80px 0;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.video-intro h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.video-intro p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.video-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-light);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-on-dark);
+    border-color: var(--primary-color);
+}
+
+/* Video Gallery Section */
+.video-gallery {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.video-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 1px solid var(--gray);
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+    border-color: var(--accent-color);
+}
+
+.video-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.video-card:hover .video-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0.9;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-on-dark);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.video-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.video-category {
+    background-color: var(--light-gray);
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.video-category[data-category="production"] {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.video-category[data-category="installation"] {
+    background-color: var(--accent-light);
+    color: var(--secondary-color);
+}
+
+/* Video Modal */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.video-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    color: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    background-color: #000;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-details {
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Video CTA Section */
+.video-cta {
+    padding: 80px 0;
+    background: url('../images/back2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: var(--text-on-dark);
+    text-align: center;
+}
+
+.video-cta h2 {
+    color: var(--white);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.video-cta p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--accent-color);
+    color: var(--text-on-accent);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(220, 170, 109, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #c99750;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(220, 170, 109, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .videos-hero {
+        height: 50vh;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-container {
+        height: 250px;
+    }
+    
+    .video-intro, .video-gallery, .video-cta {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .video-filter {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .video-info h3 {
+        font-size: 1.2rem;
+    }
+}

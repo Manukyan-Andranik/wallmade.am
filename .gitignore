@@ -6,3 +6,5 @@ products.json
 works.json
 venv_wallmade/
 .DS_Store
+templates/index_videos.html
+templates/base_videos.html

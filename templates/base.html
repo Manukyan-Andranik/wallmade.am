@@ -53,8 +53,6 @@
                                 <li><a href="{{ url_for('services') }}#benefits">{{ _('Why Choose Our Services') }}</a></li>
                                 <li><a href="{{ url_for('services') }}#contact">{{ _('Ready to Start Your Project?') }}</a></li>
                             </ul>
-                        </li>
-            
                         <li class="has-submenu">
                             <a href="{{ url_for('products') }}" class="{% if request.endpoint == 'products' %}active{% endif %}">
                                 {{ _('Products') }}
@@ -150,7 +148,7 @@
                         <li><a href="{{ url_for('services') }}#contact">{{ _('Ready to Start Your Project?') }}</a></li>
                     </ul>
                 </li>
-                
+            
                 <li>
                     <div class="submenu-toggle {% if request.endpoint == 'products' %}active{% endif %}">
                         <a href="{{ url_for('products') }}">{{ _('Products') }}</a>
@@ -215,7 +213,7 @@
                     <ul class="contact-info-footer">
                         <li><i class="fas fa-map-marker-alt"></i> {{ _("Yerevan, Arshakunyats Avenue, 25/1") }}</li>
                         <li><i class="fas fa-phone"></i> +374 95 095955</li>
-                        <li><i class="fas fa-envelope"></i> wallmade_kh@wallmade.am</li>
+                        <li><i class="fas fa-envelope"></i> info@wallmade.am</li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -232,8 +230,7 @@
             <div class="footer-bottom">
                 <p>&copy; 2022 Wallmade. {{ _('All rights reserved.') }}</p>
                 <div class="footer-links">
-                    <a>{{ _('Privacy Policy') }}</a>
-                    <a>{{ _('Terms of Service') }}</a>
+                    <a href="https://logiclab.am" target="_blank" rel="noopener noreferrer">© Powered by Souls of Code</a>
                 </div>
             </div>
         </div>

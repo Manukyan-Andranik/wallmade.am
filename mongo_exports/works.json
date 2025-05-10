@@ -1,0 +1,178 @@
+[
+  {
+    "_id": {
+      "$oid": "68192af49b33322aec9f93c9"
+    },
+    "title": {
+      "en": "Residential House",
+      "hy": "Բնակելի Տուն",
+      "ru": "Жилой Дом"
+    },
+    "Images_folder_url": "work1",
+    "description": {
+      "en": "This non-commercial project in Yerevan, Armenia, features exterior cladding tiles designed and installed by WALLMADE. The exterior of the building emphasizes our brand’s modern style, cleanliness, and technical durability. The project was made possible through our precision engineering and innovation. WALLMADE exterior cladding tiles are thermally insulating, soundproofing, moisture-proof, and fire-resistant, with a 15-year warranty.",
+      "hy": "Այս ոչ առևտրային նախագիծը Հայաստանի Երևան քաղաքում ներառում է WALLMADE-ի կողմից նախագծված և տեղադրված արտաքին երեսպատման սալիկներ։ Շենքի արտաքին տեսքը ընդգծում է մեր ապրանքանիշի ժամանակակից ոճը, մաքրությունը  և տեխնիկական ամրությունը։ Նախագծի իրագործումը հնարավոր դարձավ մեր ճշգրիտ ինժեներական աշխատանքի և նորարարության շնորհիվ։ WALLMADE-ի արտաքին երեսպատման սալիկները ջերմամեկուսիչ են, ձայնամեկուսիչ, խոնավության և հրդեհի դեմ դիմացկուն՝ երաշխավորված 15 տարի։",
+      "ru": "Этот некоммерческий проект в Ереване, Армения, включает в себя наружную облицовочную плитку, разработанную и установленную компанией WALLMADE. Внешний вид здания подчеркивает современный стиль, чистоту и техническую солидность нашего бренда. Реализация проекта стала возможной благодаря нашей точной инженерной работе и инновациям. Наружная облицовочная плитка WALLMADE тепло-, звуконепроницаема, влаго- и огнестойка, имеет гарантию 15 лет."
+    },
+    "location": {
+      "en": "Yerevan, Armenia",
+      "hy": "Երևան, Հայաստան",
+      "ru": "Ереван, Армения"
+    },
+    "project_type": {
+      "en": "Non-Commercial",
+      "hy": "Ոչ Առևտրային",
+      "ru": "Некоммерческий"
+    },
+    "year": "2022",
+    "products_used": {
+      "en": [
+        "Exterior Cladding Tiles",
+        "Structural Supports"
+      ],
+      "hy": [
+        "Արտաքին Երեսպատման Սալիկներ",
+        "Կառուցվածքային Աջակցություններ"
+      ],
+      "ru": [
+        "Наружная облицовочная плитка",
+        "Структурные опоры"
+      ]
+    },
+    "updated_at": {
+      "$date": "2025-05-09T07:42:26.825Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68192b6e9b33322aec9f93d2"
+    },
+    "title": {
+      "en": "Kindergarten Building",
+      "hy": "Մանկապարտեզի Շենք",
+      "ru": "Здание детского сада"
+    },
+    "Images_folder_url": "work2",
+    "description": {
+      "en": "This commercial project in Yerevan, Armenia features custom metal facade panels designed and installed by WALLMADE. The building’s exterior showcases our signature cladding tiles that combine a clean, modern aesthetic with unmatched technical durability. The client’s architectural vision—a wave-like, geometric structure—was brought to life through precise engineering and our commitment to innovation. WALLMADE’s tiles offer thermo-insulation, sound insulation, moisture and fire resistance, and weather durability. Available in a variety of sizes and colors, backed with a 15-year warranty.",
+      "hy": "Այս առևտրային նախագիծը Հայաստանի Երևան քաղաքում ներառում է WALLMADE-ի կողմից նախագծված և տեղադրված մետաղական ճակատային վահանակներ։ Շենքի արտաքին տեսքը ընդգծում է մեր ապրանքանիշի կղմինդրերը՝ համատեղելով մաքրության, ժամանակակից ոճի և տեխնիկական ամրության։ Ճարտարապետական ալիքաձև նախշի իրագործումը հնարավոր դարձավ մեր ճշգրիտ ինժեներական աշխատանքի և նորարարության շնորհիվ։ WALLMADE-ի կղմինդրերը ջերմամեկուսիչ են, ձայնամեկուսիչ, խոնավության և հրդեհի դիմացկուն՝ երաշխավորված 15 տարի։",
+      "ru": "Этот коммерческий проект в Ереване, Армения, включает в себя индивидуальные фасадные панели, разработанные и установленные WALLMADE. Фасад здания подчеркивает эстетику и техническую надежность наших облицовочных плит. Уникальный волнообразный узор реализован благодаря точному инженерному подходу и инновационным решениям. Плиты WALLMADE обеспечивают тепло- и звукоизоляцию, устойчивость к влаге, огню и погодным условиям. Доступны в различных размерах и цветах, с гарантией 15 лет."
+    },
+    "location": {
+      "en": "Yerevan, Armenia",
+      "hy": "Երևան, Հայաստան",
+      "ru": "Ереван, Армения"
+    },
+    "project_type": {
+      "en": "Non-Commercial",
+      "hy": "Ոչ Առեւտրային",
+      "ru": "Некоммерческий"
+    },
+    "year": "2022",
+    "products_used": {
+      "en": [
+        "Individual Exterior Cladding Tiles",
+        "Structural Supports"
+      ],
+      "hy": [
+        "Անհատական Արտաքին Երեսպատման Սալիկներ",
+        "Կառուցվածքային Աջակցություններ"
+      ],
+      "ru": [
+        "Индивидуальная наружная облицовочная плитка",
+        "Структурные опоры"
+      ]
+    },
+    "updated_at": {
+      "$date": "2025-05-09T08:00:53.039Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68192b9e9b33322aec9f93d4"
+    },
+    "title": {
+      "en": "Residential Building",
+      "hy": "Բնակելի Շենք",
+      "ru": "Жилое Здание"
+    },
+    "Images_folder_url": "work3",
+    "description": {
+      "en": "This commercial project in Yerevan, Armenia features custom metal facade panels designed and installed by WALLMADE. The building’s exterior showcases our signature cladding tiles that combine a clean, modern aesthetic with unmatched technical durability. The client’s architectural vision—a wave-like, geometric structure—was brought to life through precise engineering and our commitment to innovation. WALLMADE’s tiles offer thermo-insulation, sound insulation, moisture and fire resistance, and weather durability. Available in a variety of sizes and colors, backed with a 15-year warranty.",
+      "hy": "Այս առևտրային նախագիծը Հայաստանի Երևան քաղաքում ներառում է WALLMADE-ի կողմից նախագծված և տեղադրված մետաղական ճակատային վահանակներ։ Շենքի արտաքին տեսքը ընդգծում է մեր ապրանքանիշի կղմինդրերը՝ համատեղելով մաքրության, ժամանակակից ոճի և տեխնիկական ամրության։ Ճարտարապետական ալիքաձև նախշի իրագործումը հնարավոր դարձավ մեր ճշգրիտ ինժեներական աշխատանքի և նորարարության շնորհիվ։ WALLMADE-ի կղմինդրերը ջերմամեկուսիչ են, ձայնամեկուսիչ, խոնավության և հրդեհի դիմացկուն՝ երաշխավորված 15 տարի։",
+      "ru": "Этот коммерческий проект в Ереване, Армения, включает в себя индивидуальные фасадные панели, разработанные и установленные WALLMADE. Фасад здания подчеркивает эстетику и техническую надежность наших облицовочных плит. Уникальный волнообразный узор реализован благодаря точному инженерному подходу и инновационным решениям. Плиты WALLMADE обеспечивают тепло- и звукоизоляцию, устойчивость к влаге, огню и погодным условиям. Доступны в различных размерах и цветах, с гарантией 15 лет."
+    },
+    "location": {
+      "en": "Yerevan, Armenia",
+      "hy": "Երևան, Հայաստան",
+      "ru": "Ереван, Армения"
+    },
+    "project_type": {
+      "en": "Non-Commercial",
+      "hy": "Ոչ Առեւտրային",
+      "ru": "Некоммерческий"
+    },
+    "year": "2022",
+    "products_used": {
+      "en": [
+        "Individual Exterior Cladding Tiles",
+        "Structural Supports"
+      ],
+      "hy": [
+        "Անհատական Արտաքին Երեսպատման Սալիկներ",
+        "Կառուցվածքային Աջակցություններ"
+      ],
+      "ru": [
+        "Индивидуальная наружная облицовочная плитка",
+        "Структурные опоры"
+      ]
+    },
+    "updated_at": {
+      "$date": "2025-05-09T08:00:49.444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "681db687688801d0f278d771"
+    },
+    "title": {
+      "en": "Residential House",
+      "hy": "Բնակելի Տուն",
+      "ru": "Жилой Дом"
+    },
+    "Images_folder_url": "work4",
+    "description": {
+      "en": "This non-commercial project in Yerevan, Armenia, features exterior cladding tiles designed and installed by WALLMADE. The exterior of the building emphasizes our brand’s modern style, cleanliness, and technical durability. The project was made possible through our precision engineering and innovation. WALLMADE exterior cladding tiles are thermally insulating, soundproofing, moisture-proof, and fire-resistant, with a 15-year warranty.",
+      "hy": "Այս ոչ առևտրային նախագիծը Հայաստանի Երևան քաղաքում ներառում է WALLMADE-ի կողմից նախագծված և տեղադրված արտաքին երեսպատման սալիկներ։ Շենքի արտաքին տեսքը ընդգծում է մեր ապրանքանիշի ժամանակակից ոճը, մաքրությունը  և տեխնիկական ամրությունը։ Նախագծի իրագործումը հնարավոր դարձավ մեր ճշգրիտ ինժեներական աշխատանքի և նորարարության շնորհիվ։ WALLMADE-ի արտաքին երեսպատման սալիկները ջերմամեկուսիչ են, ձայնամեկուսիչ, խոնավության և հրդեհի դեմ դիմացկուն՝ երաշխավորված 15 տարի։",
+      "ru": "Этот некоммерческий проект в Ереване, Армения, включает в себя наружную облицовочную плитку, разработанную и установленную компанией WALLMADE. Внешний вид здания подчеркивает современный стиль, чистоту и техническую солидность нашего бренда. Реализация проекта стала возможной благодаря нашей точной инженерной работе и инновациям. Наружная облицовочная плитка WALLMADE тепло-, звуконепроницаема, влаго- и огнестойка, имеет гарантию 15 лет."
+    },
+    "location": {
+      "en": "Yerevan, Armenia",
+      "hy": "Երևան, Հայաստան",
+      "ru": "Ереван, Армения"
+    },
+    "project_type": {
+      "en": "Non-Commercial",
+      "hy": "Ոչ Առևտրային",
+      "ru": "Некоммерческий"
+    },
+    "year": "2022",
+    "products_used": {
+      "en": [
+        "Exterior Cladding Tiles",
+        "Structural Supports"
+      ],
+      "hy": [
+        "Արտաքին Երեսպատման Սալիկներ",
+        "Կառուցվածքային Աջակցություններ"
+      ],
+      "ru": [
+        "Наружная облицовочная плитка",
+        "Структурные опоры"
+      ]
+    },
+    "updated_at": {
+      "$date": "2025-05-09T07:42:26.825Z"
+    }
+  }
+]

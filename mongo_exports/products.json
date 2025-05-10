@@ -1,0 +1,1119 @@
+[
+  {
+    "_id": {
+      "$oid": "68191c3dca7577e80d840faf"
+    },
+    "title": {
+      "en": "B1 Exterior Cladding Tile",
+      "hy": "B1 Արտաքին երեսպատման սալիկ",
+      "ru": "B1 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390063/B1_hmpt1r.png",
+    "description": {
+      "en": "The B1 exterior cladding tile offers a bold, tiered profile that adds depth and shadow play to modern façades. Built from high-performance, fire-safe materials, it delivers excellent thermal and weather insulation.",
+      "hy": "B1 արտաքին երեսպատման սալիկը առաջարկում է համարձակ աստիճանաձև պրոֆիլ, որը շենքին տալիս է խորություն և լուսաստվերի խաղ: Պատրաստված է բարձրորակ, հրդեհակայուն նյութերից և ապահովում է ջերմամեկուսացում ու եղանակակայունություն:",
+      "ru": "B1 наружная облицовочная плитка имеет выразительный ступенчатый профиль, придающий фасаду глубину и игру света и тени. Изготовлена из высокоэффективных, огнестойких материалов, обеспечивая теплоизоляцию и защиту от погодных условий."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Tiered shadow profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Աստիճանաձև ստվերային պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Ступенчатый теневой профиль",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Tiered stepped design",
+        "Dimensions: 85 mm x 230 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B1"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ աստիճանաձև ձևավորում",
+        "Չափեր՝ 85 մմ x 230 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B1"
+      ],
+      "ru": [
+        "Профиль: Ступенчатый дизайн",
+        "Размеры: 85 мм x 230 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B1"
+      ]
+    },
+    "code": "B1"
+  },
+  {
+    "_id": {
+      "$oid": "681920e1dfabcd63fabf5a2e"
+    },
+    "title": {
+      "en": "B2 Exterior Cladding Tile",
+      "hy": "B2 Արտաքին երեսպատման սալիկ",
+      "ru": "B2 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390066/B2_sedu8w.png",
+    "description": {
+      "en": "The B2 exterior cladding tile features a pronounced ribbed pattern with deep shadows that enhance architectural depth. Designed for modern facades, this tile ensures durability, insulation, and fire safety.",
+      "hy": "B2 արտաքին երեսպատման սալիկն ունի արտահայտիչ կողավոր ձևավորում՝ խոր ստվերներով, որոնք շենքին տալիս են հստակ ձևավորված կառուցվածք: Հարմար է ժամանակակից ճարտարապետության համար՝ ապահովելով ամրություն, մեկուսացում և հրդեհակայունություն:",
+      "ru": "B2 наружная облицовочная плитка имеет выраженный рельефный узор с глубокими тенями, подчеркивающими архитектурную глубину. Идеально подходит для современных фасадов, обеспечивая прочность, изоляцию и огнестойкость."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Deep ribbed profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Խորը կողավոր պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Глубокий рельефный профиль",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep ribbed design",
+        "Dimensions: 85 mm x 250 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B2"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խորը կողավոր ձևավորում",
+        "Չափեր՝ 85 մմ x 250 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B2"
+      ],
+      "ru": [
+        "Профиль: Глубокий рельефный дизайн",
+        "Размеры: 85 мм x 250 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B2"
+      ]
+    },
+    "code": "B2"
+  },
+  {
+    "_id": {
+      "$oid": "681a2104263752cfaa6c9f27"
+    },
+    "title": {
+      "en": "B3 Exterior Cladding Tile",
+      "hy": "B3 Արտաքին Երեսպատման Սալիկ",
+      "ru": "B3 Наружная Облицовочная Плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390063/B3_rmwelo.png",
+    "description": {
+      "en": "Durable and modern exterior cladding tile designed for architectural facades. Made from non-combustible foam, quartz sand, and acrylic materials, it ensures both fire safety and weather resistance. The tile features a stepped, layered profile with precise dimensions: 85mm width, 270mm height, and 2000mm length. Ideal for enhancing thermal insulation and visual appeal in contemporary designs.",
+      "hy": "Դիմացկուն և ժամանակակից արտաքին երեսպատման սալիկ՝ նախատեսված ճարտարապետական ճակատների համար: Պատրաստված է չայրվող պենոպլաստից, կվարցի ավազից և ակրիլային նյութերից՝ ապահովելով հրդեհային անվտանգություն և եղանակային պայմանների դիմադրություն: Սալիկն ունի աստիճանաձև, շերտավոր պրոֆիլ՝ ճշգրիտ չափերով՝ 85մմ լայնություն, 270մմ բարձրություն և 2000մմ երկարություն: Գերազանց ընտրություն ջերմամեկուսացման և արտաքին դիզայնի համար:",
+      "ru": "Прочный и современный облицовочный материал для архитектурных фасадов. Изготовлен из негорючей пены, кварцевого песка и акриловых материалов, что обеспечивает пожарную безопасность и устойчивость к погодным условиям. Плитка имеет ступенчатый, многослойный профиль с точными размерами: ширина 85 мм, высота 270 мм и длина 2000 мм. Идеально подходит для улучшения теплоизоляции и эстетики фасада."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Fire-resistant",
+        "Weatherproof",
+        "Modern design",
+        "Precision dimensions"
+      ],
+      "hy": [
+        "Հրդեհակայուն",
+        "Եղանակադիմացկուն",
+        "Ժամանակակից ձևավորում",
+        "Ճշգրիտ չափեր"
+      ],
+      "ru": [
+        "Огнестойкий",
+        "Устойчив к погодным условиям",
+        "Современный дизайн",
+        "Точные размеры"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Width: 85 mm",
+        "Height: 270 mm",
+        "Length: 2000 mm",
+        "Profile: Stepped/layered"
+      ],
+      "hy": [
+        "Լայնություն՝ 85 մմ",
+        "Բարձրություն՝ 270 մմ",
+        "Երկարություն՝ 2000 մմ",
+        "Պրոֆիլ՝ աստիճանաձև/շերտավոր"
+      ],
+      "ru": [
+        "Ширина: 85 мм",
+        "Высота: 270 мм",
+        "Длина: 2000 мм",
+        "Профиль: Ступенчатый/многослойный"
+      ]
+    },
+    "code": "B3"
+  },
+  {
+    "_id": {
+      "$oid": "681c877ac1b58c7a55bbb08b"
+    },
+    "title": {
+      "en": "B4 Exterior Cladding Tile",
+      "hy": "B4 Արտաքին երեսպատման սալիկ",
+      "ru": "B4 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390066/B4_dwgu7h.png",
+    "description": {
+      "en": "The B4 exterior cladding tile is a modern, stylish, and durable façade solution made from non-combustible foam, quartz sand, and acrylic materials. It provides weather resistance, thermal insulation, and a contemporary look for any building.",
+      "hy": "B4 արտաքին երեսպատման սալիկը ժամանակակից, ոճային և ամուր լուծում է ճակատի համար, պատրաստված չայրվող պենոպլաստից, կվարցային ավազից և ակրիլային նյութերից: Այն ապահովում է եղանակային պաշտպանություն, ջերմամեկուսացում և ժամանակակից տեսք ցանկացած շենքի համար:",
+      "ru": "B4 наружная облицовочная плитка — это современное, стильное и прочное фасадное решение, изготовленное из негорючей пены, кварцевого песка и акриловых материалов. Обеспечивает защиту от погодных условий, теплоизоляцию и современный внешний вид зданий."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Modern geometric design",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Ժամանակակից երկրաչափական ձևավորում",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Современный геометрический дизайн",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Stepped geometric",
+        "Dimensions: 85 mm x 300 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B4"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ աստիճանաձեւ երկրաչափական",
+        "Չափեր՝ 85 մմ x 300 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B4"
+      ],
+      "ru": [
+        "Профиль: Ступенчатый геометрический",
+        "Размеры: 85 мм x 300 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B4"
+      ]
+    },
+    "code": "B4"
+  },
+  {
+    "_id": {
+      "$oid": "681c8789c1b58c7a55bbb08c"
+    },
+    "title": {
+      "en": "B5 Exterior Cladding Tile",
+      "hy": "B5 Արտաքին երեսպատման սալիկ",
+      "ru": "B5 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390067/B5_h9ega2.png",
+    "description": {
+      "en": "The B5 exterior cladding tile is a bold and durable façade solution designed with deep horizontal step profiles. Made from non-combustible foam, quartz sand, and acrylic materials, it ensures superior weather protection, thermal performance, and a striking architectural presence.",
+      "hy": "B5 արտաքին երեսպատման սալիկը համարձակ և ամուր ճակատային լուծում է՝ նախագծված հորիզոնական խոր աստիճանավոր պրոֆիլներով։ Պատրաստված չայրվող պենոպլաստից, կվարցային ավազից և ակրիլային նյութերից, այն ապահովում է գերազանց եղանակային պաշտպանություն, ջերմամեկուսացում և տպավորիչ ճարտարապետական տեսք։",
+      "ru": "B5 наружная облицовочная плитка — это смелое и прочное фасадное решение с глубокими горизонтальными ступенчатыми профилями. Изготовлена из негорючей пены, кварцевого песка и акриловых материалов, обеспечивая отличную защиту от погодных условий, теплоизоляцию и выразительный архитектурный вид."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Deep horizontal stepped design",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Խոր հորիզոնական աստիճանավոր ձևավորում",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Глубокий горизонтальный ступенчатый дизайн",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep stepped geometric",
+        "Dimensions: 85 mm x 360 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B5"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խոր աստիճանաձև երկրաչափական",
+        "Չափեր՝ 85 մմ x 360 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B5"
+      ],
+      "ru": [
+        "Профиль: Глубокий ступенчатый геометрический",
+        "Размеры: 85 мм x 360 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B5"
+      ]
+    },
+    "code": "B5"
+  },
+  {
+    "_id": {
+      "$oid": "681c8796c1b58c7a55bbb08d"
+    },
+    "title": {
+      "en": "B6 Exterior Cladding Tile",
+      "hy": "B6 Արտաքին երեսպատման սալիկ",
+      "ru": "B6 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390068/B6_ajzftv.png",
+    "description": {
+      "en": "The B6 exterior cladding tile is a modern, stylish, and durable façade solution made from non-combustible foam, quartz sand, and acrylic materials. It provides weather resistance, thermal insulation, and a contemporary look with its deep stepped profile design.",
+      "hy": "B6 արտաքին երեսպատման սալիկը ժամանակակից, ոճային և ամուր լուծում է ճակատի համար, պատրաստված չայրվող պենոպլաստից, կվարցային ավազից և ակրիլային նյութերից: Այն ապահովում է եղանակային պաշտպանություն, ջերմամեկուսացում և ժամանակակից տեսք՝ իր խորը աստիճանաձև պրոֆիլով:",
+      "ru": "B6 наружная облицовочная плитка — это современное, стильное и прочное фасадное решение, изготовленное из негорючей пены, кварцевого песка и акриловых материалов. Обеспечивает защиту от погодных условий, теплоизоляцию и современный внешний вид с глубоким ступенчатым профилем."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Deep stepped geometric design",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Խորը աստիճանաձև երկրաչափական ձևավորում",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Глубокий ступенчатый геометрический дизайн",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep stepped geometric",
+        "Dimensions: 85 mm x 385 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B6"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խորը աստիճանաձեւ երկրաչափական",
+        "Չափեր՝ 85 մմ x 385 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B6"
+      ],
+      "ru": [
+        "Профиль: Глубокий ступенчатый геометрический",
+        "Размеры: 85 мм x 385 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B6"
+      ]
+    },
+    "code": "B6"
+  },
+  {
+    "_id": {
+      "$oid": "681c8c9385fbb623f437a7af"
+    },
+    "title": {
+      "en": "B7 Exterior Cladding Tile",
+      "hy": "B7 Արտաքին երեսպատման սալիկ",
+      "ru": "B7 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390068/B7_tmu7cp.png",
+    "description": {
+      "en": "The B7 exterior cladding tile features a modern tiered groove pattern that creates strong linear shadows and a sense of rhythm on any façade. Constructed with high-performance, fire-resistant materials, it is ideal for aesthetic and functional wall coverage.",
+      "hy": "B7 արտաքին երեսպատման սալիկն ունի ժամանակակից աստիճանաձև ակոսավոր դիզայն, որը շենքին տալիս է հստակ գծային ստվերներ և ռիթմ: Պատրաստված է բարձրորակ, հրդեհակայուն նյութերից՝ ապահովելով ինչպես գեղագիտական, այնպես էլ գործնական պատի երեսպատում:",
+      "ru": "B7 наружная облицовочная плитка имеет современный ступенчатый узор с канавками, создающий чёткие тени и ритм на фасаде. Изготовлена из высокоэффективных, огнестойких материалов, обеспечивая эстетичную и функциональную облицовку стен."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Tiered groove design",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Աստիճանաձև ակոսավոր դիզայն",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Ступенчатый канавочный дизайн",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Tiered grooved design",
+        "Dimensions: 85 mm x 385 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B7"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ աստիճանաձև ակոսավոր ձևավորում",
+        "Չափեր՝ 85 մմ x 385 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B7"
+      ],
+      "ru": [
+        "Профиль: Ступенчатый дизайн с канавками",
+        "Размеры: 85 мм x 385 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B7"
+      ]
+    },
+    "code": "B7"
+  },
+  {
+    "_id": {
+      "$oid": "681c8d1285fbb623f437a7b3"
+    },
+    "title": {
+      "en": "B8 Exterior Cladding Tile",
+      "hy": "B8 Արտաքին երեսպատման սալիկ",
+      "ru": "B8 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390069/B8_kk17qk.png",
+    "description": {
+      "en": "The B8 tile features deep, equally spaced horizontal grooves that add depth and dynamic contrast to any exterior wall. It enhances modern architectural facades while offering excellent fire resistance and thermal performance.",
+      "hy": "B8 սալիկն ունի խոր, հավասարաչափ հորիզոնական ակոսներ, որոնք պատին հաղորդում են խորություն և դինամիկ հակադրություն: Այն հիանալի է ժամանակակից ճարտարապետական լուծումների համար՝ միաժամանակ ապահովելով հրդեհակայունություն և ջերմամեկուսացում:",
+      "ru": "Плитка B8 оснащена глубокими равномерными горизонтальными канавками, придающими фасаду глубину и динамичность. Отлично подходит для современных архитектурных решений, обладая огнестойкостью и теплоизоляцией."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Deep horizontal grooves",
+        "Weather and impact resistant",
+        "Thermal insulation",
+        "Fire-resistant construction"
+      ],
+      "hy": [
+        "Խորը հորիզոնական ակոսներ",
+        "Եղանակային և հարվածակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն կառուցվածք"
+      ],
+      "ru": [
+        "Глубокие горизонтальные канавки",
+        "Устойчивость к погодным условиям и ударам",
+        "Теплоизоляция",
+        "Огнестойкая конструкция"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep horizontal grooved design",
+        "Dimensions: 85 mm x 665 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: B8"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խորը հորիզոնական ակոսավոր ձևավորում",
+        "Չափեր՝ 85 մմ x 665 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B8"
+      ],
+      "ru": [
+        "Профиль: Глубокий горизонтальный канавочный дизайн",
+        "Размеры: 85 мм x 665 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B8"
+      ]
+    },
+    "code": "B8"
+  },
+  {
+    "_id": {
+      "$oid": "681c8d7185fbb623f437a7b7"
+    },
+    "title": {
+      "en": "B9 Exterior Cladding Tile",
+      "hy": "B9 Արտաքին երեսպատման սալիկ",
+      "ru": "B9 Наружная облицовочная плитка"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390071/B9_aon05o.png",
+    "description": {
+      "en": "The B9 tile is characterized by a bold, multi-layered horizontal groove pattern, offering exceptional depth and modern appeal. Designed to enhance façade texture while maintaining durability and fire resistance.",
+      "hy": "B9 սալիկը ունի համարձակ, բազմաշերտ հորիզոնական ակոսավոր դիզայն, որը ստեղծում է արտահայտիչ խորություն և ժամանակակից տեսք։ Այն ապահովում է դիմացկունություն և հրդեհակայունություն՝ միաժամանակ հարստացնելով շենքի արտաքին տեսքը։",
+      "ru": "Плитка B9 отличается смелым, многослойным горизонтальным рисунком, придающим фасаду выраженную глубину и современный стиль. Обеспечивает прочность и огнестойкость."
+    },
+    "category": {
+      "en": "Exterior cladding tile",
+      "hy": "Արտաքին երեսպատման սալիկ",
+      "ru": "Наружная облицовочная плитка"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Bold multi-step grooved profile",
+        "UV and weather resistant",
+        "Provides thermal insulation",
+        "Fire-resistant build"
+      ],
+      "hy": [
+        "Համարձակ բազմաստիճան ակոսավոր պրոֆիլ",
+        "Ուլտրամանուշակագույն և եղանակակայուն",
+        "Տրամադրում է ջերմամեկուսացում",
+        "Հրդեհակայուն կառուցվածք"
+      ],
+      "ru": [
+        "Смелый многоступенчатый канавочный профиль",
+        "Устойчивость к ультрафиолету и погодным условиям",
+        "Обеспечивает теплоизоляцию",
+        "Огнестойкая конструкция"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Multi-step horizontal grooves",
+        "Dimensions: 85 mm x 440 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic coating",
+        "Application: Exterior wall cladding",
+        "Design Code: B9"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ բազմաստիճան հորիզոնական ակոսներ",
+        "Չափեր՝ 85 մմ x 440 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմք՝ կվարց-ակրիլային ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ B9"
+      ],
+      "ru": [
+        "Профиль: Многоступенчатые горизонтальные канавки",
+        "Размеры: 85 мм x 440 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: B9"
+      ]
+    },
+    "code": "B9"
+  },
+  {
+    "_id": {
+      "$oid": "681c8df885fbb623f437a7ba"
+    },
+    "title": {
+      "en": "DP1 Exterior Cladding Panel",
+      "hy": "DP1 Արտաքին երեսպատման վահանակ",
+      "ru": "DP1 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390072/DP1_rk6wel.png",
+    "description": {
+      "en": "The DP1 exterior cladding panel features a precision-grooved design that enhances shadow effects and adds architectural rhythm to modern façades. Engineered with durable, fire-safe materials, it ensures excellent insulation and weather protection.",
+      "hy": "DP1 արտաքին երեսպատման վահանակը ունի ճշգրտված ակոսավոր ձևավորում, որը շենքին հաղորդում է ստվերային էֆեկտներ և ճարտարապետական ռիթմ։ Պատրաստված է դիմացկուն և հրդեհակայուն նյութերից՝ ապահովելով մեկուսացում և եղանակակայունություն։",
+      "ru": "Наружная облицовочная панель DP1 оснащена точно выполненными канавками, придающими фасаду выразительность и архитектурный ритм. Изготовлена из прочных, огнестойких материалов, обеспечивает отличную тепло- и влагозащиту."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Grooved profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Ակոսավոր պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Профиль с канавками",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Grooved stepped design",
+        "Dimensions: 40 mm x 350 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: DP1"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ ակոսավոր աստիճանաձև ձևավորում",
+        "Չափեր՝ 40 մմ x 350 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ DP1"
+      ],
+      "ru": [
+        "Профиль: Канавчатый ступенчатый дизайн",
+        "Размеры: 40 мм x 350 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: DP1"
+      ]
+    },
+    "code": "DP1"
+  },
+  {
+    "_id": {
+      "$oid": "681c8e6085fbb623f437a7bc"
+    },
+    "title": {
+      "en": "ATK 1 Exterior Cladding Panel",
+      "hy": "ATK 1 Արտաքին երեսպատման վահանակ",
+      "ru": "ATK 1 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390063/ATK_1_sewbb2.png",
+    "description": {
+      "en": "The ATK 1 exterior cladding panel features a sleek, flat design ideal for minimalist and modern architectural styles. Manufactured from fire-safe, insulating materials, it ensures long-term durability and performance in varying weather conditions.",
+      "hy": "ATK 1 արտաքին երեսպատման վահանակը ունի հարթ և նրբագեղ ձևավորում, որը հիանալի է մինիմալիստական և ժամանակակից ճարտարապետության համար։ Պատրաստված է հրդեհակայուն մեկուսիչ նյութերից՝ ապահովելով ամրություն և դիմացկունություն:",
+      "ru": "Наружная облицовочная панель ATK 1 имеет гладкий и элегантный дизайн, идеально подходящий для минималистичной и современной архитектуры. Изготовлена из огнестойких, теплоизолирующих материалов, обеспечивающих долговечность и устойчивость к погодным условиям."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Flat seamless profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Հարթ, անթերի պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Гладкий бесшовный профиль",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Flat panel with joint groove",
+        "Dimensions: 30 mm x 200 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: ATK 1"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ հարթ վահանակ միացման ակոսով",
+        "Չափեր՝ 30 մմ x 200 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ ATK 1"
+      ],
+      "ru": [
+        "Профиль: Плоская панель с канавкой для стыковки",
+        "Размеры: 30 мм x 200 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: ATK 1"
+      ]
+    },
+    "code": "ATK1"
+  },
+  {
+    "_id": {
+      "$oid": "681c8eb285fbb623f437a7be"
+    },
+    "title": {
+      "en": "TP 2 Exterior Cladding Panel",
+      "hy": "TP 2 Արտաքին երեսպատման վահանակ",
+      "ru": "TP 2 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390072/TP_2_mmmeh4.png",
+    "description": {
+      "en": "The TP 2 exterior cladding panel combines functional simplicity with a grooved joining edge that ensures a seamless fit between elements. Its strong and clean form suits modern exteriors, offering durability and weather resistance.",
+      "hy": "TP 2 արտաքին երեսպատման վահանակը համատեղում է պարզությունը և գործնականությունը՝ միացման ակոսով ապահովելով անթերի տեղադրում։ Այն ունի ամուր և մաքուր ձևավորում՝ հարմար ժամանակակից շենքերի համար:",
+      "ru": "Наружная облицовочная панель TP 2 сочетает простоту с практичностью благодаря пазу для стыковки, обеспечивающему ровное соединение. Прочный и лаконичный дизайн идеально подходит для современных фасадов."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Flat profile with step-groove",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Հարթ պրոֆիլ՝ աստիճանաձև ակոսով",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Плоский профиль с пазом",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Flat with interlocking edge groove",
+        "Dimensions: 30 mm x 316 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: TP 2"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ հարթ, միացման ակոսով",
+        "Չափեր՝ 30 մմ x 316 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ TP 2"
+      ],
+      "ru": [
+        "Профиль: Плоский с канавкой для стыковки",
+        "Размеры: 30 мм x 316 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: TP 2"
+      ]
+    },
+    "code": "TP2"
+  },
+  {
+    "_id": {
+      "$oid": "681e3b4498be4657c11c8cb8"
+    },
+    "title": {
+      "en": "TP 3 Exterior Cladding Panel",
+      "hy": "TP 3 Արտաքին երեսպատման վահանակ",
+      "ru": "TP 3 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390073/TP_3_yzitdr.png",
+    "description": {
+      "en": "The TP 3 exterior cladding panel features a refined stepped edge profile for a tightly interlocked and elegant facade. Designed for durability and aesthetic appeal, it is ideal for both residential and commercial exteriors.",
+      "hy": "TP 3 արտաքին երեսպատման վահանակը ունի աստիճանաձև եզրային պրոֆիլ՝ խիտ միացման և գեղագիտական ավարտի համար։ Այն նախատեսված է ինչպես բնակելի, այնպես էլ կոմերցիոն արտաքին պատերի համար:",
+      "ru": "Наружная облицовочная панель TP 3 имеет ступенчатый край, обеспечивающий плотное соединение и элегантный внешний вид. Подходит для жилых и коммерческих фасадов."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Stepped interlocking profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Աստիճանաձև միացման պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Ступенчатый соединительный профиль",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Stepped edge with interlocking groove",
+        "Dimensions: 30 mm x 288 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: TP 3"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ աստիճանաձև եզրային ակոսով",
+        "Չափեր՝ 30 մմ x 288 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ TP 3"
+      ],
+      "ru": [
+        "Профиль: Ступенчатый край с канавкой",
+        "Размеры: 30 мм x 288 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: TP 3"
+      ]
+    },
+    "code": "TP3"
+  },
+  {
+    "_id": {
+      "$oid": "681e3bf798be4657c11c8cbc"
+    },
+    "title": {
+      "en": "TP 4 Exterior Cladding Panel",
+      "hy": "TP 4 Արտաքին երեսպատման վահանակ",
+      "ru": "TP 4 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390073/TP_4_ojecgt.png",
+    "description": {
+      "en": "The TP 4 exterior cladding panel is designed with a wide profile for a seamless and bold architectural appearance. It combines structural integrity with thermal and weather resistance, ideal for modern building exteriors.",
+      "hy": "TP 4 արտաքին երեսպատման վահանակն ունի լայն պրոֆիլ, որն ապահովում է միատար և ժամանակակից տեսք։ Այն համադրում է կառուցվածքային ամրությունը, ջերմամեկուսացումն ու եղանակակայունությունը՝ իդեալական դարձնելով ժամանակակից շինությունների արտաքին պատերի համար։",
+      "ru": "Облицовочная панель TP 4 имеет широкий профиль для создания цельного и современного архитектурного вида. Обеспечивает прочность конструкции, теплоизоляцию и устойчивость к погодным условиям, идеально подходит для фасадов современных зданий."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Wide and solid profile",
+        "Weather-resistant",
+        "Thermal insulation",
+        "Fire-safe material"
+      ],
+      "hy": [
+        "Լայն և ամուր պրոֆիլ",
+        "Եղանակակայուն",
+        "Ջերմամեկուսացում",
+        "Հրդեհակայուն նյութ"
+      ],
+      "ru": [
+        "Широкий и прочный профиль",
+        "Устойчивость к погодным условиям",
+        "Теплоизоляция",
+        "Огнестойкий материал"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Broad panel with precision groove",
+        "Dimensions: 40 mm x 311 mm x 2000 mm",
+        "Material: Non-combustible foam core with quartz-acrylic finish",
+        "Application: Exterior wall cladding",
+        "Design Code: TP 4"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ լայն վահանակ ճշգրիտ ակոսով",
+        "Չափեր՝ 40 մմ x 311 մմ x 2000 մմ",
+        "Նյութ՝ չայրվող պենոպլաստի հիմքով, կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ TP 4"
+      ],
+      "ru": [
+        "Профиль: Широкая панель с точной канавкой",
+        "Размеры: 40 мм x 311 мм x 2000 мм",
+        "Материал: Негорючая пена с кварцево-акриловым покрытием",
+        "Применение: Облицовка наружных стен",
+        "Код дизайна: TP 4"
+      ]
+    },
+    "code": "TP4"
+  },
+  {
+    "_id": {
+      "$oid": "681e3ca898be4657c11c8cc2"
+    },
+    "title": {
+      "en": "TP 5 Exterior Cladding Panel",
+      "hy": "TP 5 Արտաքին երեսպատման վահանակ",
+      "ru": "TP 5 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390074/TP_5_vfjgmh.png",
+    "description": {
+      "en": "The TP 5 exterior cladding panel features a modern geometric profile that enhances the depth and shadow play on building facades. Its construction ensures strong durability, fire safety, and excellent insulation properties.",
+      "hy": "TP 5 արտաքին երեսպատման վահանակն ունի ժամանակակից երկրաչափական ձև, որը ընդգծում է շինության ճակատի խորությունն ու ստվերային խաղը։ Այն ապահովում է բարձր ամրություն, հրդեհակայունություն և հիանալի ջերմամեկուսացում։",
+      "ru": "Облицовочная панель TP 5 имеет современный геометрический профиль, подчеркивающий глубину и игру теней на фасадах зданий. Обеспечивает высокую прочность, огнестойкость и отличную теплоизоляцию."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Modern geometric profile",
+        "Enhanced shadow depth effect",
+        "Weather-resistant and durable",
+        "Thermal and fire insulation"
+      ],
+      "hy": [
+        "Ժամանակակից երկրաչափական պրոֆիլ",
+        "Խորության և ստվերի ընդգծված էֆեկտ",
+        "Եղանակակայուն և ամուր",
+        "Ջերմային և հրդեհակայուն մեկուսացում"
+      ],
+      "ru": [
+        "Современный геометрический профиль",
+        "Подчеркнутый эффект глубины и тени",
+        "Устойчивость к погодным условиям и прочность",
+        "Тепло- и огнеизоляция"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep geometric profile with edge cuts",
+        "Dimensions: 54 mm x 354 mm x 2000 mm",
+        "Material: Fire-safe foam with quartz-acrylic coating",
+        "Application: Modern exterior wall cladding",
+        "Design Code: TP 5"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խորը երկրաչափական պրոֆիլ եզրային կտրվածքներով",
+        "Չափեր՝ 54 մմ x 354 մմ x 2000 մմ",
+        "Նյութ՝ հրդեհակայուն պենոպլաստ՝ կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ ժամանակակից արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ TP 5"
+      ],
+      "ru": [
+        "Профиль: Глубокий геометрический профиль с резами по краям",
+        "Размеры: 54 мм x 354 мм x 2000 мм",
+        "Материал: Огнестойкая пена с кварцево-акриловым покрытием",
+        "Применение: Современная облицовка фасадов",
+        "Код дизайна: TP 5"
+      ]
+    },
+    "code": "TP5"
+  },
+  {
+    "_id": {
+      "$oid": "681e3d7398be4657c11c8cc6"
+    },
+    "title": {
+      "en": "TP 5 Exterior Cladding Panel",
+      "hy": "TP 5 Արտաքին երեսպատման վահանակ",
+      "ru": "TP 5 Наружная облицовочная панель"
+    },
+    "Images_folder_url": "https://res.cloudinary.com/duwlnnzni/image/upload/v1746390074/TP_5_vfjgmh.png",
+    "description": {
+      "en": "The TP 5 exterior cladding panel features a modern geometric profile that enhances the depth and shadow play on building facades. Its construction ensures strong durability, fire safety, and excellent insulation properties.",
+      "hy": "TP 5 արտաքին երեսպատման վահանակն ունի ժամանակակից երկրաչափական ձև, որը ընդգծում է շինության ճակատի խորությունն ու ստվերային խաղը։ Այն ապահովում է բարձր ամրություն, հրդեհակայունություն և հիանալի ջերմամեկուսացում։",
+      "ru": "Облицовочная панель TP 5 имеет современный геометрический профиль, подчеркивающий глубину и игру теней на фасадах зданий. Обеспечивает высокую прочность, огнестойкость и отличную теплоизоляцию."
+    },
+    "category": {
+      "en": "Exterior cladding panel",
+      "hy": "Արտաքին երեսպատման վահանակ",
+      "ru": "Наружная облицовочная панель"
+    },
+    "material": {
+      "en": "Non-combustible foam, Quartz sand, Acrylic materials",
+      "hy": "Չայրվող պենոպլաստ, Կվարցի ավազ, Ակրիլային նյութեր",
+      "ru": "Негорючая пена, Кварцевый песок, Акриловые материалы"
+    },
+    "features": {
+      "en": [
+        "Modern geometric profile",
+        "Enhanced shadow depth effect",
+        "Weather-resistant and durable",
+        "Thermal and fire insulation"
+      ],
+      "hy": [
+        "Ժամանակակից երկրաչափական պրոֆիլ",
+        "Խորության և ստվերի ընդգծված էֆեկտ",
+        "Եղանակակայուն և ամուր",
+        "Ջերմային և հրդեհակայուն մեկուսացում"
+      ],
+      "ru": [
+        "Современный геометрический профиль",
+        "Подчеркнутый эффект глубины и тени",
+        "Устойчивость к погодным условиям и прочность",
+        "Тепло- и огнеизоляция"
+      ]
+    },
+    "specifications": {
+      "en": [
+        "Profile: Deep geometric profile with edge cuts",
+        "Dimensions: 54 mm x 354 mm x 2000 mm",
+        "Material: Fire-safe foam with quartz-acrylic coating",
+        "Application: Modern exterior wall cladding",
+        "Design Code: TP 5"
+      ],
+      "hy": [
+        "Պրոֆիլ՝ խորը երկրաչափական պրոֆիլ եզրային կտրվածքներով",
+        "Չափեր՝ 54 մմ x 354 մմ x 2000 մմ",
+        "Նյութ՝ հրդեհակայուն պենոպլաստ՝ կվարց-ակրիլ ծածկույթով",
+        "Կիրառություն՝ ժամանակակից արտաքին պատի երեսպատում",
+        "Դիզայնի կոդ՝ TP 5"
+      ],
+      "ru": [
+        "Профиль: Глубокий геометрический профиль с резами по краям",
+        "Размеры: 54 мм x 354 мм x 2000 мм",
+        "Материал: Огнестойкая пена с кварцево-акриловым покрытием",
+        "Применение: Современная облицовка фасадов",
+        "Код дизайна: TP 5"
+      ]
+    },
+    "code": "TP5"
+  }
+]

@@ -730,14 +730,14 @@ msgstr "Не удалось отправить ваше сообщение. По
 msgid "Please fill all required fields"
 msgstr "Пожалуйста, заполните все обязательные поля"
 
-msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability"
-msgstr "Основанная в 2022 году, компания WALLMADE специализируется на производстве и установке премиальных решений для наружной облицовки. Всего за несколько лет мы стали лидером в области инновационных архитектурных поверхностей, сочетая эстетическое совершенство с непревзойдённой долговечностью"
+msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+msgstr "Основанная в 2022 году, компания WALLMADE специализируется на производстве и установке премиальных решений для наружной облицовки. Всего за несколько лет мы стали лидером в области инновационных архитектурных поверхностей, сочетая эстетическое совершенство с непревзойдённой долговечностью."
 
-msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications"
-msgstr "Наша экспертиза включает создание индивидуальных архитектурных деталей, превращающих здания в достопримечательности. Работая в тесном сотрудничестве с архитекторами и строителями, мы разрабатываем индивидуальные решения, расширяющие границы дизайна при строгом соблюдении технических требований"
+msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
+msgstr "Наша экспертиза включает создание индивидуальных архитектурных деталей, превращающих здания в достопримечательности. Работая в тесном сотрудничестве с архитекторами и строителями, мы разрабатываем индивидуальные решения, расширяющие границы дизайна при строгом соблюдении технических требований."
 
-msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements"
-msgstr "В WALLMADE мы переосмысливаем внешнее строительство через передовые материалы, точное проектирование и художественное видение - создавая поверхности, которые выдерживают испытание временем и производят сильное визуальное впечатление"
+msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+msgstr "В WALLMADE мы переосмысливаем внешнее строительство через передовые материалы, точное проектирование и художественное видение - создавая поверхности, которые выдерживают испытание временем и производят сильное визуальное впечатление."
 
 msgid "Discover our story"
 msgstr "Узнать нашу историю"

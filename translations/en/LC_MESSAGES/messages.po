@@ -687,14 +687,14 @@ msgstr "Your message has been sent successfully! We will get back to you soon"
 
 
 
-msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability"
-msgstr "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability"
+msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
+msgstr "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
 
-msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications"
+msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
 msgstr "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications"
 
-msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements"
-msgstr "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements"
+msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
+msgstr "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
 
 msgid "Discover our story"
 msgstr "Discover our story"

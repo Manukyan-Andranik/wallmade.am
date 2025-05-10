@@ -733,13 +733,13 @@ msgid "Please fill all required fields"
 msgstr "Խնդրում ենք լրացնել բոլոր պահանջվող դաշտերը"
 
 msgid "Founded in 2022, WALLMADE specializes in manufacturing and installing premium exterior cladding solutions. In just a few years, we have established ourselves as a leader in innovative architectural surfacing, combining aesthetic excellence with unmatched durability."
-msgstr "Հիմնադրվելով 2022 թվականին՝ WALLMADE-ը մասնագիտացած է բարձրորակ արտաքին երեսպատման լուծումների արտադրության և տեղադրման ոլորտում: Մի քանի տարվա ընթացքում մենք դարձել ենք նորարարական ճարտարապետական մակերեսների առաջատար՝ միավորելով գեղագիտական կատարելությունն ու անզուգական ամրությունը"
+msgstr "Հիմնադրվելով 2022 թվականին՝ WALLMADE-ը մասնագիտացած է բարձրորակ արտաքին երեսպատման լուծումների արտադրության և տեղադրման ոլորտում: Մի քանի տարվա ընթացքում մենք դարձել ենք նորարարական ճարտարապետական մակերեսների առաջատար՝ միավորելով գեղագիտական կատարելությունն ու անզուգական ամրությունը:"
 
 msgid "Our expertise extends to custom architectural detailing that transforms buildings into landmarks. Working closely with architects and builders, we craft tailored solutions that push the boundaries of design while meeting rigorous technical specifications."
 msgstr "Մեր փորձաքննությունը ներառում է հատուկ ճարտարապետական մանրամասներ, որոնք շենքերը վերածում են ուշագրավ օբյեկտների: Սերտ համագործակցելով ճարտարապետների և շինարարների հետ՝ մենք ստեղծում ենք հատուկ լուծումներ, որոնք ընդլայնում են դիզայնի սահմանները՝ համապատասխանելով խիստ տեխնիկական պահանջներին"
 
 msgid "At WALLMADE, we redefine exterior construction through cutting-edge materials, precision engineering, and artistic vision - delivering surfaces that stand the test of time while making powerful visual statements."
-msgstr "WALLMADE-ում մենք վերասահմանում ենք արտաքին շինարարությունը՝ օգտագործելով առաջատար նյութեր, ճշգրիտ ինժեներական լուծումներ և գեղարվեստական տեսլական՝ ստեղծելով մակերեսներ, որոնք դիմանում են ժամանակի փորձությանը՝ միաժամանակ ուժեղ տեսողական ազդեցություն թողնելով"
+msgstr "WALLMADE-ում մենք վերասահմանում ենք արտաքին շինարարությունը՝ օգտագործելով առաջատար նյութեր, ճշգրիտ ինժեներական լուծումներ և գեղարվեստական տեսլական՝ ստեղծելով մակերեսներ, որոնք դիմանում են ժամանակի փորձությանը՝ միաժամանակ ուժեղ տեսողական ազդեցություն թողնելով:"
 
 msgid "Discover our story"
 msgstr "Ծանոթացեք մեր պատմությանը"

@@ -770,3 +770,6 @@ msgstr "See our craftsmanship in action"
 
 msgid "View All Videos"
 msgstr "View All Videos"
+
+msgid "Premium quality materials for outstanding results"
+msgstr "Premium quality materials for outstanding results"

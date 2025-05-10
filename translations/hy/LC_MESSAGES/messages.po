@@ -816,3 +816,7 @@ msgstr "Դիտեք մեր վարպետությունը գործողության 
 
 msgid "View All Videos"
 msgstr "Դիտել բոլոր տեսանյութերը"
+
+
+msgid "Premium quality materials for outstanding results"
+msgstr "Բարձրորակ նյութեր՝ գերազանց արդյունքների համար"

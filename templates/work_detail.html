@@ -4,60 +4,14 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/work_detail_style.css') }}">
 {% endblock %}
 
-{% block extra_js %}
-<script>
-    const imageUrls = {{ work.Images_folder_url|tojson }};
-    let currentIndex = 0;
-
-    const mainImage = document.getElementById('main-project-image');
-    const prevBtn = document.getElementById('prev-image');
-    const nextBtn = document.getElementById('next-image');
-    const dots = document.querySelectorAll('.image-pagination .dot');
-
-    function updateImage(index) {
-        mainImage.style.opacity = 0;
-        setTimeout(() => {
-            mainImage.src = imageUrls[index];
-            currentIndex = index;
-            updateDots();
-            mainImage.style.opacity = 1;
-        }, 200);
-    }
-
-    function updateDots() {
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[currentIndex].classList.add('active');
-    }
-
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
-        updateImage(currentIndex);
-    });
-
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % imageUrls.length;
-        updateImage(currentIndex);
-    });
-
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-            const index = parseInt(dot.getAttribute('data-index'));
-            updateImage(index);
-        });
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') prevBtn.click();
-        if (e.key === 'ArrowRight') nextBtn.click();
-    });
-</script>
-{% endblock %}
-
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}</h1>
-        <p>{{ _('Featured project using Wallmade architectural details') }}</p>
+        <h1 class="hero-title" data-aos="fade-up">{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">{{ _('Featured project using Wallmade architectural details') }}</p>
+    </div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="300">
+        <span></span>
     </div>
 </section>
 
@@ -67,39 +21,46 @@
             <div class="main-image">
                 <button id="prev-image" class="image-nav-btn" aria-label="Previous image">‹</button>
                 <img src="{{ work.Images_folder_url[0] }}"
+                     data-src="{{ work.Images_folder_url[0] }}"
                      alt="{{ _(work.title.get(current_language, work.title.get('en', 'Project'))) }}"
-                     id="main-project-image" class="zoom-on-hover" loading="eager">
+                     id="main-project-image" 
+                     class="zoom-on-hover lazyload"
+                     loading="eager"
+                     width="1200"
+                     height="800">
                 <button id="next-image" class="image-nav-btn" aria-label="Next image">›</button>
             </div>
         </div>
         <div class="image-pagination" id="image-pagination">
             {% for image in work.Images_folder_url %}
-                <span class="dot{% if loop.index0 == 0 %} active{% endif %}" data-index="{{ loop.index0 }}" title="Image {{ loop.index }}"></span>
+                <span class="dot{% if loop.index0 == 0 %} active{% endif %}" 
+                      data-index="{{ loop.index0 }}" 
+                      title="Image {{ loop.index }}"></span>
             {% endfor %}
         </div>
 
         <div class="project-info">
             <div class="project-meta">
-                <div class="meta-item">
+                <div class="meta-item" data-aos="fade-up">
                     <h4>{{ _('Location') }}</h4>
                     <p>{{ work.location.get(current_language, work.location.get('en', '')) }}</p>
                 </div>
-                <div class="meta-item">
+                <div class="meta-item" data-aos="fade-up" data-aos-delay="100">
                     <h4>{{ _('Project Type') }}</h4>
                     <p>{{ work.project_type.get(current_language, work.project_type.get('en', '')) }}</p>
                 </div>
-                <div class="meta-item">
+                <div class="meta-item" data-aos="fade-up" data-aos-delay="200">
                     <h4>{{ _('Year Completed') }}</h4>
                     <p>{{ work.year }}</p>
                 </div>
             </div>
 
             <div class="project-description">
-                <h2>{{ _('Project Overview') }}</h2>
-                <p>{{ work.description.get(current_language, work.description.get('en', '')) }}</p>
+                <h2 data-aos="fade-up">{{ _('Project Overview') }}</h2>
+                <p data-aos="fade-up" data-aos-delay="100">{{ work.description.get(current_language, work.description.get('en', '')) }}</p>
 
-                <h3>{{ _('Wallmade Products Used') }}</h3>
-                <ul class="products-used">
+                <h3 data-aos="fade-up" data-aos-delay="200">{{ _('Wallmade Products Used') }}</h3>
+                <ul class="products-used" data-aos="fade-up" data-aos-delay="300">
                     {% for product in work.products_used.get(current_language, work.products_used.get('en', [])) %}
                         <li>{{ product }}</li>
                     {% endfor %}
@@ -111,15 +72,22 @@
 
 <section class="section project-more-images">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _('Project Details') }}</h2>
             <p class="section-subtitle">{{ _('Additional views and details') }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         <div class="image-grid">
             {% for image in work.Images_folder_url %}
-                <div class="grid-item">
-                    <img src="{{ image }}" alt="{{ work.title.get('en') }} - {{ _('Detail') }} {{ loop.index0 }}"
-                         loading="lazy" class="zoom-on-hover">
+                <div class="grid-item" data-aos="zoom-in" data-aos-delay="{{ loop.index0 * 100 }}">
+                    <img src="{{ image }}"
+                         data-src="{{ image }}"
+                         alt="{{ work.title.get(current_language, work.title.get('en', 'Project')) }} - {{ _('Detail') }} {{ loop.index }}"
+                         loading="lazy"
+                         class="zoom-on-hover lazyload"
+                         width="600"
+                         height="400"
+                         decoding="async">
                 </div>
             {% endfor %}
         </div>
@@ -128,11 +96,111 @@
 
 <section class="section cta bg-dark">
     <div class="container">
-        <div class="cta-content">
+        <div class="cta-content" data-aos="zoom-in">
             <h2>{{ _('Inspired by This Project?') }}</h2>
             <p>{{ _('Contact us to discuss how we can contribute to your next architectural endeavor.') }}</p>
             <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Contact Us') }}</a>
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+
+    // Initialize lazy loading
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load main image immediately (since it's above the fold)
+        const mainImage = document.getElementById('main-project-image');
+        if (mainImage.dataset.src) {
+            mainImage.src = mainImage.dataset.src;
+        }
+
+        // Lazy load for other images
+        if ('loading' in HTMLImageElement.prototype) {
+            const lazyImages = document.querySelectorAll('img.lazyload');
+            lazyImages.forEach(img => {
+                if (img.dataset.src && img !== mainImage) {
+                    img.src = img.dataset.src;
+                }
+            });
+        } else {
+            // Load lazysizes polyfill if needed
+            const script = document.createElement('script');
+            script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+
+        // Image gallery functionality
+        const imageUrls = "{{ work.Images_folder_url|tojson }}";
+        let currentIndex = 0;
+        const prevBtn = document.getElementById('prev-image');
+        const nextBtn = document.getElementById('next-image');
+        const dots = document.querySelectorAll('.image-pagination .dot');
+
+        function updateImage(index) {
+            mainImage.style.opacity = 0;
+            setTimeout(() => {
+                mainImage.dataset.src = imageUrls[index];
+                mainImage.src = imageUrls[index];
+                currentIndex = index;
+                updateDots();
+                mainImage.style.opacity = 1;
+            }, 200);
+        }
+
+        function updateDots() {
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
+            updateImage(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % imageUrls.length;
+            updateImage(currentIndex);
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.getAttribute('data-index'));
+                updateImage(index);
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prevBtn.click();
+            if (e.key === 'ArrowRight') nextBtn.click();
+        });
+
+        // Intersection Observer for secondary images
+        const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('.image-grid img[data-src]').forEach(img => {
+            lazyLoadObserver.observe(img);
+        });
+    });
+</script>
 {% endblock %}

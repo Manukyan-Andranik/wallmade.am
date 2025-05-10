@@ -7,29 +7,36 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>{{ _("Our Products") }}</h1>
-        <h2>{{ _("High-quality architectural details for every project") }}</h2>
+        <h1 class="hero-title" data-aos="fade-up">{{ _("Our Products") }}</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">{{ _("High-quality architectural details for every project") }}</p>
+    </div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="300">
+        <span></span>
     </div>
 </section>
 
 <section id="cladding-tile" class="section products-section">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">{{ _("Our exterior cladding tiles") }}</h2>
+            <p class="section-subtitle">{{ _("Premium quality materials for outstanding results") }}</p>
+            <div class="section-divider" data-aos="fade-right"></div>
         </div>
         
         <div class="products-grid">
             {% for product in products %}
-            <div class="product-card" data-category="{{ product.category.get(current_language, 'all') if product.category else 'all' }}">
+            <div class="product-card" data-category="{{ product.category.get(current_language, 'all') if product.category else 'all' }}" data-aos="zoom-in">
                 <div class="product-image">
                     <img 
                         src="{{ url_for('static', filename='img/placeholder.png') }}" 
                         data-src="{{ product.Images_folder_url }}" 
-                        alt="{{ product.title.get('en') }}" 
+                        alt="{{ product.title.get(current_language, product.title.get('en', 'Product')) }}" 
                         loading="lazy" 
                         decoding="async" 
                         class="lazyload"
-                        width="400" height="300">
+                        width="400" 
+                        height="300"
+                        data-aos="fade-up">
                     <div class="product-overlay">
                         <a href="{{ url_for('product_detail', product_id=product._id) }}" class="btn-view">{{ _("View Details") }}</a>
                     </div>
@@ -47,27 +54,60 @@
 
 <section class="section cta bg-dark">
     <div class="container">
-        <div class="cta-content">
+        <div class="cta-content" data-aos="zoom-in">
             <h2>{{ _("Can't Find What You're Looking For?") }}</h2>
             <p>{{ _("We specialize in custom solutions. Contact us to discuss your specific requirements.") }}</p>
             <a href="{{ url_for('contact') }}" class="btn-primary">{{ _("Request Custom Quote") }}</a>
         </div>
     </div>
 </section>
+{% endblock %}
 
+{% block extra_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    // Fallback for browsers without native lazyload
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+
+    // Enhanced lazy loading with Intersection Observer
     document.addEventListener("DOMContentLoaded", function() {
         if ('loading' in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img.lazyload');
-            images.forEach(img => {
-                img.src = img.dataset.src;
+            // Native lazy loading supported
+            const lazyImages = document.querySelectorAll('img.lazyload');
+            lazyImages.forEach(img => {
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                }
             });
         } else {
+            // Load lazysizes polyfill
             const script = document.createElement('script');
             script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+            script.async = true;
             document.body.appendChild(script);
         }
+
+        // Intersection Observer for more control
+        const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            lazyLoadObserver.observe(img);
+        });
     });
 </script>
 {% endblock %}

@@ -1,6 +1,7 @@
 import json
 from bson import json_util
 from bson.objectid import ObjectId
+
 from config import Config
 
 class DataManager:

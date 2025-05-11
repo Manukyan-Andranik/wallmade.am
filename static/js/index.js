@@ -1,108 +1,116 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const dots = document.querySelectorAll('.nav-dot');
-    const prevBtn = document.querySelector('.nav-arrow.left');
-    const nextBtn = document.querySelector('.nav-arrow.right');
-    let currentIndex = 0;
-    let isAnimating = false;
-    const animationDuration = 600;
-
-
-    // Update carousel
-    function updateCarousel(newIndex) {
-        if (isAnimating) return;
-        isAnimating = true;
-        
-        // Update dots
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[newIndex].classList.add('active');
-        
-        currentIndex = newIndex;
-        
-        setTimeout(() => {
-            isAnimating = false;
-        }, animationDuration);
-    }
-
-    // Event listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-            const index = parseInt(dot.dataset.index);
-            updateCarousel(index);
-        });
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight') nextSlide();
-        if (e.key === 'ArrowLeft') prevSlide();
-    });
-
-    // Initialize
-    initCarousel();
-});
-
-
-// Initialize AOS animations with smoother settings
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize AOS animations
     AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out-back',
+        duration: 800,
+        easing: 'ease-in-out',
         once: true,
         offset: 120,
         delay: 100,
         mirror: false
     });
-});
 
+    // Function to check for iOS devices
+    function isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize scroll animations
-    const animateElements = document.querySelectorAll('.animate-text, .product-card, .work-card');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('aos-animate');
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
+    // Adjust background elements for iOS
+    console.log(isIOS());
+    if (isIOS()) {
+        const heroBg = document.querySelector('.hero-background');
 
-    animateElements.forEach(el => {
-        observer.observe(el);
-    });
+        // Ensure backgrounds are fixed
+        if (heroBg) {
+            heroBg.style.position = 'fixed';
+            heroBg.style.top = '0';
+            heroBg.style.left = '0';
+        }
+    }
+    else {
+        // For non-iOS: add ::before via class
+        const hero = document.querySelector('.hero');
+        const heroBg = document.querySelector('.hero-background');
 
-    // Parallax effect for hero background
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.pageYOffset;
-            hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-        });
+        if (hero) {
+            hero.classList.add('use-before');
+            heroBg.classList.remove('hero-background');
+
+        }
     }
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 
     // Button hover effects
     const buttons = document.querySelectorAll('.btn-secondary, .btn-primary, .btn-modern');
     buttons.forEach(button => {
-        button.addEventListener('mouseenter', function() {
-            this.style.transform = this.style.transform.replace('scale(1)', 'scale(1.05)');
+        button.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateY(-3px) scale(1.05)';
+            this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.15)';
         });
-        button.addEventListener('mouseleave', function() {
-            this.style.transform = this.style.transform.replace('scale(1.05)', 'scale(1)');
+
+        button.addEventListener('mouseleave', function () {
+            this.style.transform = '';
+            this.style.boxShadow = '';
+        });
+    });
+
+    // Intersection Observer for scroll animations
+    const animateElements = document.querySelectorAll('.animate-text, .product-card, .work-card');
+
+    if (animateElements.length) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        animateElements.forEach(el => {
+            observer.observe(el);
+        });
+    }
+
+    // Video player functionality
+    const playButtons = document.querySelectorAll('.play-button');
+    playButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const videoContainer = this.closest('.video-container');
+            const video = videoContainer.querySelector('video');
+
+            if (video.paused) {
+                video.play()
+                    .then(() => {
+                        this.innerHTML = '<i class="fas fa-pause"></i>';
+                        videoContainer.classList.add('playing');
+                    })
+                    .catch(error => {
+                        console.error('Video playback failed:', error);
+                    });
+            } else {
+                video.pause();
+                this.innerHTML = '<i class="fas fa-play"></i>';
+                videoContainer.classList.remove('playing');
+            }
         });
     });
 });

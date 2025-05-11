@@ -9,19 +9,45 @@
     padding-top: 100px;
     text-align: center;
     overflow: hidden;
-}
+  background-attachment: fixed;
 
-.hero::before {
+}
+.use-before::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/back.jpg') no-repeat center center/cover;
+    background: url('/static/images/back.jpg') no-repeat center center / cover;
     background-attachment: fixed;
-    z-index: 0;
+    z-index: -1;
+  }
+.hero-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0); /* triggers hardware acceleration */
+  z-index: -1;
 }
+
+.cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--green);
+    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0); /* triggers hardware acceleration */
+  }
 
 .hero-overlay {
     position: absolute;
@@ -415,17 +441,12 @@
 .work-image {
     width: 100%;
     height: 100%;
-}
-
-.work-image img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.6s ease;
 }
 
-.work-card:hover .work-image img {
-    transform: scale(1.1);
+.work-card:hover .work-image {
+    transform: scale(1.05);
 }
 
 .work-overlay {
@@ -434,12 +455,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
 }
 
 .work-card:hover .work-overlay {
@@ -447,16 +468,11 @@
 }
 
 .work-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
-    transform: translateY(20px);
+    text-align: center;
+    transform: translateY(10px);
     opacity: 0;
-    transition: var(--transition);
+    transition: all 0.4s ease;
 }
 
 .work-card:hover .work-info {
@@ -470,60 +486,92 @@
 }
 
 .work-info p {
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    opacity: 0.9;
+    font-size: 1rem;
+    opacity: 0.8;
 }
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
-    background-image: url("../images/back2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    position: relative;
     color: white;
     text-align: center;
-    padding: 120px 0;
-    position: relative;
+    padding: 120px 20px;
+    overflow: hidden;
 }
 
-.cta::before {
-    content: '';
+.cta .cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.cta-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-}
-
-.cta-content {
-    position: relative;
     z-index: 1;
-    transform: scale(0.95);
-    opacity: 0;
-    transition: all 0.6s ease;
 }
 
-.cta-content.aos-animate {
-    transform: scale(1);
+.cta .cta-content.aos-animate {
+    transform: translateY(0);
     opacity: 1;
 }
 
 .cta h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 20px;
-    color: white;
+    font-weight: 700;
 }
 
 .cta p {
     font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
+    margin-bottom: 40px;
     opacity: 0.9;
 }
+
+.cta .btn-secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
+.cta .btn-secondary:hover {
+    background-color: var(--light-gray);
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .about-preview-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .works-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
 
 .btn-primary {
     display: inline-block;

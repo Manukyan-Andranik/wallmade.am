@@ -3,9 +3,10 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
 {% endblock %}
 
-
 {% block content %}
+<!-- Hero Section with iOS fix -->
 <section class="hero">
+    <div class="hero-background"></div>
     <div class="container">
         <div class="hero-content" data-aos="fade-up">
             <p class="hero-title">{{ _('Precision Crafted Architectural Details') }}</p>
@@ -135,67 +136,11 @@
     </div>
 </section>
 
-<section class="section cta bg-dark">
-    <div class="container">
-        <div class="cta-content" data-aos="zoom-in">
-            <h2>{{ _('Ready to Elevate Your Project?') }}</h2>
-            <p>{{ _('Contact us to discuss your project.') }}</p>
-            <a href="{{ url_for('contact') }}" class="btn-primary">{{ _('Get in Touch') }}</a>
-        </div>
-    </div>
-</section>
 {% endblock %}
 
 {% block extra_js %}
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
-<script>
-// Video Play/Pause functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const playButtons = document.querySelectorAll('.play-button');
-    
-    playButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const videoContainer = this.closest('.video-container');
-            const video = videoContainer.querySelector('video');
-            
-            if (video.paused) {
-                video.play();
-                this.innerHTML = '<i class="fas fa-pause"></i>';
-                videoContainer.classList.add('playing');
-            } else {
-                video.pause();
-                this.innerHTML = '<i class="fas fa-play"></i>';
-                videoContainer.classList.remove('playing');
-            }
-        });
-    });
-    
-    // Initialize lazy loading for images
-    const lazyLoadImages = [].slice.call(document.querySelectorAll("img.lazy"));
-    if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove("lazy");
-                    lazyImageObserver.unobserve(lazyImage);
-                }
-            });
-        });
+<script src="{{ url_for('static', filename='js/index_animations.js') }}"></script>
 
-        lazyLoadImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
-    }
-    
-    // Initialize AOS
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-    });
-});
-</script>
 {% endblock %}

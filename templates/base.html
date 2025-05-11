@@ -184,6 +184,7 @@
 
     <!-- Footer -->
     <footer class="main-footer">
+    <div class="footer-background"></div>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -237,7 +238,26 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-    {% block extra_js %}{% endblock %}
+    {% block extra_js %}
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new MutationObserver(() => {
+                const distanceToBottom = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+        
+                // Only scroll to bottom if user is already very close to the bottom (e.g. within 100px)
+                if (distanceToBottom < 100) {
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }
+            });
+        
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
+        </script>
+        
+    {% endblock %}
 </body>
 
 </html>

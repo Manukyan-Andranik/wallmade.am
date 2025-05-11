@@ -536,6 +536,13 @@ section {
 }
 
 /* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    color: var(--text-light);
+}
+
 .main-footer {
     background-color: var(--dark-color);
     color: var(--text-on-dark);
@@ -629,7 +636,7 @@ section {
 }
 
 .newsletter-form {
-    display: flex;
+    display: center;
     margin-top: 20px;
 }
 
